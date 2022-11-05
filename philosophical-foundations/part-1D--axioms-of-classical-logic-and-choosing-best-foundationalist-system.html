@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-01 Tue 04:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophical Foundations Part 1D: Axioms Of Classical Logic And Choosing The Best Foundationalist System</title>
+<meta name="author" content="Zero Contradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Philosophical Foundations Part 1D: Axioms Of Classical Logic And Choosing The Best Foundationalist System</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga8b2001">1. How The Axioms For Classical Logic Were Created, What Axioms Are, And What They Are Used For</a>
+<ul>
+<li><a href="#org41df90e">1.1. Characteristics Of Logical Axioms (Postulates)</a></li>
+<li><a href="#orga39a744">1.2. Characteristics Of L1 Theorems (Performative Contradictions)</a></li>
+</ul>
+</li>
+<li><a href="#org8ebfe66">2. Further Analysis On Foundations And Axiomatic Systems</a></li>
+<li><a href="#orgad65e74">3. Explaining What Performative Contradictions Are And Why They Are Ideal For Building Our Framework</a></li>
+<li><a href="#orgcbff106">4. Why I Conceived Using These Axioms And Theorems For My Philosophy</a></li>
+<li><a href="#org5716100">5. Verifying Questionable Performative Contradictions: I Do Not Exist. I Am Not Conscious. I Am Dead / I Am Not Alive.</a></li>
+<li><a href="#org441b0b0">6. Should Reason Be Proven By Performative Contradiction Or Assumed As A Self-Evident Axiom?</a></li>
+<li><a href="#org1105531">7. Reasons Why This Is The Best Axiomatic Foundation For Philosophy Ever Created (That I Know Of)</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga8b2001" class="outline-2">
+<h2 id="orga8b2001"><span class="section-number-2">1.</span> How The Axioms For Classical Logic Were Created, What Axioms Are, And What They Are Used For</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>This blog post essay explains it very well: <a href="https://stateofthenihil.wordpress.com/2019/09/26/the-laws-of-logic-or-why-formal-logic-sucks/">https://stateofthenihil.wordpress.com/2019/09/26/the-laws-of-logic-or-why-formal-logic-sucks/</a>
+<ul class="org-ul">
+<li>&ldquo;By thinking about order of discovery and understanding that we were already making arguments before having a concept of the logical laws, we can ask how this was even possible. The answer has to do with the fact that we aren’t capable of violating the laws of logic consciously.&rdquo;</li>
+<li>&ldquo;This inability to violate any/most of the laws is first, what allows us to rely on them prior to conceiving of the laws themselves, but is, second, what makes the laws of logic not arbitrary.&rdquo;</li>
+</ul></li>
+<li>The Laws of Logic are basically patterns in cognition, suggesting that we simply think in this way when we reason.</li>
+<li>i</li>
+<li>i</li>
+<li>DEFINITION OF LOGICAL AXIOM/POSTULATE: An axiom or postulate is a statement that is taken to be true, to serve as a premise or starting point for further reasoning and arguments.</li>
+<li>DEFINITION OF L1 theorem: An L1 theorem is a self-evident tautology that creates a performative contradiction when you reject it.</li>
+<li>ALSO IMPORTANT: This definition doesn&rsquo;t really work for ANY of the axioms of classical logic. Rejecting any of the axioms of classical logic does not create a performative contradiction.</li>
+<li>The Law of Non-Contradiction (LNC, the third logical axiom) has to be established first before performative contradictions can be used to prove the L1 Theorems.</li>
+<li>Logic is the study of valid reasoning. It follows that if we wish to propose a reasonable foundationalist theory of epistemology, we should start by selectively choosing logical ontologies that will yield a logical system that will work best for our purposes.</li>
+<li>For our theory of logic, we will choose classical logic, which has the ontologies of being a two-value logic with existential and universal quantification. If we later discover that we wish to do reasoning that will require additional ontologies like time, possibility, necessity, evidentiality, etc or different ontologies such as additional truth value (e.g. indeterminate in addition to true and false), then we can formulate a different foundationalist theory that reuses and builds upon many of the findings in our classical logic paradigm.</li>
+<li>An axiom is a statement that cannot be proved by reference to any more basic statements, because it provides the most basic conceptual foundation of all proofs.</li>
+<li>That said, it might be more appropriate to call the L1 Theorems corollaries instead since they are all performative contradictions that are proven by the Law of Non-Contradiction.</li>
+<li>But they are also self-evident. And they are all also unique since they can all be proven by their own self-refutations. Those two characteristics make them worthy of being called L1 Theorems.</li>
+<li>Are things that we can sense perceptually self-evident?</li>
+<li>A statement that cannot be proved in any manner, yet is not self-evident, is simply an arbitrary assertion.</li>
+<li>After assuming the three axioms of classical logic, and expanding the L1 theorems beyond just existence and consciousness, this all looks more like a mathematical axiomatic system.</li>
+<li>The existence axiom cannot prove the existence of anything besides oneself though, but that is okay. The existence of other things besides oneself can be proven once the validity of the senses are proven.</li>
+</ul>
+</div>
+
+<div id="outline-container-org41df90e" class="outline-3">
+<h3 id="org41df90e"><span class="section-number-3">1.1.</span> Characteristics Of Logical Axioms (Postulates)</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>The Three Axioms of Classical Logic</li>
+<li>Postulates taken to be True</li>
+<li>Satisfies the Definition of Law</li>
+<li>Has both metaphysical and propositional equivalents</li>
+<li>Required to Prove the L1 Theorems</li>
+<li>Can Prove the Inference Rules and Other Tools of Classical Logic</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga39a744" class="outline-3">
+<h3 id="orga39a744"><span class="section-number-3">1.2.</span> Characteristics Of L1 Theorems (Performative Contradictions)</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Self-Evident Tautologies</li>
+<li>Rejection creates performative contradictions</li>
+<li>Furthers the foundations of metaphysics and epistemology</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8ebfe66" class="outline-2">
+<h2 id="org8ebfe66"><span class="section-number-2">2.</span> Further Analysis On Foundations And Axiomatic Systems</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>Perhaps the brain implicitly assumes axioms so often for multiple reasons: 1. it isn&rsquo;t programmed to recognize them unless it&rsquo;s looking for them, and 2. it probably speeds up mental calculations if one doesn&rsquo;t consciously realize them (but this becomes a bad thing when you must recognize them).</li>
+<li>Interestingly, the order in which axioms are listed matters. It would not make sense to establish the Identity Axiom after the Law of Non-Contradiction.</li>
+<li>The reason for this is probably because the previous axioms state concepts that the later axioms have to refer to.
+<ul class="org-ul">
+<li>So when the previous axioms are missing, it&rsquo;s confusing what the later axioms are talking about.</li>
+</ul></li>
+<li>Non-logical axioms (postulates) are formulas that play the role of theory-specific assumptions. Reasoning about two different structures, for example the natural numbers and the integers, may involve the same logical axioms; the non-logical axioms aim to capture what is special about a particular structure (or set of structures, such as groups). Thus non-logical axioms, unlike logical axioms, are not tautologies. Another name for a non-logical axiom is postulate.</li>
+<li>&ldquo;Axiomatic&rdquo; implies that axioms often tend to be things that people implicitly assume since they&rsquo;re used so much.</li>
+<li>Almost every modern mathematical theory starts from a given set of non-logical axioms.</li>
+<li>It has been thought that in principle every theory could be axiomatized in this way and formalized down to the bare language of logical formulas.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgad65e74" class="outline-2">
+<h2 id="orgad65e74"><span class="section-number-2">3.</span> Explaining What Performative Contradictions Are And Why They Are Ideal For Building Our Framework</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>A performative contradiction arises when the propositional content of a statement contradicts either the act of asserting it or the noncontingent presuppositions that make possible the performance of the speech act, such as occurs with &ldquo;all statements must be false&rdquo;.</li>
+<li>Every performative contradiction can be an L1 Theorem, provided that it is a useful one. And every L1 Theorem is also a performative contradiction.</li>
+<li>Since we wish for our axioms and other assumptions to be as few as possible, we will use all the performative contradictions that we can possibly think of to form what will be called the L1 (Level I) Theorems.</li>
+<li>Theorems that can be proven using regular contradictions (contradictions where a premise does not directly contradict itself by merely uttering it by itself) are less ideal for building the first and second set of theorems for our foundationalist theory since they require more knowledge and pertain to less general concepts.</li>
+<li>We have determined that using theorems generated by performative contradictions are very ideal for building a foundationalist theory for several reasons. Once they are established, they can prove (in combination with Classical Logic):
+<ol class="org-ol">
+<li>They reveal several important truths that would otherwise be assumed by many philosophers as implicit premises or knowledge that is deemed to be self-evident, which we want to avoid since the revelation of a false implicit premise usually requires rethinking every epistemic conclusion that implicitly assumes that false premise.</li>
+<li>Proofs by performative contradiction are formal and rigorous ways for proving statements that many people assume to be self-evident. They therefore constitute a superior proof strategy when it is possible to use them.</li>
+<li>Reason is revealed to be a valid source of knowledge. [ELABORATE ON THIS]</li>
+<li>We have a solid foundation for better understanding the Reasoning Process and basic Reasoning Skills (more commonly known as &ldquo;Critical Thinking Skills&rdquo;).</li>
+</ol></li>
+<li>Even if I did not have this foundationalist framework to prove all the conclusions of the performative contradictions, I would still want to accept all those conclusions anyway based on my own intuition and sense perception. The foundationalist framework helps to to further verify those obvious intuitions with a rigor that is higher than intuition.</li>
+<li>NOTE: It is perfectly possible for people to hold self-contradictory beliefs in the Empirically-Grounded Coherentism model of the Understanding of Human Knowledge as long as they don&rsquo;t realize or question the contradiction. Reason is a game that participants must agree to play. Although it might be contradictory to use reason to doubt reason, if people are tempted to doubt reason, they will still do it as long as they haven&rsquo;t realized or refuse to recognize the contradictory in doubting reason. The point here is that even if a belief is self-contradictory, it is up to the believer to realize the contradiction for themselves.</li>
+<li>IMPORTANT: Using a different type of logic instead of classical (AKA formal) logic could yield more L1 Theorems to work with.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcbff106" class="outline-2">
+<h2 id="orgcbff106"><span class="section-number-2">4.</span> Why I Conceived Using These Axioms And Theorems For My Philosophy</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+On August 2020, I came up with this idea for a foundationalist system after a discussion that I had with some other students at my alma mater&rsquo;s philosophy club. Months prior, we had a meeting where we discussed foundationalism and basic beliefs, which caused me to start thinking about foundationalism versus coherentism.
+</p>
+
+<p>
+At the time, I was leaning towards foundationalism since I used to be an Objectivist and Objectivism is a foundationalist philosophy, which contradicts itself. After my discussion on August 2020, I realized why Ayn Rand&rsquo;s and Aristotle&rsquo;s Axioms are contradictory and poorly chosen.
+</p>
+
+<p>
+At this period in my life, I was still a borderline Efilist, as I didn&rsquo;t have the philosophical understandings to know how to refute Efilism, even though Efilism opposes my biological desires and instincts.
+</p>
+
+<p>
+<a href="https://thewaywardaxolotl.blogspot.com/2016/07/what-is-abyss.html?view=classic">I gazed into the Abyss, and tried to figure out what the founding assumptions of my philosophy were.</a>
+</p>
+
+<p>
+Let&rsquo;s be clear: Although I am using axioms to start my philosophy off, the axioms are re-verified by the rest of the philosophy, as we will see in the other webpages that I am writing in this series on  <i>Philosophical Foundations</i> _. Consider the definition of a <b>theory</b>:
+</p>
+
+<p>
+A theory is a set of sentences which is closed under logical implication. That is, given any subset of sentences {s<sub>1</sub>, s<sub>2</sub>, &#x2026;} in the theory, if sentence r is a logical consequence of {s<sub>1</sub>, s<sub>2</sub>, &#x2026;}, then r must also be in the theory.
+</p>
+
+<p>
+Since this blog&rsquo;s philosophy and its axioms all constitute a theory, eventually, the other sentences and propositions of the philosophy will all support each other, so this philosophy is actually coherentist, even though it starts off as being presented as a foundationalist system for pedagogical purposes.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5716100" class="outline-2">
+<h2 id="org5716100"><span class="section-number-2">5.</span> Verifying Questionable Performative Contradictions: I Do Not Exist. I Am Not Conscious. I Am Dead / I Am Not Alive.</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>Are these true performative contradiction? By saying &ldquo;I&rdquo;, you imply that you exist. So if your conclusion is that you exist, you kind of assume what you&rsquo;re trying to prove.</li>
+<li>Either you exist, or you don&rsquo;t exist. It must be the case that you do exist, because if you didn&rsquo;t exist, you never could have stated that you don&rsquo;t exist in the first place.</li>
+<li>Whenever you&rsquo;re given two contradicting statements, you have to pick the one that remains consistent with reality: the one that doesn&rsquo;t lead you down a dead end.</li>
+<li>Rejecting any Axiom is a performative contradiction. If this is true, then the entire list of performative contradictions is also a list of axioms.</li>
+<li>That said, you have to choose: I do exist. I am conscious. I am alive. If you reject these three options, then you lead yourself down a philosophical dead end that is inconsistent with reality.</li>
+<li>As additional proof that you&rsquo;re supposed to reject the propositions being said, You clearly do that when disproving: skepticism/solpsism, the invalidity of reason, and all statements are false.</li>
+<li>Why would it be any different that you accept the propositions being said and reject the implicit premises that are not stated, instead of accepting the implicit premises and rejecting the assertions?</li>
+<li>We know that this cannot be the case because which premise/assertion gets accepted and which one gets rejected HAS TO be the same for ALL of the performative contradictions.</li>
+<li>Under the <span class="underline"><span class="underline"><span class="underline">__</span></span></span> axiom of standard deontic logic, Efilism would be invalidated because the philosophy obligates accomplishing an impossible task: the extinction of all life. Extinction of all life in the universe is definitely impossible, but extinction of all life to the most feasible extent possible could be possible, even though it is obviously self-defeating.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org441b0b0" class="outline-2">
+<h2 id="org441b0b0"><span class="section-number-2">6.</span> Should Reason Be Proven By Performative Contradiction Or Assumed As A Self-Evident Axiom?</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>A question that is worth asking is: Should reason be self-justified? (by proof by performative contradiction among other ways) Or should reason be accepted as an axiom in this foundationalist theory?</li>
+<li>My intuition is that Reason can and SHOULD be used to justify itself because it IS valid, but some people would still disagree and argue that reason would have to be accepted as an axiom in this foundationalist theory. Even if it is debatable whether or not the validity of reason should be included as an axiom in this foundationalist theory of epistemology, using reason to debate the inclusion of this axiom is nothing new. Many, many other mathematical theories also use reason and debates to concretely decide the axioms that lay the foundations for those theories.</li>
+<li>If it should be the case that reason cannot justify itself by performative contradiction, it would also have to be the case that reason cannot be justified by any means at all. We wouldn&rsquo;t be able to justify reason using biological and evolutionary reasoning, nor could we justify reasoning by any other mental faculties (faith, emotion, imagination (relies on reasoning), intuition (relies on reasoning)) since all of them are either invalid or end up using reason indirectly in some way, nor could we even conclude that reason has to be valid since it&rsquo;s the only other possible mental faculty available that could possibly prove the validity of reason (once again, reason would have to be used to justify itself, but it was already assumed that we can&rsquo;t do this when we ruled out proof by performative contradiction).</li>
+<li>Anyway, the point here was that if reason cannot justify itself as being a valid source of knowledge, much less the only one, then it is completely impossible to justify it at all, unless it is taken to be a self-evident axiom. But even then, the very act of deciding and choosing which axioms to include in a belief system is in of itself an act of using reason, which further bolsters the self-evidence that reason is valid. Although we want the total number of axioms that we assume for any foundationalist system to be as few as possible, and while I don&rsquo;t believe that it&rsquo;s necessary to assume the validity of reason as an axiom, it certainly wouldn&rsquo;t be problematic at all to do so since the validity of reason is true, self-evident, self-justifying, and wholly consistent with our epistemic theory. It ultimately comes down to personal preference regarding whether someone wants to assume the validity of reason as an axiom or prove reason by performative contradiction and other self-justifying means. All the conclusions built on top of the founding axioms and L1 Theorems will be the same.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1105531" class="outline-2">
+<h2 id="org1105531"><span class="section-number-2">7.</span> Reasons Why This Is The Best Axiomatic Foundation For Philosophy Ever Created (That I Know Of)</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>Since these are the exact same axioms used for classical logic, establishing them also unlocks all the inference rules, makes classical logic possible, and enables me to use Proof by Contradiction.</li>
+<li>These three axioms also have equivalents regarding reality and metaphysics, so they can be used for more than just logic and propositions.</li>
+<li>These axioms are required to be able to use Proof by Contradiction, which is necessary for showing that Performative Contradictions are contradictions.</li>
+<li>Unlocking the collection of all Performative Contradictions verifies several self-evident, yet important philosophical truths.</li>
+<li>I do exist, I am conscious, I am alive, I have conscious epistemic free will, the truth exists, I can be certain of some things, I should have values, and reason is a valid source of sensory knowledge.</li>
+<li>Although the conclusions derived from the Performative Contradictions may be self-evident, proving them by Contradiction enables us to avoid relying on self-evidence for knowing that they are true.</li>
+<li>This proves that reason is a valid source of knowledge. This is a big deal because not only is reason a valid source of sensory knowledge, but it&rsquo;s the <i>ONLY</i> valid source of sensory knowledge, and we will prove that later.</li>
+<li>Once reason is established, classical logic can be used in combination to strengthen our reasoning since we managed to establish it using the three axioms.</li>
+<li>All of this makes a perfect epistemic foundation for learning metaphysics and epistemology in more depth.</li>
+<li>And once we learn the basics, we&rsquo;ll also be able to prove that the universe is cause-and-effect and deterministic, the senses are valid, empiricism is true, learn how evolution works, identify cognitive biases and limits of knowledge, and move on to ethics and the rest of philosophy.
+<ul class="org-ul">
+<li>Once I prove all of this as well, I can use the newly established knowledge (e.g. evolution, the evolution theorems and, etc) to re-affirm all the L1 theorems established here, so the structure of this theory of epistemology will ultimately be shown to follow (Empirically-Grounded) Coherentism, not Foundationalism.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Zero Contradictions</p>
+<p class="date">Created: 2022-11-01 Tue 04:19</p>
+</div>
+</body>
+</html>

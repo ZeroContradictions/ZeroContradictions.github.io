@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-10-30 Sun 06:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophical Foundations Part 1C: Definitions And Basic Beliefs</title>
+<meta name="author" content="Zero Contradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Philosophical Foundations Part 1C: Definitions And Basic Beliefs</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgfbe2959">1. Logical Definitions</a></li>
+<li><a href="#org13ac7c3">2. The A Priori And A Posteriori Distinction</a></li>
+<li><a href="#orgbda0469">3. Regarding Self-Evidence And Basic Beliefs</a>
+<ul>
+<li><a href="#org0ebd2c6">3.1. Some Examples</a>
+<ul>
+<li><a href="#org1906b94">3.1.1. Categories of Beliefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfbe2959" class="outline-2">
+<h2 id="orgfbe2959"><span class="section-number-2">1.</span> Logical Definitions</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Statement</li>
+<li>Proposition</li>
+<li>Formula</li>
+<li>Sentence; <a href="https://mathworld.wolfram.com/Sentence.html">https://mathworld.wolfram.com/Sentence.html</a></li>
+<li>Hypothesis</li>
+<li>Conjecture</li>
+<li>If a claim is plausible, but there is no evidence for it, then the claim is a conjecture.</li>
+<li>Principle</li>
+<li>Theory</li>
+<li>A theory is a set of sentences which is closed under logical implication. That is, given any subset of sentences {s<sub>1,s</sub><sub>2</sub>,&#x2026;} in the theory, if sentence r is a logical consequence of {s<sub>1,s</sub><sub>2</sub>,&#x2026;}, then r must also be in the theory.</li>
+<li>Weisstein, Eric W. &ldquo;Theory.&rdquo; From MathWorld&#x2013;A Wolfram Web Resource. <a href="https://mathworld.wolfram.com/Theory.html">https://mathworld.wolfram.com/Theory.html</a></li>
+<li>Theorem: Are theorems a type of tautology or are tautologies a type of theorem?</li>
+<li>A sentence is a theorem iff it is the conclusion of a valid argument with the empty set of premises (so that any assignment of values to variables appearing in the sentence makes it true).</li>
+<li>Fact</li>
+<li>Lemma: a subsidiary or intermediate theorem in an argument or proof.</li>
+<li>Assumption: i</li>
+<li>Explicit Premise: i</li>
+<li>Implicit / Unstated Premise:</li>
+<li>Axiom: i</li>
+<li>Postulate: The same thing as axiom, right?</li>
+<li>Corollary</li>
+<li>Law</li>
+<li>Definition of absurdity / &ldquo;the absurd&rdquo;: The quality of being impossible to be conceptualized; something that makes no sense because it is contradictory.</li>
+<li>Confidence in X: The belief that X is likely to be true.</li>
+<li>Confidence Level in Believing X: The amount of confidence that the belief in X is likely to be true.</li>
+<li>Skepticism: i</li>
+<li>(Blind) Faith: High confidence in a belief, based on a perceived degree of warrant <b>without using reason</b>; the suspension of skepticism without using reason.</li>
+<li>Noun: A word that is a person, place, thing, or idea.</li>
+<li>Noun Phrase: A phrase that has a noun or pronoun as its head or performs the same grammatical function as a noun.</li>
+<li>Concept: Anything that a person could possibly think of. Identifiably concepts have names or explicit descriptions attached to them, whereas unidentiable concepts do not. An identitifiable concept that has a word/name/referrant that can refer to it can also be classified as a noun and any semantic attributes that are attached to that noun.</li>
+<li>QUESTION: Is there any difference between nouns and concepts?</li>
+<li>Property: i</li>
+<li>QUESTION: What is the difference between a law and a property?</li>
+<li>Contradiction</li>
+<li>Performative Contradiction</li>
+<li>Tautology</li>
+<li>Ontology</li>
+<li>Basic Belief: i;</li>
+<li>Self-Evident: i;</li>
+<li>Three-Valued Logic: A logical structure which does not assume the law of the excluded middle. Three truth values are possible: true, false, or undecided. There are 3072 such logics.</li>
+<li>Rational Ignorance: i</li>
+<li>Philosophical Razor: i</li>
+<li>Consciousness: i</li>
+<li>Levels of Consciousness: i</li>
+<li>Nature: i</li>
+<li>- What is nature? Define it, especially as it relates to the Appeal to Nature Fallacy.</li>
+<li>Axiomatic Set Theory: A version of set theory in which axioms are taken as uninterpreted rather than as formalizations of pre-existing truths.</li>
+<li>Paradox: A statement which appears self-contradictory or contrary to expectations, also known as an antinomy.</li>
+<li>Antinomy: A paradox or contradiction.</li>
+<li>Pseudoparadox: an apparent paradox, such as the catalogue paradox, for which there is no underlying actual contradiction.</li>
+<li>mathworld.wolfram.com can help with this.</li>
+<li>Raison d&rsquo;être: Reason for being. The claimed reason for the existence of something or someone; the sole or ultimate purpose of something or someone.</li>
+<li>i</li>
+<li>i</li>
+<li>i</li>
+<li>IMPORTANT: Explain the nature of A Priori Truths (e.g. water is H2O) and A Posteriori Truths, and how they relate to this foundationalist theory.</li>
+<li>Example of a Necessary A Priori Truth: Water is H2O</li>
+<li>Example of a Necessary Posteriori Truth: i</li>
+<li>i</li>
+<li>i</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org13ac7c3" class="outline-2">
+<h2 id="org13ac7c3"><span class="section-number-2">2.</span> The A Priori And A Posteriori Distinction</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<a href="../epistemology/a-priori-and-a-posteriori-distinction.html">The A Priori And A Posteriori Distinction</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbda0469" class="outline-2">
+<h2 id="orgbda0469"><span class="section-number-2">3.</span> Regarding Self-Evidence And Basic Beliefs</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Definition of Basic Belief: Basic beliefs (also commonly called foundational beliefs or core beliefs) are, under the epistemological view called foundationalism, the axioms of a belief system.[example needed]
+</p>
+
+<p>
+There is no such thing as a false properly basic belief.
+</p>
+
+<p>
+Difference between self-evident and properly basic: &#x2026;
+</p>
+
+<p>
+Example: Seeing a glass of water or using our senses isn&rsquo;t self-evident, but it is properly basic.
+</p>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Basic_belief">https://en.wikipedia.org/wiki/Basic_belief</a>
+</p>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Self-evidence">https://en.wikipedia.org/wiki/Self-evidence</a>
+</p>
+
+<p>
+Does a higher level of intelligence (or some certain level of intelligence in a section of the brain) make some concepts self-evident?
+</p>
+</div>
+
+<div id="outline-container-org0ebd2c6" class="outline-3">
+<h3 id="org0ebd2c6"><span class="section-number-3">3.1.</span> Some Examples</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Here too it is relatively specific and concrete propositions rather than their more general and abstract colleagues that are properly basic. Perhaps such items are
+</p>
+
+<p>
+(11) There are trees,
+</p>
+
+<p>
+(12) There are other persons,
+</p>
+
+<p>
+and
+</p>
+
+<p>
+(13) The world has existed for more than 5 minutes,
+</p>
+
+<p>
+are not in fact properly basic; it is instead such propositions as
+</p>
+
+<p>
+There are other persons,
+</p>
+
+<p>
+(14) I see a tree,
+</p>
+
+<p>
+(15) that person is pleased,
+</p>
+
+<p>
+(16) I had breakfast more than an hour ago,
+</p>
+
+<p>
+The world has existed for more than 5 minutes,
+</p>
+
+<p>
+Of course propositions of the latter sort immediately and self-evidently entail propositions of the former sort; and perhaps there is thus no harm in speaking of the former as properly basic, even though so to speak is to speak a bit loosely.
+</p>
+
+<p>
+For properly basic beliefs, these are typically universal statements. The modern foundationalist&rsquo;s criterion for proper basicality, for example, is doubly universal:
+</p>
+
+<p>
+(18) For any proposition A and person S, A is properly basic for S if and only if A is incorrigible for S or self-evident to S.
+</p>
+
+<p>
+Some of my beliefs, however, I accept but don&rsquo;t accept on the basis of any other beliefs. Call these beliefs basic. I believe that 2 + 1 = 3, for example, and don&rsquo;t believe it on the basis of other propositions. I also believe that I am seated at my desk, and that there is a mild pain in my right knee.
+</p>
+
+<p>
+These too are basic to me; I don&rsquo;t believe them on the basis of any other propositions. According to the classical foundationalist, some propositions are properly rightly basic for a person and some are not. Those that are not, are rationally accepted only on the basis of evidence, where the evidence must trace back, ultimately, to what is properly basic. The existence of God, furthermore, is not among the propositions that are properly basic; hence a person is rational in accepting theistic belief only if he has evidence for it.
+</p>
+
+<p>
+The central point, here, however, is that a belief is properly basic only in certain conditions; these conditions are, we might say, the ground of its justification and, by extension, the ground of the belief itself. In this sense, basic beliefs are not, or are not necessarily, groundless beliefs.
+</p>
+</div>
+
+<div id="outline-container-org1906b94" class="outline-4">
+<h4 id="org1906b94"><span class="section-number-4">3.1.1.</span> Categories of Beliefs</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+Foundationalism holds that all beliefs must be justified in order to be known. Beliefs therefore fall into two categories:
+</p>
+
+<p>
+Beliefs that are properly basic, in that they do not depend upon justification of other beliefs, but on something outside the realm of belief (a &ldquo;non-doxastic justification&rdquo;)
+</p>
+
+<p>
+Beliefs that derive from one or more basic beliefs, and therefore depend on the basic beliefs for their validity
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Zero Contradictions</p>
+<p class="date">Created: 2022-10-30 Sun 06:02</p>
+</div>
+</body>
+</html>

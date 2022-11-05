@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-02 Wed 22:09 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Case Against Libertarianism And Anarchism</title>
+<meta name="author" content="Zero Contradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">The Case Against Libertarianism And Anarchism</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org430ce9e">1. List Of My Disagreements With Libertarianism (As Of March 2022)</a></li>
+<li><a href="#org16619bf">2. Why It Is Actually Misleading To Think Of The Libertarian NAP As A Single Principle</a>
+<ul>
+<li><a href="#org5db5d1c">2.1. List Of Ethical Topics That Libertarians/Ancaps Could Disagree On</a></li>
+</ul>
+</li>
+<li><a href="#org19d6a1b">3. In A Way, This World Already Has Exactly What Ancaps Are Asking For</a></li>
+<li><a href="#org847d4e5">4. Other Notes</a></li>
+</ul>
+</div>
+</div>
+<p>
+Many of the claims stated in this article will include links to other blog posts that elaborate on the arguments made here.
+</p>
+
+<div id="outline-container-org430ce9e" class="outline-2">
+<h2 id="org430ce9e"><span class="section-number-2">1.</span> List Of My Disagreements With Libertarianism (As Of March 2022)</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Georgism is necessary for truly free markets, to protect negative rights, to significantly reduce wealth inequality, to prevent real estate bubbles, and conserve the Earth&rsquo;s finite natural resources.</li>
+<li>Freedom is not the most important value. Preserving the stability and prosperity of modern civilization is the actual most important value.</li>
+<li>The Non-Aggression Principle is incompatible with human nature, although it is notable for being a good first attempt at trying to establish the rules of a cooperative society. [See: Life is Violent]</li>
+<li>Eminent Domain can be justified in some cases, especially if a land-possessor fails to pay their Location Value Tax.</li>
+<li>Peak resources is a real concern. It is horribly mistaken to believe that humans will never run out of resources when they live on a planet with a finite amount of material resources. Natural Resources Taxation is the most logical solution.</li>
+<li>Eugenic Population Control (EPC) is necessary in order to preserve modern civilization in a world where the traditional constraints on evolution have disappeared due to modern technology.</li>
+<li>Regulations to prevent overpopulation are a good thing since the Earth has finite resources, Demographic Transition Theory is completely wrong, and this is everybody&rsquo;s best interests to prevent war, disease, and famine in the future.</li>
+<li>Immigration controls are a good idea.</li>
+<li>Morality is NOT objective because morality necessarily has to depend on perspective. Moreover, it is also very dangerous to view morality as completely black and white.</li>
+<li>Open-carry is not a good idea for the same reason why public nudity is not a good idea. It disturbs the peace, and it&rsquo;s not advantageous anyway since concealed-carry is superior from a game-theoretic perspective.</li>
+<li>Libertarians frequently tend to be ignorant/naive of geopolitical realities. For example, Reason Magazine had both the ignorance and the nerve to blame NATO (a defensive alliance where all members join with democratic support) for Russian aggression, despite a history of Russians invading their neighbors and a well-known Russian interest to restore the USSR.
+<ul class="org-ul">
+<li><a href="https://reason.com/2022/02/28/ukraine-putin-war-russia-nato-us-bad-europe-clinton/">https://reason.com/2022/02/28/ukraine-putin-war-russia-nato-us-bad-europe-clinton/</a></li>
+<li><a href="https://reason.com/2022/10/28/it-should-be-ok-to-talk-about-negotiating-with-russia-over-ukraine/">https://reason.com/2022/10/28/it-should-be-ok-to-talk-about-negotiating-with-russia-over-ukraine/</a>
+<ul class="org-ul">
+<li>The world should have already learned from 1939 that appeasement is NOT an option for ending war. If Ukraine brokered a deal to let Russia keep its annexed territories, Russia would simply attack Ukraine again and again in the future until they finally take over the entire country. And then Russia would accomplish the rest of their outdated geopolitical desires and worldview.</li>
+</ul></li>
+<li>i</li>
+<li>i</li>
+</ul></li>
+<li>Military spending is not a waste if it secures rational national security interests.</li>
+<li>Government is necessary in order to establish, guarantee, and protect a free market.</li>
+<li>A parliamentary democracy with other characteristics that deter corruption, tragedies of the commons, and other failures is actually a reasonably good way to determine the laws of a society since morality is subjective. However, it must also be emphasized that this assumes a public of rational voters. The promotion of eugenics works well with this.</li>
+<li>Global government is a good idea since it is necessary in order to prevent Tragedies of the Commons from happening on a global scale. The humanist ideology of the United Nations is a terrible basis for a global government, but if a rational ideology that understands evolution well was the hypothetical global government&rsquo;s ideology instead, then the arguments against global government aren&rsquo;t really any better than the standard arguments given against any form of government.</li>
+<li>Tariffs, power projection, and other foreign policy tools can actually be useful and rational for securing national interests and playing good geopolitics.</li>
+<li>Genetics and culture, genes and memes go hand in hand. If government is necessary in order to produce more favorable outcomes when a failure in the interaction of genes and culture arises, then so be it. Example: setting a maximum hour workweek in South Korea.</li>
+<li>Pigouvian pollution taxes are one of the best solutions to regulating pollution, reducing climate change, and reducing society&rsquo;s current dependence on inefficient roads and cars.</li>
+<li>Government is necessary for doing urban planning right. Urban planning is very important because it affects future societal and economical outcomes.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org16619bf" class="outline-2">
+<h2 id="org16619bf"><span class="section-number-2">2.</span> Why It Is Actually Misleading To Think Of The Libertarian NAP As A Single Principle</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Although the Libertarian NAP is defined as an ethical rule prohibiting all actions that violate negative rights, there is disagreement among Libertarians regarding what should and should not count as negative rights.
+</p>
+
+<p>
+Libertarians might be inclined to believe that it&rsquo;s obvious as to what counts as a negative right since it can be asked as a yes/no question, but it&rsquo;s actually not that simple because there are lots of gray areas. And even if you try to resolve the gray areas by definitively drawing a line in the sand, this is not going to work for everybody. Some people are going to disagree with the ultimate decision, whether that&rsquo;s a small minority, or whether the disagreement is split half and half among the population. When I used to be a Libertarian, this I used to believe this (that it is obvious regarding what does and does not count as negative rights) until I started asking deeper questions about ethics (e.g. Georgism) and became a moral relativist.
+</p>
+
+<p>
+For example, two Libertarians might say that they both believe in the NAP, but if you dig deeper and ask more specific questions, they actually disagree on a number of things (abortion, IP rights, rainwater rights, etc).
+</p>
+
+<p>
+Is abortion a negative right, or does the fetus have a negative right to life even though it has not been born yet (and lacks cognitive abilities)?
+</p>
+</div>
+
+<div id="outline-container-org5db5d1c" class="outline-3">
+<h3 id="org5db5d1c"><span class="section-number-3">2.1.</span> List Of Ethical Topics That Libertarians/Ancaps Could Disagree On</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Abortion</li>
+<li>Death Penalty</li>
+<li>Veganism</li>
+<li>Animal Rights</li>
+<li>Children&rsquo;s Rights</li>
+<li>Rainwater Rights</li>
+<li>Pollution Laws</li>
+<li>Whether Private Property Is Based On Labor Or Original Appropriation</li>
+<li>Intellectual Property Rights? Copyrights? Trademarks? Patents?</li>
+<li>Should Land Value Taxes Be Collected? If Yes, Then How So?</li>
+<li>The Legality of Blackmailing</li>
+<li>The Appropriate Penalties, Fines, And Jail Times For Committing Any Type Of Crime, Or Breaking The Laws</li>
+<li>When Democracy Is Valid (If Ever)</li>
+<li>The Legality To Open Carry Firearms?</li>
+<li>Can People Be Naked Or Topless In Public?</li>
+<li>The Legality Of Loitering</li>
+<li>What Should The Age Of The Majority Be?</li>
+<li>What Procedure Should Be Followed For The Court System?</li>
+<li>One-Party Or Two-Party Consent For Revealing Private Communications?</li>
+<li>What The Age Of Consent Should Be</li>
+<li>The Legality Of Blackmailing</li>
+<li>Legal Status and Procedures regarding Do Not Resuscitate (DNR) orders</li>
+<li>Legal Status and Procedures regarding someone deemed mentally-incompetent; Who/what authority can deem someone mentally-incompetent?</li>
+<li>The Legality Of Open-Carry</li>
+<li>The Consent Laws For Releasing Audio Recordings Between Two Or More Parties</li>
+<li>If Drunk Driving Should Be Legal</li>
+<li>If Pitbulls Should Be Banned</li>
+<li>If It&rsquo;s Ethical To Have Children Without Their Consent</li>
+<li>If It&rsquo;s Okay To Indoctrinate Children</li>
+<li>What Counts As Indoctrination</li>
+<li>What Counts As Deception</li>
+<li>Et Cetera. This isn&rsquo;t even a complete list of all the ways how Libertarians might disagree with each other.</li>
+</ul>
+
+<p>
+The bottom line here is it&rsquo;s not sufficient to define a legal code only according to the NAP, because there&rsquo;s simply way too much variation in what people would consider to be &ldquo;aggressive&rdquo; or &ldquo;non-aggression&rdquo;. A legal code would have to be much more specific and rigid because people will disagree on what counts as negative rights and then some.
+</p>
+
+<p>
+With all that being said, it&rsquo;s more accurate to think of the Libertarian NAP is a spectrum of NAPs that tends to favor negative rights, depending on what people should and should not count as negative rights.
+</p>
+
+<p>
+Assuming that we want to achieve a stable, high-technological society with little to no violence and abundant resources, Libertarianism is not the way forward.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org19d6a1b" class="outline-2">
+<h2 id="org19d6a1b"><span class="section-number-2">3.</span> In A Way, This World Already Has Exactly What Ancaps Are Asking For</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+There are hundreds to thousands of different jurisdictions and sub-jurisdictions that you could move to if you don&rsquo;t like the laws that come with living where you are NOW. With so many options for &ldquo;opting-out&rdquo; available to you, how could ANYONE reasonably argue that it&rsquo;s not possible for you to opt-out of the laws that you live under today? I don&rsquo;t see how Ancapistan would be any different. If Ancaps can&rsquo;t even be satisfied with migrating to a different jurisdiction with different laws when there are at least hundreds to choose from, this suggests that Propertarianism and the freedom to migrate somewhere else (or opt-out as you say) won&rsquo;t be sufficient for resolving every human&rsquo;s moral disagreements with one another.
+</p>
+
+<p>
+Of course, Ancaps are assuming that all, most, or some of them would each do their best to conform with their own versions of the NAP, but it&rsquo;s not clear how you could even guarantee that each Ancap-citadel would try to follow the NAP in the first place, especially since Ancaps can&rsquo;t agree with each other on what counts as a violation of the NAP, much less since an Ancap society has never existed (and never will).
+</p>
+
+<p>
+However, since people cannot universally agree on what does or does not count on aggression, I would argue that in a way, this world already has exactly what Ancaps are asking for. If you disagree with the Canadian version of the NAP, then you can migrate to the United States and live under the American version of the NAP instead. If you still don&rsquo;t like that, then you can also choose to opt-out for the Mexican NAP, the Japanese NAP, the Australian NAP, the German NAP, the Mongolian NAP, the Nigerian NAP, the Swiss NAP, and so forth. If you just do some researching, you can probably find a legal jurisdiction that has a decent interpretation of the NAP that you&rsquo;re looking for.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org847d4e5" class="outline-2">
+<h2 id="org847d4e5"><span class="section-number-2">4.</span> Other Notes</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Libertarianism should be rejected because it is humanist. It will inevitably fail since many of its practices are ironically altruistic even though it is also a very individualist ideology at the same time. The main altruistic components of libertarianism are: its insistence upon allowing unregulated immigration, unregulated reproduction, it replaces welfare with charity of supposedly equal amounts, its value of freedom over everything else, even if it comes at a cost to the individual.
+</p>
+
+<p>
+Maybe there would be greater success at arguing against libertarians by convincing them that there are greater values than freedom? (i.e. stability, i)
+Contrary to what most libertarians would like to believe, freedom does not lead to societal stability.
+</p>
+
+<p>
+Labor is the usage of energy to support oneself, to create wealth that is. Humans own themselves, so they own all the labor that they do themselves. The labor done by an individual is the conversion of that individual&rsquo;s energy into tasks and/or wealth that supports themselves and their goals (regardless of whether their goals are rational or irrational, but everyone does have to do at least <b>some</b> wealth to sustain themselves and their existence). It is possible to extract more energy out of the environment when individuals work and cooperate together by exchanging their labor to accomplish their goals. That being said, the ancap conception that people cannot own their labor since labor is only behavior and not material matter makes no biological sense. Ancaps who believe that ownership is derived from land/resources and homesteading rather than labor completely the understanding that all living things strive to extract energy from the environment in order to support themselves. For that matter, ancapitardism doesn&rsquo;t make physical sense either since labor is the exertion of energy, which was extracted from the environment by what we eat, breathe, and drink, all of which <b>is</b> material matter.
+</p>
+
+<p>
+Although Libertarians portray humans as being indoctrinated by the government to support the government, they&rsquo;re just merely using the Rhetoric of Exploitation as explained in Blithering Genius&rsquo;s essay: <a href="https://thewaywardaxolotl.blogspot.com/2013/12/the-rhetoric-of-exploitation_21.html">https://thewaywardaxolotl.blogspot.com/2013/12/the-rhetoric-of-exploitation_21.html</a>
+It is not a good argument to portray culture as indoctrination because culture and context are always inseparable from human life.
+</p>
+
+<p>
+There is a conflict between Alloidal-Voluntaryists&rsquo; support for the Libertarian NAP and their support for Propertarianism.
+</p>
+
+<p>
+Although we already live in a Propertarian world (considering that different countries have different laws for enforcing their different ethical views), Voluntaryists and Libertarians are still unhappy with this because the Voluntaryist / Libertarian spectrum of NAPs is not enforced to a sufficient extent of their liking.
+</p>
+
+<blockquote>
+<p>
+Dennis: &ldquo;Tax evasion is one of the main uses for bitcoin.&rdquo;
+</p>
+</blockquote>
+
+<p>
+You wanna know what else are great uses for bitcoin and crypto? Scams, ransom, hacking attempts, human trafficking, et cetera. By making transactions anonymous, yes there are some good people who gain freedom from the government, but what you&rsquo;re overlooking is that there are always at least two sides to every moral action. When transactions become anonymous and untraceable, you also make it easier for criminals and evil-doers to get away with their bad deeds and immoral acts. And as more and more companies, individuals, and governments become more accepting of cryptocurrencies, they are also becoming more accepting of these criminals&rsquo; nefarious and untraceable means of collecting money. And you support that apparently. Crypto does have some advantages, but your perspective on cryptocurrencies is very one-sided.
+</p>
+
+<blockquote>
+<p>
+Dennis: &ldquo;This is huge. Future generations will chuckle at your short-sightedness and small mindedness. you sound like the nay-sayers when the internet was in it&rsquo;s nascency.&rdquo;
+</p>
+</blockquote>
+
+<p>
+Yeah, sure. The Internet totally hasn&rsquo;t had any negative effects on society whatsoever. You&rsquo;re being one-sided again. With the Internet also came the Dark Web, a popular hub for criminal activities. The Internet is also causing ideological extremists like yourself (an Ancap) to congregate together, and the rise of these radical ideologies is a contributing factor to the fall of people&rsquo;s faith in the current democratic society and the rising instability of our culture and society. Social media may not be worth the costs that it has had on society. And of course, the Internet is responsible for the spread of lots of fake news and misinformation all over the world. In many ways, human societies would be better off if the Internet was never invented.
+</p>
+
+<p>
+Why should we expect the growing popularity and adoption of cryptocurrencies to be any different? Cryptocurrencies might do some good for society, but they will also undoubtedly cause some predictable harm as well. Stuff like this becomes more obvious when you reject the concept of a Universal Good or a Universal Evil, and it&rsquo;s just one of many reasons why it&rsquo;s so illogical to believe in an Objective Morality, or &ldquo;universally preferable behavior&rdquo; as you call it. There is no such thing because every cause and every action has both an upside AND a downside. It just depends on the perspective you&rsquo;re viewing the cause/action from.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Zero Contradictions</p>
+<p class="date">Created: 2022-11-02 Wed 22:09</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/*** reset ***/
+html, body, div, span, h1, h2, h3, p, a, img, strong, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+/*** ID Atttributes Used In Org-Mode HTML Output ***/
+#org-div-home-and-up {
+    font-size: 90%;
+    text-align: right;
+}
+
+#table-of-contents ul, #table-of-contents ol {
+    font-size: 100%;
+    list-style-type: none;
+}
+
+#content, #postamble {
+    font-size: 100%;
+}
+
+/*** universal ***/
+a {
+    color: blue;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+a:focus {
+    outline: thin dotted;
+}
+/* a:visited, a:hover { */
+/*   color: #cb4b16; */
+/* } */
+
+p {
+    line-height: 1.3em;
+    text-align: justify;
+    margin: 0px 40px 5px 0px;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+ul li, ol li {
+    margin: 0px 40px 5px 40px;
+    line-height: 1.3em;
+}
+
+.figure p, img {
+    img-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    max-width: 900px;
+    max-height: 900px;
+}
+
+.figure-number {
+    /* Customize this, if this should be changed. */
+}
+
+table {
+    font-size: 1.3em;
+    margin: 15px auto 15px auto;
+}
+
+/* Note: For some reason, I can't center-align */
+/* text in the table cells, even with .org-left */
+/* th, td { */
+/*     text-align: center; */
+/*     vertical-align: center; */
+/* } */
+
+/* h1, h2, h3, h4, h5, h6 { */
+/*     font-family: 'PT Sans Narrow', sans-serif; */
+/*     font-weight: 700; */
+/* } */
+
+h1 {
+    font-size: 2.0em;
+    border-top: 2px solid black;
+    max-width: 1000px;
+    margin: 20px auto 0;
+    padding: 10px 0 0 0;
+}
+
+h2 {
+    font-size: 1.6em;
+    border-top: 2px solid black;
+    margin: 20px 40px 10px 00px;
+    padding: 15px 0 0 0;
+}
+
+h3 {
+    font-size: 1.25em;
+    border-top: 1px solid black;
+    margin: 10px 40px 10px 00px;
+    padding: 15px 0 0 0;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin: 10px 40px 10px 00px;
+    padding: 15px 0 0 0;
+}
+
+h5 {
+    font-size: 1em;
+    margin: 10px 40px 10px 00px;
+    padding: 15px 0 0 0;
+}
+
+.outline-text-2 {
+    /* Controls text within level-1 org sections, but not the headers themselves */
+}
+
+.outline-text-3 {
+    /* Controls text within level-2 org sections, but not the headers themselves */
+}
+
+pre, code {
+    font-family: 'Inconsolata', sans-serif;
+}
+
+/** main **/
+html {
+    background-color: #eee8d5;
+    /* background-color: black; */
+}
+
+body {
+    margin: 0 auto;
+    border: 1pt solid #93a1a1;
+    padding: 4em;
+    max-width: 20cm;
+    background-color: #B0C4DE;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 1;
+}
+
+header {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid black
+}
+
+footer {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.25em;
+}

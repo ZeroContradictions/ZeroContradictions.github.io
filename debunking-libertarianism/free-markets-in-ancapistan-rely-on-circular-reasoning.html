@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-10-25 Tue 00:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free-Markets in Ancapistan Rely On Circular-Reasoning</title>
+<meta name="author" content="Zero Contradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Free-Markets in Ancapistan Rely On Circular-Reasoning</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org53572bc">1. Arguments In Favor Of Anarcho-Capitalism Depend On Circular-Reasoning</a></li>
+<li><a href="#org96d53df">2. Anarcho-Capitalism Circular Reasoning Stated In Lines Of Logical Propositions</a></li>
+<li><a href="#org239c035">3. Stated More Eloquently:</a></li>
+<li><a href="#org855a448">4. Attempt To State Better Based Closer To What Ancaps Believe, And Show More The Contradiction More Clearly</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org53572bc" class="outline-2">
+<h2 id="org53572bc"><span class="section-number-2">1.</span> Arguments In Favor Of Anarcho-Capitalism Depend On Circular-Reasoning</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The basic error with anarchism is that it evades the crucial, life-and-death difference between trade and force. Objectivism recognizes that because man is the rational animal, he can only succeed if he is free of coercion. If men are allowed to trade freely, he will prosper and succeed. If men are subject to coercion (practiced either by the state or by criminals) he will fail and die. Anarchists conflate these two - they make no distinction between trade and force and simply argue that force is just a kind of trade like any other so it should be on the market.
+</p>
+
+<p>
+### The roles that would be traditionally filled by government - police, courts and army - should simply be filled by a free market, they argue. But this is plainly circular reasoning. The protection of individual rights cannot be supplied by a market since the very existence of a market itself requires the protection of individual rights. You get into an infinite regress trying to explain this away.
+</p>
+
+<p>
+Furthermore the notion that the state has an immoral monopoly on coercion is a false comparison. Competition in coercion is nothing like competition in a marketplace. Competing in a marketplace means you have several goods to choose from and there is no coercion at all. Competing in coercion would mean&#x2026; what exactly? All force is a monopoly - force says obey or harm will be done to you. The notion of &ldquo;competition&rdquo; in force is silly, unless you mean five independent thugs pointing guns at you with different demands.
+</p>
+
+<p>
+Another key reason why a limited government is necessary is to place the awesome power of retaliatory force under objective laws. With a limited government, specific rules can be placed on its functioning which will limit the government&rsquo;s power and ensure it adheres to certain basic rules. Under anarcho-capitalism, any private agency can do whatever it wants - if a group wants to have the death penalty for adultery, that is perfectly OK. If another group thinks thermonuclear warfare is a proper response to property dispute, who is to stop them - after all, we wouldn&rsquo;t want to interfere with their &ldquo;right&rdquo; to use retaliatory force. Limited government provides the possibility of placing the means of coercion under objective control - anarcho-capitalism lets anybody do absolutely anything no matter how wicked, unjust or disproportionate.
+</p>
+
+<p>
+And the final reason is the very fact that anarchy simply cannot exist as you envision it. The only valid meaning of the term anarchy is the way it was historically used - to mean a situation where no central authority results in constant violence and bloodshed between different, feuding mini-dictatorships (i.e. Somalia). The idea of anarchy as a society where everyone magically lives in harmony without the use of force is a fantasy - nothing like this has ever existed in history on any scale whatever, the reason being that such a society would fall victim to the first thug or enemy army who showed up (if they could resist those two, then they do have some force-wielding entity which is then a de-facto government).
+</p>
+
+<p>
+So, in short, anarcho-&ldquo;capitalism&rdquo; conflates trade and force, rests on circular logic, embraces complete subjectivism and is logically incoherent. Anarchy means Somalia, Afghanistan and Iraq - If it is freedom you want, you must support the existence of a government which will guarantee it.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org96d53df" class="outline-2">
+<h2 id="org96d53df"><span class="section-number-2">2.</span> Anarcho-Capitalism Circular Reasoning Stated In Lines Of Logical Propositions</h2>
+<div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li>Individual rights will be exclusively protected by private defense corporations.</li>
+
+<li>Private defense corporations will compete against each other in a free marketplace with the intent of gaining the most profit.</li>
+
+<li>A free and fair marketplace can only exist if individual rights (trade, property, etc) are protected, otherwise the marketplace is not free nor fair.</li>
+
+<li>Individual rights would not be protected unless the so-called defense corporations already existed, but those corporations cannot exist in a free marketplace because there has to be an entity that establishes that free marketplace to begin with, and that free marketplace cannot exist if there isn&rsquo;t already an entity that guarantees its existence (a government), and the defense corporations that would supposedly guarantee its existence wouldn&rsquo;t exist due to the previous sentences stated.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org239c035" class="outline-2">
+<h2 id="org239c035"><span class="section-number-2">3.</span> Stated More Eloquently:</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+## Anarcho-Capitalism Circular Reasoning Stated In Lines Of Logical Propositions
+</p>
+
+<ol class="org-ol">
+<li>Individual rights will be exclusively protected by private defense corporations.</li>
+
+<li>Private defense corporations will compete against each other in a free marketplace with the intent of gaining the most profit.</li>
+
+<li>A free and fair marketplace can only exist if individual rights (trade, property, etc) are protected, otherwise the marketplace is not free nor fair.</li>
+</ol>
+
+<p>
+If you believe all the premises above as well as: (A -&gt; B) AND (B -&gt; C) AND (C -&gt; B), then you believe in a circular reasoning fallacy. Individual rights would not be protected if the private defense corporations don&rsquo;t exist, the private defense corporations do not exist if the free marketplace does not exist, and the free marketplace does not exist because there is no entity that can independently guarantee its existence since we already assumed premise A. By negation introduction, we can reject proposition A.
+</p>
+
+<p>
+Ancaps might counter-argue that communities could still provide their own defenses until a free market forms, but this is also impossible because no community or defense agency would be able to purchase the goods and services that would be necessary for protecting themselves against foreign invaders (guns, ammunition, defenses), which would effectively means that everybody would be defenseless unless they already had modern weapons and defenses to begin with. Producing modern weapons on an industrial scale is essentially impossible without an existing free market that could enable the production and distribution of defensive goods, and no free market can exist since individual rights cannot be protected without sufficient defenses, and moreover, because there are no governments that can guarantee a market in the first place.
+</p>
+
+<p>
+Conclusion: A laissez-faire government is necessary to protect a free market where corporations of any kind are able to compete against each other.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org855a448" class="outline-2">
+<h2 id="org855a448"><span class="section-number-2">4.</span> Attempt To State Better Based Closer To What Ancaps Believe, And Show More The Contradiction More Clearly</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+## Anarcho-Capitalism Circular Reasoning Stated In Lines Of Logical Propositions
+</p>
+
+<ol class="org-ol">
+<li>Individual rights will be protected exclusively by private entities, without any government protection.</li>
+
+<li>Private defense corporations will compete against each other in a free marketplace with the intent of gaining the most profit.</li>
+
+<li>A free and fair marketplace can only exist if individual rights (trade, property, etc) are protected, otherwise the marketplace is not free nor fair.</li>
+</ol>
+
+<p>
+If you believe all the premises above as well as: (A -&gt; B) AND (B -&gt; C) AND (C -&gt; B), then you believe in a circular reasoning fallacy. It would not be possible to sufficiently protect individual rights without a free marketplace that could distribute the necessary weapons and defenses, private defense corporations would not exist if the free marketplace does not exist, and the free marketplace does not exist because there is no entity that can independently guarantee its existence since we already assumed premise A. By negation introduction, we can reject proposition A.
+</p>
+
+<p>
+Ancaps might counter-argue that communities could still provide their own defenses until a free market forms, but this is also impossible because no community or defense agency would be able to purchase the goods and services that would be necessary for protecting themselves against foreign invaders (guns, ammunition, defenses), which would effectively means that everybody would be defenseless unless they already had modern weapons and defenses to begin with. Producing modern weapons on an industrial scale is essentially impossible without an existing free market that could enable the production and distribution of defensive goods, and no free market can exist since individual rights cannot be protected without sufficient defenses, and moreover, because there are no governments that can guarantee a market in the first place.
+</p>
+
+<p>
+If Community X has a greater Comparative Advantage and a greater Division of Labor at producing better quality weapons than Community Y, then Community X would be able to subdue Community Y by force if they wanted to. But if governments existed, they could prevent Community X from conquering Community Y, and it would be possible to establish a free marketplace that could produce and distribute high-quality weapons across all regions.
+</p>
+
+<p>
+Conclusion: A laissez-faire government is necessary to protect a free market where corporations of any kind are able to compete against each other.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Zero Contradictions</p>
+<p class="date">Created: 2022-10-25 Tue 00:12</p>
+</div>
+</body>
+</html>

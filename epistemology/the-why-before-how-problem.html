@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-02 Wed 19:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Nature Of Answering "How?" And "Why?"</title>
+<meta name="author" content="Zero Contradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">The Nature Of Answering &ldquo;How?&rdquo; And &ldquo;Why?&rdquo;</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orge6c67f4">1. Definitions</a></li>
+<li><a href="#orga06a7ed">2. Examples Of Why-Questions That Start Scientific Inquiries</a></li>
+<li><a href="#org7eb0695">3. Examples Of Why-Questions That Later Became Rephrased As How-Questions</a></li>
+<li><a href="#org6aefa17">4. &ldquo;How&rdquo; And &ldquo;Why&rdquo; In Other Languages</a></li>
+<li><a href="#org72a6700">5. The &ldquo;Why Before How&rdquo; Problem</a></li>
+<li><a href="#org964ec2f">6. Prioritization Of Thinking In Philosophy</a></li>
+<li><a href="#org5aae5d5">7. My List Of Wrong Philosophical Questions To Ask in my incorrect-information file&#x2026;</a></li>
+<li><a href="#org5bffb19">8. How Would We Know What We Know If We Only Had Our Senses And The Techniques From The Knowledge We Currently Know To Figure Out Hard Science?</a></li>
+<li><a href="#orgff63006">9. My Thoughts On Theological Non-Cognitivism And Igtheism</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge6c67f4" class="outline-2">
+<h2 id="orge6c67f4"><span class="section-number-2">1.</span> Definitions</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Add definitions for ‘why’ and ‘how’ to your file on this topic and the nature of science:
+</p>
+<ul class="org-ul">
+<li>How:</li>
+<li>Why:</li>
+<li>make-believe (uncountable):
+<ul class="org-ul">
+<li>(childish) The quality or act of pretending; acting as if something is true when in fact one knows it is not.</li>
+<li>(childish) The action of pretending or imagining that things are better than they really are.</li>
+</ul></li>
+<li>The Religious / Make-Believe Approach (for Understanding the Universe): Attempting to explain the &ldquo;why&rdquo; questions and then explain the &ldquo;how&rdquo; questions.</li>
+<li>The Scientific Approach (for Understanding the Universe): Attempting to explain &ldquo;how&rdquo; things work <b>before</b> explaining &ldquo;why&rdquo; things work the way they do (if one can even get to the latter part).</li>
+<li>The Principle Of Explaining HOW Before WHY: i</li>
+<li>i</li>
+<li>i</li>
+<li>i</li>
+<li><a href="https://en.wikipedia.org/wiki/Interrogative_word">https://en.wikipedia.org/wiki/Interrogative_word</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga06a7ed" class="outline-2">
+<h2 id="orga06a7ed"><span class="section-number-2">2.</span> Examples Of Why-Questions That Start Scientific Inquiries</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Often science begins with Why-questions. Here are some examples:
+</p>
+<ul class="org-ul">
+<li>Why are the animals and plants of this world the way they are?</li>
+<li>Why does lightning occur?</li>
+<li>Why is iron magnetic?</li>
+<li>Why are voiceless obstruents more common than voiced obstruents among the world’s languages?</li>
+<li>Why are there so many similar species across Earth’s continents?</li>
+<li>What do kidneys do?</li>
+<li>What causes fire?</li>
+<li>Why are humans the way they are?</li>
+</ul>
+
+<p>
+However, it is often the case that when answering why something happens we end up explaining how it happens. By the definition of why, someone could easily just state the motive, cause, or reason of whatever subject the question is asking about in a single stands or just a few words, but when the question is being asked with an expectation of an in-depth answer, answering with only a single sentence or a few words is not acceptable, thus very descriptive and comprehensive descriptions have to be given in order to answer the question.
+</p>
+
+<p>
+Nevertheless, it is still the case that in order to answer “Why” questions, we must explain how things work and answer other questions along the way as they come up before we can answer the original “Why?” question.
+</p>
+
+<p>
+But in doing so, it also becomes possible to ask a similar question that is reworded such that it asks “How?” instead of “Why?” and leads to the exact same answer. And then when the answer is talk to future learners who are learning about the topic, The questions are more likely to be presented as asking “How?” instead of asking “Why?”, although sometimes they might still be asked with “Why?”, especially if it just feels more natural to ask the questions with that interrogative and/or The person asking the question has no idea where to start answering it or the concepts needed to explain the answer to the question that they want to know.
+another way to think of the difference between How and Why is that “How?” is the same question as “Why?” except that “How?” is asking for more detailed answer.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7eb0695" class="outline-2">
+<h2 id="org7eb0695"><span class="section-number-2">3.</span> Examples Of Why-Questions That Later Became Rephrased As How-Questions</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+The Questions Shown Previously, but reworded to ask “How?” instead of “Why?”:
+</p>
+<ul class="org-ul">
+<li>How does Evolution work?</li>
+<li>How does lightning occur?</li>
+<li>Why is iron magnetic?</li>
+<li>Why are voiceless obstruents more common than voiced obstruents among the world’s languages?</li>
+<li>Why are there so many similar species across Earth’s continents?</li>
+<li>What do kidneys do?</li>
+<li>What causes fire?</li>
+<li>Why are humans the way they are?</li>
+</ul>
+
+<p>
+Can the three-word expression “the reason why” always be replaced with a nominal usage “how” (but not vice versa)?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6aefa17" class="outline-2">
+<h2 id="org6aefa17"><span class="section-number-2">4.</span> &ldquo;How&rdquo; And &ldquo;Why&rdquo; In Other Languages</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Are there languages that make different semantic distinctions between their equivalent ways to asking how and/or why? if so, what kinds of semantic differences exist between those languages and English’s way of saying things?
+Known Examples:
+</p>
+<ul class="org-ul">
+<li>¿Por qué? and ¿Para qué? in Spanish</li>
+<li>i</li>
+<li>i</li>
+<li>i</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org72a6700" class="outline-2">
+<h2 id="org72a6700"><span class="section-number-2">5.</span> The &ldquo;Why Before How&rdquo; Problem</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Science aims to describe the HOW&rsquo;s of how reality works <i>before</i> explaining the WHY&rsquo;s. What religion does instead is it skips over the HOW&rsquo;s and jumps straight to answering the WHY questions, and then it uses the fabricated answers to those WHY questions to answer the <b>HOW</b> questions about how reality works. Religion fails to correctly understand the world precisely because it works in the opposite direction that Science does (Science would describe <b>how</b> reality works before it ever describes <b>why</b>, if it ever even gets to that point).
+</p>
+
+<p>
+More specifically, when science doesn&rsquo;t do a very good job of explaining the why&rsquo;s about realities, these why&rsquo;s relate to ontologies (e.g. gravity, creation of universe, forces of universe, chemical structure of universe, properties of universe, etc)
+</p>
+
+<p>
+SAID DIFFERENTLY BUT LESS ELEGANTLY: Science is supposed to describe <b>how</b> things work, not <b>why</b> things are the way they are. What religion does is it tries to skip over the <b>how&rsquo;s</b> of reality and skip straight to the <b>why&rsquo;s</b>, and then it uses those fabrications to describe <b>how</b> reality works. Religion fails to correctly understand the world precisely because it works in the opposite direction that Science does (Science would describe <b>how</b> reality works before it ever describes <b>why</b>, if it ever even gets to that point).
+</p>
+
+<p>
+The WHY before HOW problem is probably the simplest, the most general, and most general way to reject all supernatural phenomena (including God) in a single argument. And the simplicity of the argument could be fittingly explained after explaining the reasoning process and the criteria and nature of degrees of certainty/skepticism and why arbitrary statements are not epistemically valid.
+</p>
+
+
+<p>
+&gt; What religion does is it tries to skip over the how&rsquo;s of reality and skip straight to the why&rsquo;s, and then it uses those fabrications to describe how reality works.
+</p>
+
+<p>
+I am not sure what you consider to be religion, but not all religions explain how the physical world works (which I presume is what you mean by reality). Confucianism would be a good example of this (although ancient/medieval Chinese cosmology was heavily influenced from Confucianism).
+</p>
+
+<p>
+Regardless, one could explain the why before the how. For example, I know why Ford sells cars (for profit of course), but I do not know how to build or successfully sell cars.
+</p>
+
+<p>
+&gt; Follow Up Question: So many humans can do this for social sciences, but could they ever do this (explain &ldquo;why&rdquo; before &ldquo;how&rdquo;) for universal or world-centric sciences? I don&rsquo;t think so, unless I could find a counter-example for this.
+</p>
+
+<p>
+If Philosophy and Science both intend to accurately describe reality, then they must describe &ldquo;what is&rdquo; before prescribing &ldquo;what ought to be&rdquo;, as well as explain &ldquo;how things are and how they work&rdquo; before explaining &ldquo;why things are the way they are&rdquo;. As I see it, religion does both of these in the opposite order.
+</p>
+
+
+<p>
+ALTERNATIVE TEXT / TEXT WRITTEN IN CONDENSED FORM THAT COULD BE USED: &ldquo;If Philosophy and Science are both to accurately describe reality, then they must describe &rdquo;what is&ldquo; <i>before</i> prescribing &rdquo;what ought to be&ldquo;, as well as explain &rdquo;how things are and how they work&ldquo; <i>before</i> explaining &rdquo;why things are the way they are&ldquo;. On one hand, Science aims to describe <b>How</b> reality works before explaining the <b>Why</b> reality works the way it does. But what religion does instead is it skips over the <b>How&rsquo;s</b> of reality and jumps straight to answering the <b>Why&rsquo;s</b> of reality first, and then religion uses the fabricated answers to the WHY questions to answer the <b>HOW</b> questions about how reality works. Religion fails to correctly understand the world precisely because it works in the opposite direction that Science does (Science would describe <b>how</b> reality works before describing <b>why</b>, if it ever even gets to the latter point).&rdquo;
+</p>
+
+<p>
+[text for asking people which method for understanding the universe makes more sense, and then explaining why science is valid and religion is not]
+</p>
+
+<p>
+The only way anyone could possibly explain &ldquo;why&rdquo; something works before describing &ldquo;how&rdquo; it works is if they fabricated a bunch of false made-up premises to explain the why&rsquo;s, and then used the understanding generated by those false made-up assumptions to explain the how&rsquo;s.
+</p>
+
+<p>
+But of course, the main purpose of religion besides helping people <b>think</b> they know why the world works the way it does is to give people a philosophy of sorts (obviously not a rational one though) for understanding why they should live their lives the way they do / think they should. So although religion uses fabricated nonsense to explain the &ldquo;how&rdquo; questions of life, it needs to create the fabrications for explaining the &ldquo;hows&rdquo; in such a way that it helps them live their lives. For example, religious people often believe that God favored monogamy, and so they make monogamy part of their religion and use the fabrication of God to help explain it. i
+</p>
+
+
+<p>
+During the scientific revolution and the enlightenment humans had for the first time in many millennia started trying to explain the How&rsquo;s of Reality instead of the Why&rsquo;s. And it is during this era that people started rejecting religion in mass for the first time, because they started rejecting the commonplace epistemic error of trying to explain Why before explaining How, and believing in religion as the fallacious conclusion.
+</p>
+
+<p>
+IMPORTANT: When writing your explanation, thoughts, and reasoning about the WHY before HOW problem, it would be relevant for you to explain how human beliefs can only be grounded in either reality or imagination. Wittgenstein’s early magnum opus work could provide more insight into understanding the ideas are related to this, as well as for how you could best explain the grounding of all beliefs ultimately in either reality, imagination, or both.
+</p>
+
+<p>
+IMPORTANT: How might Tinbergen&rsquo;s Four Questions be discussed and evaluated when writing your philosophy of How? versus Why?
+</p>
+
+<p>
+Attempting to explain WHY before HOW tends to run into propositions that can be debunked and dismissed by Hitchen&rsquo;s Razor and Russel&rsquo;s Teapot Analogy.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org964ec2f" class="outline-2">
+<h2 id="org964ec2f"><span class="section-number-2">6.</span> Prioritization Of Thinking In Philosophy</h2>
+<div class="outline-text-2" id="text-6">
+<ol class="org-ol">
+<li>Putting &ldquo;what is&rdquo; before &ldquo;what ought&rdquo;.</li>
+<li>Putting &ldquo;how&rdquo; before &ldquo;why&rdquo;.</li>
+<li>i</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org5aae5d5" class="outline-2">
+<h2 id="org5aae5d5"><span class="section-number-2">7.</span> My List Of Wrong Philosophical Questions To Ask in my incorrect-information file&#x2026;</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Often times, people are asking the wrong questions:
+</p>
+<ul class="org-ul">
+<li>Is the mind tabula rasa? -The answer is too complicated to definitely say yes or no to this question.</li>
+<li>Which planet is the closest planet to Earth? -The answer depends on what you mean by the closest planet to Earth. There are four different questions that have more precise answers such that they each have clear, unambiguous answers.</li>
+<li>Should we obey the law? -The correct question to ask is: Is the law reasonable/justified? And the answer is no.</li>
+</ul>
+
+<p>
+It seems that when my brain forms arbitrary questions (like the kind frequently typed in search engines), it doesn&rsquo;t define the noun phrases used in the questions beforehand.
+</p>
+<ul class="org-ul">
+<li>Example 1: I googled &ldquo;What are the best-selling computers of all time?&rdquo; without considering that some best-selling computers might have different versions/later<sub>improvements</sub> of the same computer, thus adding ambiguity to the question.</li>
+<li>Example 2: I asked &ldquo;How many languages does the average person know?&rdquo; when I already knew that it depends on the definition of language and dialect. Perhaps a better but harder to answer question would be: What is the statistical data regarding how many languages and dialects people know?</li>
+</ul>
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5bffb19" class="outline-2">
+<h2 id="org5bffb19"><span class="section-number-2">8.</span> How Would We Know What We Know If We Only Had Our Senses And The Techniques From The Knowledge We Currently Know To Figure Out Hard Science?</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+If you ask anyone &ldquo;What is larger, the sun or the moon?&rdquo;
+</p>
+
+<p>
+Every educated person will say the sun and may even tell you that the sun is about 400 times the size of the moon. An uneducated person will probably remember from school that the sun is bigger or they may not and go with what they see.
+</p>
+
+<p>
+Now you ask &ldquo;Well, they appear to be the same size. So, how do you know that the sun is bigger? How would people have figured this out during ancient times before telescopes and such were invented?&rdquo;
+</p>
+
+<p>
+At this point the uneducated person may find it puzzling and interesting. The educated person will be offended. &ldquo;Are you questioning my intelligence? You must be a conspiracy theorist.&rdquo;
+</p>
+
+<p>
+Very few people will actually know the observations which were needed for us to even question whether the sun and the moon were different sizes. Fewer still will know the experiments done and the body of empirical knowledge required to make us certain that the sun is larger. Yet, the educated people are all certain the sun is bigger. They are also certain they have arrived at this conclusion using rational decision making.
+</p>
+
+<p>
+To answer your question, there are a lot of educated people who are not very smart. Being mediocre and educated makes people indignant when they are questioned.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgff63006" class="outline-2">
+<h2 id="orgff63006"><span class="section-number-2">9.</span> My Thoughts On Theological Non-Cognitivism And Igtheism</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+The Wikipedia article on <a href="https://en.wikipedia.org/wiki/Theological_noncognitivism">Theological Non-Cognitivism</a>.
+</p>
+
+<p>
+I&rsquo;ve never agreed with the TAG, but I&rsquo;ve always thought that the Cosmological Argument was the best argument for God, however it could only prove a non-supernatural Deistic God(s) at best. Nobody may completely understand why the universe was created, but even then, it is highly dishonest to conclude that an all-knowing, all-powerful magical man was the creator without evidence and for lack of a better explanation. Every supernatural definition of God is non-existent. Deism is basically the position that God created the Universe, but no longer intervenes in its affairs.
+</p>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Existence_of_God#Cosmological_argument">https://en.wikipedia.org/wiki/Existence_of_God#Cosmological_argument</a>
+</p>
+
+<p>
+i
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Zero Contradictions</p>
+<p class="date">Created: 2022-11-02 Wed 19:59</p>
+</div>
+</body>
+</html>

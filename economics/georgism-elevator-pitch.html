@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-04 Fri 21:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Georgism Elevator Pitch</title>
+<meta name="author" content="Zero Contradictions" />
+<meta name="description" content="What Georgism is, why we need it, how it will solve nearly all our economic problems, the economic reasoning for it, and why the GTP beats the OATP." />
+<meta name="keywords" content="Georgism, LVT, Monopoly, rent, housing, bubble, urban planning, capitalism, socialism, OATP" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Georgism Elevator Pitch</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org1004fb2">1. What Georgism Is, and Why It&rsquo;s Worth Trying</a></li>
+<li><a href="#orgcd9e562">2. Supply-Demand Curves For Understanding LVT</a></li>
+<li><a href="#orga25db01">3. Georgism Compared to Other Economic Ideologies</a></li>
+<li><a href="#orgd79d977">4. How I First Recognized The Problems Of Anti-Georgism As A 5-Year-Old</a></li>
+<li><a href="#org386eba9">5. Quotes by Henry George</a></li>
+<li><a href="#org009f1b5">6. Why The GTP Beats The OATP By Every Measure Possible</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1004fb2" class="outline-2">
+<h2 id="org1004fb2"><span class="section-number-2">1.</span> What Georgism Is, and Why It&rsquo;s Worth Trying</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="https://en.wikipedia.org/wiki/Georgism">Georgism</a> is the position that sales tax, income tax, property tax, and all other taxes should all be abolished and replaced with Land Value Tax (LVT)<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>, which would then fund all government services and potentially even a public revenue to the people, known as the <a href="https://en.wikipedia.org/wiki/Citizen%27s_dividend">Citizen&rsquo;s Dividend</a> and similar to the <a href="https://en.wikipedia.org/wiki/Alaska_Permanent_Fund">Alaska Permanent Fund</a>. The idea is that literally everybody would stand to benefit from getting rid of income taxes, sales taxes, and property taxes. Labor would become cheaper, goods and services would become cheaper, housing would become cheaper, and everybody would have more money in their pockets.
+</p>
+
+<p>
+By &ldquo;Land&rdquo;, Georgists are referring to <a href="https://en.wikipedia.org/wiki/Land_(economics)">the economic definition of land</a>, so natural resources like: geographical locations, mineral deposits, forests, fish stocks, atmospheric quality, geostationary orbits, and portions of the electromagnetic spectrum all also count as &ldquo;land&rdquo;, and would be subject to the appropriate amount of Land Value Tax, as set by the market in terms of <a href="https://en.wikipedia.org/wiki/Economic_rent#Land_rent">Land Rent</a>. This is a non-exhaustive list of benefits to be gained from using LVT instead of other taxes:
+</p>
+<ul class="org-ul">
+<li>Goods and services would become cheaper (due to no more sales taxes),</li>
+<li>Labor would be cheaper (due to no more income taxes),</li>
+<li>Housing would be more affordable (due to no more property taxes &amp; landlords would be incentivized to build more housing per acre),</li>
+<li>The economic inputs of the economy would get taxed instead of the economic outputs, so there would be incentives to use the inputs (Land &amp; Natural Resources) more efficiently, and we should absolutely want this since there is a fixed, finite amount of valuable land and natural resources on Earth. Likewise, people wouldn&rsquo;t get penalized for generating greater economic outputs.</li>
+<li>LVT would increase economic stability by bootstrapping the entire economy to the prices of its economic inputs, unlike the current instability where the prices of economic outputs depend on other economic outputs. Markets generate prices, but they generate them from other prices too, which are ultimately determined by the prices of the economy&rsquo;s inputs to production, namely land since land is the source of all wealth.</li>
+<li>Urban sprawl would be non-existent,</li>
+<li>Land monopolies wouldn&rsquo;t exist anymore,</li>
+<li>Pollution would be disincentivized (Pollution taxes are a logical conclusion from recognizing that land belongs to everyone equally),</li>
+<li>Since the wealthiest people are naturally the ones who own the most land and the most valuable land, Land Value Tax would therefore reduce economic inequality, because the LVT would mostly fall on the wealthiest members of society.</li>
+<li>It is extremely difficult to do tax evasion under LVT, since land cannot be concealed or moved overseas and titles are easily identified, as they are registered with the public. Land value assessments are usually considered public information, which is available upon request. This transparency reduces tax evasion.</li>
+<li>A person who claims land can occupy it as long as they pay the appropriate Land Value Tax for the land that they&rsquo;re occupying. This resolves Tragedies of the Commons, while simultaneously ensuring that <b>everybody</b> benefits from it, not just the one single person who is occupying the land. This is a win-win, unlike Communism where there is the Tragedy of the Commons (ToC), or Anarcho-Capitalism where there is no ToC, but property owners get unfairly wealthy for value that they did not create.</li>
+<li>When everybody owns land equally, this ensures that everybody has equal access to the three factors of production: <b><b>Land</b></b>, Labor, and Capital. It follows that economic productivity is increased, and wealth inequality is dramatically reduced. The massive wealth inequality that exists today is in large part caused by the skewed and unequal ownership of highly valuable land.</li>
+<li>Land Value Tax has been endorsed by Milton Friedman, Adam Smith, John Locke, Benjamin Franklin, Tom Paine, Thomas Jefferson, and many other Classical Liberals.</li>
+<li>Japan&rsquo;s Lost Decade, the Great Recession, and China&rsquo;s upcoming real estate bubble and recession never would&rsquo;ve happen since it wouldn&rsquo;t be possible to do land speculation anymore when all the taxes are replaced with Land Value Tax. Also note that land speculation is undesirable for all human societies since it is a form of <a href="https://en.wikipedia.org/wiki/Rent-seeking">rent-seeking</a>.</li>
+<li>Cities that use pro-Georgist urban planning would have no need for cars as well as no need to save up money to buy houses (for houses, most of the value is concentrated within the land that the house sits on, not the actual house itself). By eliminating the need to buy two of the most expensive items that people will ever buy within their lifetimes, the economy becomes drastically more efficient because all the money being used to buy those expensive things (houses and cars) can now be used to buy more important things instead.</li>
+</ul>
+<p>
+Fun Fact: the <a href="https://en.wikipedia.org/wiki/Monopoly_(game)">board game Monopoly</a> and its predecessor <a href="https://en.wikipedia.org/wiki/The_Landlord%27s_Game">The Landlord&rsquo;s Game</a> were actually created to demonstrate that an economy that rewards individuals is better than one where monopolies hold all the wealth and to promote the economic theories of Henry George, as noted in the second introduction paragraph of the Wikipedia article on <a href="https://en.wikipedia.org/wiki/Monopoly_(game)">board game Monopoly</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd9e562" class="outline-2">
+<h2 id="orgcd9e562"><span class="section-number-2">2.</span> Supply-Demand Curves For Understanding LVT</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+The following links show some interactive graphs, charts, numbers for modeling how the mathematics and economics of Georgism work.
+</p>
+<ul class="org-ul">
+<li><a href="https://www.geogebra.org/m/NkVQx2w6">Geogebra: The Law of Rent</a></li>
+<li><a href="https://www.geogebra.org/m/BhfHRu33">Geogebra: Distribution of Wealth Between Factors of Production</a></li>
+<li><a href="https://www.geogebra.org/m/cDDWcAxj">Geogebra: Land Value Tax Calculator</a></li>
+<li><a href="https://www.geogebra.org/m/zPSMGzEt">Geogebra: Land Value Tax Revenues Relative to Rent and Land Value</a></li>
+<li><a href="https://www.geogebra.org/m/KfNfHRhp">Geogebra: Idle Land, Unemployed Workers Caused by Incorrect Taxation</a></li>
+</ul>
+
+
+<div id="orgcc6b5c3" class="figure">
+<p><img src="../images/Perfectly_inelastic_supply.svg" alt="Perfectly_inelastic_supply.svg" class="org-svg" />
+</p>
+<p><span class="figure-number">Figure 1: </span>A supply and demand diagram showing the effects of land value taxation. As the supply of land is fixed, the burden of the tax falls entirely on the land owner. There is no change in the rental price and quantity transacted, and no deadweight loss.</p>
+</div>
+
+
+<div id="org0afb380" class="figure">
+<p><img src="../images/Maximum_taxation_with_perfectly_inelastic_supply.svg" alt="Maximum_taxation_with_perfectly_inelastic_supply.svg" class="org-svg" />
+</p>
+<p><span class="figure-number">Figure 2: </span>In this case, land is taxed at 100% of its value, eliminating the landowner surplus completely. The ownership of land becomes worthless except to those who value it higher than market rents.</p>
+</div>
+
+<p>
+Figure 1: <a href="https://en.wikipedia.org/wiki/File:Perfectly_inelastic_supply.svg">Perfectly Inelastic Supply</a> by <a href="https://en.wikipedia.org/wiki/User_talk:VBGFscJUn3">Explodicle</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0.</a>.
+</p>
+
+<p>
+Figure 2: <a href="https://en.wikipedia.org/wiki/File:Maximum_taxation_with_perfectly_inelastic_supply.svg">Maximum Taxation With Perfectly Inelastic Supply</a> by <a href="https://en.wikipedia.org/wiki/User_talk:VBGFscJUn3">Explodicle</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0.</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga25db01" class="outline-2">
+<h2 id="orga25db01"><span class="section-number-2">3.</span> Georgism Compared to Other Economic Ideologies</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Unlike Capitalism, Socialism, and Communism, Georgism has never tried before, and yet it is different from all of them, as it is the only one where everybody is guaranteed equal access to all Three of the Factors of Production. It is definitely worth giving Georgism a chance to see how it performs compared to our current finder&rsquo;s keepers system.
+</p>
+
+<p>
+The following table shows a simplified, yet useful understanding of how Georgism compares to other more widely known economic ideologies, with respect to whether or not each one of the Three Factors of Production are private or public:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Capitalism</th>
+<th scope="col" class="org-left">Georgism</th>
+<th scope="col" class="org-left">Socialism</th>
+<th scope="col" class="org-left">Communism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Land</td>
+<td class="org-left">Private</td>
+<td class="org-left">Public</td>
+<td class="org-left">Public</td>
+<td class="org-left">Public</td>
+</tr>
+
+<tr>
+<td class="org-left">Capital</td>
+<td class="org-left">Private</td>
+<td class="org-left">Private</td>
+<td class="org-left">Public</td>
+<td class="org-left">Public</td>
+</tr>
+
+<tr>
+<td class="org-left">Labor</td>
+<td class="org-left">Private</td>
+<td class="org-left">Private</td>
+<td class="org-left">Private</td>
+<td class="org-left">Public</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Land is the source of all wealth. Would you rather have all the money or have all the land?
+</p>
+
+<p>
+Today, we can see that enormous corporations that have monopolies / private ownership over things like oil, natural gas, precious metals, diamonds, etc like British Petrol or De Beers are super rich, often earning billions of dollars every year. But is it really fair that those corporations should get billions of dollars annually, just because they managed to claim the land containing those natural resources before anybody else could, under a Finders&rsquo; Keepers system? They certainly deserve <b>some</b> money for doing the labor necessary for extracting those natural resources, but they didn’t do any labor to physically create the resources. Another thing that’s worth pointing out is that many/most economists would agree that land monopolies and natural monopolies are the greatest monopolies of them all since they tend to have the fewest competing alternatives when a monopoly does form.
+</p>
+
+<p>
+<a href="../FAQs/georgism-FAQs.html">See the Georgism FAQs page for any questions you may have.</a>
+</p>
+
+
+<div id="org70ddbfa" class="figure">
+<p><img src="../images/graphs-of-LVT-outcomes-01--all.jpg" alt="graphs-of-LVT-outcomes-01--all.jpg" />
+</p>
+<p><span class="figure-number">Figure 3: </span>You can download this image by right clicking it and saving it, if you wish. If you do so, you are encouraged to share it and spread the word. (credit to u/The_Great_Goblin on Reddit)</p>
+</div>
+
+<p>
+If you would like to view the graph above broken down, you can view it as ten different separated images at this link: <a href="https://www.reddit.com/r/georgism/comments/qp69t9/upgraded_graphs_of_lvt_outcomes/">Graphs of LVT Outcomes (Separated Downloadable Infographics)</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd79d977" class="outline-2">
+<h2 id="orgd79d977"><span class="section-number-2">4.</span> How I First Recognized The Problems Of Anti-Georgism As A 5-Year-Old</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+When I was a 5-year-old kid who didn&rsquo;t know anything economics, urban planning, or political science, I could tell that land speculation didn&rsquo;t make any sense, even before I knew what the term itself was called and how the phenomenon works, based on the effects that it caused to the urban planning of my surroundings.
+</p>
+
+<p>
+In the town where I grew up, I always wondered why there were vacant acres of land laying around here and there in between all the houses, businesses, parks, etc. All these vacant swaths of land also had these huge signs on them with phone numbers of who to contact if someone would like to buy the land. But as a child and a teenager, I didn&rsquo;t think much about this phenomenon. But I did subconsciously wonder, &ldquo;Why do all these empty spaces need to be between everything? Wouldn&rsquo;t it be better to build everything closer together so that there would be shorter distances to drive between? For context, my parents would often spend a few hours traveling around the metropolitan area with me in the car, and it always felt like it took so long to get from point A to point B. I naturally recognized that it wouldn&rsquo;t have to take so much time to travel from one place to another if all the buildings and places were built more closely together, i.e. if there was less urban sprawl around the metropolitan area.
+</p>
+
+<p>
+When I finally learned about Georgism as a young adult, I finally understood what was going on. Not only were all these land speculators ruining the town&rsquo;s urban planning and creating lots of urban sprawl, but since their unused land was gaining value from the community&rsquo;s labor without them having to do any work themselves, this was a form of invisible yet socially acceptable theft (AKA <a href="https://en.wikipedia.org/wiki/Rent-seeking">rent-seeking</a>). Alloidal libertarians are able to recognize that inflation is a form of invisible theft, and yet they turn a blind eye to land speculation which also extracts other people&rsquo;s labor into the hands of just a few, yet differently. I talk more about how my newly acquired understanding of Georgism and Land Economics was the first issue that caused me to become disillusioned from mainstream Right-Libertarianism in <a href="../debunking-libertarianism/geolibertarian-syllogisms.html">this blog post here.</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org386eba9" class="outline-2">
+<h2 id="org386eba9"><span class="section-number-2">5.</span> Quotes by Henry George</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+&ldquo;Now, what is necessary to enable labor to produce these things, is land. When we speak of labor creating wealth, we speak metaphorically. Man creates nothing. The whole human race, were they to labor forever, could not create the tiniest mote that floats in a sunbeam—could not make this rolling sphere one atom heavier or one atom lighter. In producing wealth, labor, with the aid of natural forces, but works up, into the forms desired, pre-existing matter, and, to produce wealth, must, therefore, have access to this matter and to these forces—that is to say, to land. The land is the source of all wealth. It is the mine from which must be drawn the ore that labor fashions. It is the substance to which labor gives the form. And, hence, when labor cannot satisfy its wants, may we not with certainty infer that it can be from no other cause than that labor is denied access to land?&rdquo; (Henry George, Progress and Poverty, Book V, Chapter I, Page 272).
+</p>
+
+<p>
+&ldquo;But if one man owned the island, and if we went there and you people were fools enough to allow me to lay claim to the ownership of the island and say it belonged to me, then I could charge a monopoly rent; I could make you pay me every penny that you earned, save just enough for you to live; and the reason I could not make you pay more is simply this, that if you would pay more you would die. … “If we were to go to that island that we imagined, and if you were fools enough to admit that the land belonged to me, I would be your master, and you would be my slaves just as thoroughly, just as completely, as if I owned your bodies, for all I would have to do to send you out of existence would be to say to you &rdquo;get off my property.&ldquo; That is the cause of the industrial slavery that exists all over the world, that is the cause of the low wages, that is the cause of the unemployed labor.&rdquo;&rsquo; (Henry George, The Land for the People, Speech 1889).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org009f1b5" class="outline-2">
+<h2 id="org009f1b5"><span class="section-number-2">6.</span> Why The GTP Beats The OATP By Every Measure Possible</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+The Original Appropriation Theory of Property (OATP) is a <a href="https://en.wikipedia.org/wiki/First_possession_theory_of_property">Finder&rsquo;s Keepers approach to property and land rights</a>. It is also the indefensible culprit behind real-estate recessions, the ever-increasing cost of housing, inefficient urban planning, increased pollution, and so much more.
+</p>
+
+<p>
+The Georgist Theory of Property (GTP) can be stated using the following syllogistic reasoning:
+</p>
+<ol class="org-ol">
+<li>Every person owns themself.</li>
+<li>Every person thus owns the labor that they produce.</li>
+<li>Every person thus owns anything produced by their labor.</li>
+<li>People can trade things that they create with their labor for things that other people create with their labor.</li>
+<li>Land is not created by labor.</li>
+<li>But land is necessary in order to be productive (because it&rsquo;s one of the three factors of production: land, labor, and capital).</li>
+<li>In order for everybody to have an equal right to be productive<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>, everybody must have an equal right to land.</li>
+<li>In order to have a free-market economy, everybody must have an equal right to be productive<sup><a id="fnr.2.100" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>, otherwise the economy is anti-free-market.</li>
+</ol>
+<p>
+<b><b>Conclusion:</b></b> In order to have a truly free-market economy, everybody must have an equal right to land. Likewise, no one should have unchecked ownership of land because they did not create the land, lest the economy be anti-free-market.
+</p>
+
+<p>
+The only way how the OATP could be considered better than the GTP is that the OATP is better for people who already have power and want to maintain their existing power structures. That is indeed the reason why the world has not adopt the GTP since power is self-justifying, aside from the fact that most people don&rsquo;t have good economic intuitions for understanding how a Georgism-like system would be more economically efficient for everybody overall.
+</p>
+
+<p>
+This goes back to how the ultimate basis for society is cooperation between other selfish individuals who are presumed to be rational actors. We could adopt a system that would enable maximum cooperation and benefits between everybody, but unfortunately, prisoner&rsquo;s dilemmas regarding land rights prevent us from achieving the cooperative square of the Prisoner&rsquo;s Dilemma, hence why we&rsquo;re stuck with the OATP and all its negative consequences in our society.
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Location Value Taxation is a more specific type of Land Value Taxation that only concerns that refers to real estate values controlled by a location&rsquo;s proximity to various goods and services, although people often say &ldquo;Land Value Taxation&rdquo; to refer to both concepts, which creates confusion. Land Value Taxation is also referred to by some people like Blithering Genius as &ldquo;Natural Resource Taxation&rdquo; (NRT). In my writings, I use &ldquo;Land Value Taxation&rdquo; (LVT) for the more general concept because that&rsquo;s the most commonly used term and Location Value Taxation to refer to the more specific concept, but I understand that NRT and Land Value Taxation are interchangeable terms because land itself is defined as natural resources that exist in finite supply.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Having an equal right to be productive means having an equal opportunity to be as productive as anyone else.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Zero Contradictions</p>
+<p class="date">Created: 2022-11-04 Fri 21:33</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-01 Tue 16:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Why Objective Morality is Absolute Nonsense</title>
+<meta name="author" content="Zero Contradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Why Objective Morality is Absolute Nonsense</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgb4bb0f2">1. All The Different Ways / Puzzle Pieces For Proving That Morality Is Relative And Subjective</a></li>
+<li><a href="#org7473e00">2. Address Reasons Why Morality May Seem Objective, Even Though It Is Not</a>
+<ul>
+<li><a href="#org2694adb">2.1. Why Cooperation Is Not Objectively Moral, Even If Would Produce The Greatest Amount Of Wealth</a></li>
+<li><a href="#orga8cbab3">2.2. Not Everybody Wants To Live In A Technologically-Advanced Society</a></li>
+</ul>
+</li>
+<li><a href="#orgb4253c1">3. Why It Is Actually Misleading To Think Of The Libertarian NAP As A Single Principle</a>
+<ul>
+<li><a href="#orga5ac3ad">3.1. Aggression Is Subjective, So The NAP And Every Interpretation Of The NAP Is Also Subjective</a></li>
+</ul>
+</li>
+<li><a href="#org67d23aa">4. Descriptive Ethics And Definitions Of Terms Used In Ethics</a></li>
+<li><a href="#org7f3424f">5. Why It&rsquo;s Dangerous To Have A Black-And-White Sense Of Morality</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb4bb0f2" class="outline-2">
+<h2 id="orgb4bb0f2"><span class="section-number-2">1.</span> All The Different Ways / Puzzle Pieces For Proving That Morality Is Relative And Subjective</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The term &ldquo;post-moral&rdquo; designates the position held by Blithering Genius, StateOfTheNihil, Brittonic Memetics, and myself, similar to moral relativism, but different enough that it&rsquo;s also kind of similar to amoralism.
+Remember that it is valuable to find multiple different ways to prove things, since each method can reveal something new or showcase powerful intuitions for why the conclusion is correct. In the case of philosophy and belief systems, finding different ways to prove the same conclusion is essential for helping the necessary amount of contradictions build up in the believer&rsquo;s mind, so that they can ultimately reject their previous, fallacious beliefs. This is a list of ways for proving that morality is relative / subjective:
+</p>
+<ol class="org-ol">
+<li>The most direct and straight-forward way of proving that morality is subjective is to start by showing that all value is subjective and that morality is necessarily based on value. Since morality is based on value, and all value is subjective, morality also has to be subjective. Objective value is an oxymoron because all value is perspective-dependent, but &ldquo;objective&rdquo; means perspective-independent. Objective value does not exist (because it can&rsquo;t), so objective morality doesn&rsquo;t exist either.</li>
+<li><b><b>Morality cannot progress anyways because most so-called &ldquo;moral progress&rdquo; is actually improvements in technology and the standard of living.</b></b> The only reason why slavery ended was because machines were invented that could do the labor instead. Slavery would still be legal today if it wasn&rsquo;t for the Industrial Revolution, for the same reason why the Founding Fathers of the United States owned slaves themselves despite disliking the idea of slavery. If it never became possible to replace slave labor with machines and people who worked over 80 hours a week (before labor unions and further technological advancement/automation), the same moral attitude held by the Founding Fathers would still persist to this day because slavery would still be necessary to do all the labor without the availability of machines.
+<ul class="org-ul">
+<li>Since free trade can help prevent war, it must be acknowledged that technology was needed to facilitate free trade like the steam engine (and more sophisticated engines later on), shipping container, man-made Suez and Panama Canals, and more have made it easier to facilitate free trade which prevents the likelihood of war since the mid-20th century.</li>
+<li>NOTE: Although &ldquo;moral progress&rdquo; is strongly correlated with technological progress, it is still the case that technological progress and the mostly &ldquo;good&rdquo; things that it can accomplish can still improve human societies in ways that are pleasing to nearly everyone&rsquo;s subjective moral preferences.</li>
+<li><a href="./how-technology-creates-the-illusion-of-moral-progress.html">See this post for more details</a></li>
+</ul></li>
+<li>How can there ever be any true &ldquo;moral progress&rdquo; when virtually all &ldquo;moral progress&rdquo; can, is, or will only be made possible by technological improvements? If the technology that caused the moral improvements was historically absent for most of human history, how could previous human societies have been moral if it wasn&rsquo;t technologically possible for them to be moral?</li>
+<li>Even today, there are people like Anarcho-Capitalists who argue that their fantasy worlds will have amazing technologies like sea-steading, blockchains, and more that will enable them to live in a super &ldquo;ethical&rdquo; utopia that has never been seen before. But if new/innovative technologies are necessary to make such utopias possible, then hypothetical &ldquo;moral improvements&rdquo; like the kinds alluded to by AnCaps are only made possible by advancing technologies, as it has always been the case. (I can give you some more examples if you&rsquo;d like about how most moral progress is really only technological progress)</li>
+<li>Life is a zero-sum game. Whether it be competition for energy and resources, competition for mates and reproducing offspring, or competition for virtually anything else, life is ultimately a game of competition between selfish individuals striving to accomplish their own goals and objectives. Everybody may want to win, but not everybody can win at life because for every winner, there will be a loser. Whether moral objectivists accept it or not, picking the winners and losers of life is completely subjective.</li>
+<li>Most people would believe that there are at least some situations where it is immoral to force someone else to conform to your own morality. This suggests that morality is not objective.</li>
+<li>Although Mathematics is always enforced by reality without the help of moral agents, morality is not enforced by the material world under any circumstances, and it must necessarily be enforced by moral agents who decide to enforce it however THEY want to do so.
+<ul class="org-ul">
+<li>If everybody chooses not to follow the objective morality, then nobody will follow it. And if nobody chooses to enforce the objective morality, then the objective morality will not be enforced at all.</li>
+<li>On the other hand, it is NOT optional to obey mathematics, unlike morality. Those who attempt to manipulate the universe in some way by making the wrong mathematical calculations (or even no calculations at all) to inform their decisions will necessarily face the consequences of their actions due to their failure to make and be informed by the right mathematical calculations.</li>
+</ul></li>
+<li>Although Ayn Rand wrote that rationalizing is anti-virtuous and irrational thing to do, this statement condemning rationalization is only true when not dealing with ethics. Just about everyone will rationalize their existence if necessary because humans and animals alike all evolved to do that. Rationalizing is not anti-virtuous, it is part of nature, on principle of selfish genes and egoism.</li>
+<li>Reason is incapable of determining objective morality. Since value and the prioritization of values is subjective, it is impossible for reason to objectively determine which values should be prioritized over others.</li>
+<li>If morality was supposedly objective then why has it made the least amount of progress compared to all the other sciences and fields of human knowledge? It is undeniable that a moral objectivist would have to agree that most of the world does not follow the supposedly objective moral standard that they claim to exist, since most of the world is divided by religion, state and legal institutions, and cultural philosophies/ethics. This does not decisively prove that morality is not objective, but it is still additional evidence to prove the point that morality is subjective nonetheless. One should also recognize that:
+<ul class="org-ul">
+<li>What&rsquo;s &ldquo;moral&rdquo; in one time period is not moral in a later one.</li>
+<li>What&rsquo;s &ldquo;moral&rdquo; in one culture is not moral in another.</li>
+<li>What&rsquo;s &ldquo;moral&rdquo; to one moral agent is not moral to another.</li>
+</ul></li>
+</ol>
+<p>
+It doesn&rsquo;t seem coincidental that nobody can agree on what objective morality is.
+</p>
+<ol class="org-ol">
+<li>Game Theory is excellent for demonstrating how morality depends on perspective.</li>
+<li>If determinism is true and humans don&rsquo;t truly have free will, then how could any real moral progress ever truly happen if everything in the past and future were/are determined to happen?</li>
+<li>So Sam Harris argues that the only viable moral framework for an objective &ldquo;science of morality&rdquo; is one where &ldquo;morally good&rdquo; things pertain to increases in the &ldquo;well-being of conscious creatures&rdquo; (he should have written &ldquo;sentient&rdquo; creatures instead, because morality applies to sentient beings just as much as conscious ones).
+<ul class="org-ul">
+<li>HOWEVER, he has not considered that &ldquo;well-being&rdquo; is still subjective. Although someone like Blithering Genius would argue in favor of maintaining the high-standard of living and mostly desirable material conditions of modernity (presumably in the interest of overall &ldquo;well-being&rdquo;?), someone else like an Efilist like Gary Inmendham would argue that the best &ldquo;well-being&rdquo; for all the sentient life on Earth at large would be if they all the sentient life was destroyed or euthanized and that the Earth was rendered uninhabitable for all future life.</li>
+<li>Efilists would argue that the greatest well-being is the complete absence of suffering, no matter how much pleasure life may receive overall. And other people argue that the positive value of pleasure exceeds the negative value of pain, or that the total value of pleasure versus pain always adds up to zero. Sam Harris&rsquo;s argument in favor of objective morality still fails because &ldquo;well-being&rdquo; is subjective to interpretation.</li>
+<li>And since Sam Harris is presumably against a hypothetical Benevolent World Explosion proposal, how would he decisively argue that it would be an objectively &ldquo;bad&rdquo; thing to do? How would he irrefutably argue that the existence of pleasure overrides or equals out the existence of pain? What makes his conception of &ldquo;well-being&rdquo; any better than the Efilist conception of &ldquo;well-being&rdquo;? If it&rsquo;s immoral to euthanize the entire Earth since some/most sentient organisms want to live, how is it not immoral for everyone to continue bringing children into this world if it&rsquo;s inevitable that at least some of them won&rsquo;t want to be alive at all?</li>
+<li>In the book, Harris acknowledges that &ldquo;there could, in principle, be a species compared to which we are relatively unimportant (although he doubts such a species exists).[26]&rdquo; (according to Wikipedia&rsquo;s article on the Moral Landscape). But if this were hypothetically true, then couldn&rsquo;t this have the potential to create a moral conflict that would demonstrate the relativity of morality? The humans would want to live, but the theoretically more important species could argue that they have a right to use the humans and their world as they wish because they are more important. The biological and Darwininan tendency is for the individual to always justify themself. The humans will justify their existence against the more important species (the hyper-intelligent aliens), and the aliens will justify themselves against the humans. There is no right moral answer here.</li>
+</ul></li>
+</ol>
+<p>
+ANOTHER WAY OF WRITING ARGUMENT #9: Sam Harris argues that the only viable moral framework for an objective &ldquo;science of morality&rdquo; is one where &ldquo;morally good&rdquo; things pertain to increases in the &ldquo;well-being of conscious creatures&rdquo; (he should have written &ldquo;sentient&rdquo; creatures instead, because morality applies to sentient beings just as much as conscious ones). HOWEVER, Harris has not considered that &ldquo;well-being&rdquo; is still subjective. Although someone like [Blithering Genius](<a href="https://www.youtube.com/user/BlitheringGenius/videos">https://www.youtube.com/user/BlitheringGenius/videos</a>) would argue in favor of maintaining the high-standard of living and mostly desirable material conditions of modernity (presumably in the interest of overall &ldquo;well-being&rdquo;?), someone else like [an Efilist like Gary Inmendham](<a href="https://efilism.fandom.com/wiki/Efilism_Wiki">https://efilism.fandom.com/wiki/Efilism_Wiki</a>) would argue that the best &ldquo;well-being&rdquo; for all the sentient life on Earth at large would be if all the sentient life was destroyed or euthanized and that the Earth was rendered uninhabitable for all future life. Efilists argue that the greatest well-being is the complete absence of suffering, no matter how much pleasure life may receive overall. And other people argue that the positive value of pleasure exceeds the negative value of pain, or that the total value of pleasure versus pain always adds up to zero. <b><b>Harris&rsquo;s argument in favor of objective morality still fails because &ldquo;well-being&rdquo; is subjective to interpretation.</b></b>
+</p>
+<ul class="org-ul">
+<li>It still subjective to value a net increase in total happiness over a net decrease in total suffering. Assuming that positive (classical) utilitarianism is a self-evident criteria for judging objective morality completely disregards negative utilitarians who believe that any total reduction pain should be prioritized over any total increase in happiness.</li>
+<li>Who&rsquo;s to say that positive utilitarianism is objectively better than negative utilitarianism? Some extreme negative utilitarians like the people on r/Efilism would argue that it would better to euthanize all the sentient life on Earth and render the Earth to be permanently uninhabital because even 8+ billion happy people could never justify even a single person who is suffering.</li>
+
+<li>Anybody who defines &ldquo;objective&rdquo; morality as maximizing well-being basically believes in some form of utilitarianism. The definition for Utilitarianism is:
+    Utilitarianism is a family of normative ethical theories that prescribe actions that maximize happiness and well-being for all affected individuals.[1][2]
+However, defining &ldquo;objective&rdquo; morality in terms of well-being does NOT work because well-being is subjective too. There are several different types of Utilitarianism, so it would be very arbitrary of you to label ONLY ONE form of Utilitarianism as the &ldquo;objective&rdquo; one, out of many different conceived versions.
+The main reason why moral objectivists have a strong tendency to leans towards believing some kind of Utilitarian framework is that their false conception of objective morality forces them to find some sort of supposedly objective aggregation onto an absolute scale, and it is necessary for them to do this, which results in an insoluble problem.
+Also, if it is truly the case that all pain and pleasure metaphysically balance out in reality, then such a fact would make Utilitarianism a very questionable basis for morality, much less an &ldquo;objective&rdquo; one.</li>
+
+<li>Defending the fundamental subjectivity of morality can NOT be debunked as a Subjectivist Fallacy. The real fallacy at play here is the insistence of the moral objectivists about applying an objective method for making decisions (reason) to a fundamentally subjective idea (values). Once again, there is no such thing as objective value, for the reasons that I&rsquo;ve already explained. The moral objectivists are making a fallacy because they aren&rsquo;t acknowledging the limitations of reason.</li>
+
+<li><p>
+Nobody can ever do anything with a 100% guarantee that their actions will always be an unequivocally good thing.
+</p>
+
+<p>
+Examples:
+</p>
+<ul class="org-ul">
+<li>ProtonMail and security services helping both innocent people who want privacy AND criminals at the same time.</li>
+<li>The United States arming the Taliban to fight the Soviets during the Cold War, but later on the Taliban uses the same weapons to fight against the American invasion and occupation of Afghanistan.</li>
+<li>Helping people develop good public speaking skills. They could use those skills for &ldquo;good&rdquo; things or &ldquo;bad&rdquo; things, and you can never know for sure. Hitler for example, probably had at least some practice and feedback developing good public speaking skills.</li>
+<li>Ending world hunger, but then triggering a global overpopulation crisis.</li>
+<li>Helping people become better programmers, but then they become hackers instead, or help China develop a national surveillance and social credit system that monitors everybody 24/7.</li>
+<li>i</li>
+<li>i</li>
+<li>i</li>
+<li>i</li>
+</ul></li>
+</ul>
+
+<p>
+Jonathan Haidt&rsquo;s Moral Foundations Theory: <a href="https://en.wikipedia.org/wiki/Moral_foundations_theory">https://en.wikipedia.org/wiki/Moral_foundations_theory</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7473e00" class="outline-2">
+<h2 id="org7473e00"><span class="section-number-2">2.</span> Address Reasons Why Morality May Seem Objective, Even Though It Is Not</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Collective, societal values
+</p>
+
+<p>
+Virtually every human society has been against theft, murder, and rape to some extent, although in varying ways.
+</p>
+
+<p>
+It is possible to hold contradictory values, which then brings the necessity that the contradiction be resolved. Although the Law of Non-Contradiction can indeed be extended to have some implications on subjective moral views to an extent, it only does so to the extent that the moral agent desires being rational and having non-contradictory values.
+</p>
+
+<p>
+Even then, the common desire to have non-contradicting values still does not imply objective morality because it&rsquo;s possible for multiple different consistent value systems to arise.
+</p>
+
+<p>
+A huge problem with believing in objective morality is that it gives the believer the false hope that future human societies will eventually be structured according to their utopian ideologies. The believers <b>think</b> that their beliefs are &ldquo;objective correct&rdquo;, so it must be the case that everybody will eventually recognize that the utopian ideologies are correct, and will eventually follow them. So no matter how unrealistic, improbable, or unbelievable it may seem that most people nowadays would accept their utopian ideological cult(s) in the future, they just have to keep trying because eventually everybody will realize that the cult(s) were right.
+</p>
+</div>
+
+<div id="outline-container-org2694adb" class="outline-3">
+<h3 id="org2694adb"><span class="section-number-3">2.1.</span> Why Cooperation Is Not Objectively Moral, Even If Would Produce The Greatest Amount Of Wealth</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Since Libertarians and Ancaps are strong proponents of contract theory ethics, they believe that it is unthinkable and wickedly immoral for anybody to break any contract or agreement that two or more parties agrees to. That being said, their moral (identify which of Jonathan Haidt&rsquo;s proposed morals applies here) dogmas prevent them from realizing that the omnipresent possibility that anybody could defect from an agreement is precisely why it isn&rsquo;t objectively correct that cooperation is always the best choice for the agents in the prisoner&rsquo;s dilemma. Even if cooperation would lead to higher wealth and overall well-being for all the parties involved, cooperation is still <b>not</b> going to be the best option if it&rsquo;s possible that the other side could and/or would defect.
+</p>
+
+<p>
+People who argue that cooperation is &ldquo;objectively moral&rdquo; don&rsquo;t understand the prisoner&rsquo;s dilemma. In the prisoner&rsquo;s dilemma, the choices are selfishness or altruism.
+</p>
+
+<p>
+There is no (viable) cooperation choice, because reciprocity is not ensured. That&rsquo;s why the prisoner&rsquo;s dilemma has to be solved to create cooperation.
+</p>
+
+<p>
+If cooperating together was the objectively best choice, i.e. it offers the greatest individual reward for each player and defection is guaranteed to not happen, then prisoner&rsquo;s dilemmas wouldn&rsquo;t exist at all in the first place.
+</p>
+
+<p>
+Conversely, if prisoner&rsquo;s dilemmas didn&rsquo;t exist, then there would be no inquiry as to why someone would choose anything less than the option with the greatest potential reward and what can be done to achieve that.
+</p>
+
+<p>
+i
+</p>
+
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga8cbab3" class="outline-3">
+<h3 id="orga8cbab3"><span class="section-number-3">2.2.</span> Not Everybody Wants To Live In A Technologically-Advanced Society</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Contary to popular belief, not everybody wants to live in a technologically-advanced society where everybody lives harmoniously with each other. Many people assume that everybody wants exactly this, and that this implies the existence of an objectively-correct morality, but there are some notably interesting ideologies that oppose it, so it would be a logical and philosophical mistake to assume that this is a universal moral premise that everybody has.
+</p>
+
+<p>
+Anybody who assumes this has not thought enough about the philosophical nature of problems, how and why problems arise, nor have they questioned the best type of well-being (form of utilitarianism).
+</p>
+
+<p>
+Two such counter-examples ideologies that disagree with this popular and naive premise are Efilism and Anarcho-Primitivism.
+</p>
+
+<p>
+Efilists disagree because they believe in absolute [negative-utilitarianism] that not even the existence of the smallest quantity of pain can ever be morally justified.
+</p>
+
+<p>
+Efilists recognize that wherever life exists, problems will never go away. Efilists thus believe that the most morally correct thing to do would be to eliminate all life so that problems will stop existing forever.
+</p>
+
+<p>
+It is also naive to believe that technology is the solution to all problems. It is literally impossible for life to exist without problems, because once again, problems will never go away for as long as life continues to exist.
+</p>
+
+<p>
+That being said, Anprims believe that technology causes more problems than it solves.
+</p>
+
+<p>
+[ELABORATING ON MORALITY FROM THE ANARCHO-PRIMITIVIST POINT OF VIEW]
+</p>
+
+<p>
+Both of these ideologies have their short fallings, but in some ways, these two ideologies are more enlightened than the conventional Humanist worldview of the West.
+</p>
+
+<p>
+There may even be more ideologies that oppose this premise than just the two counter-examples that I have mentioned here.
+</p>
+
+<p>
+Since not everybody agrees that a harmonious, technologically-advanced society would be a utopia where maximal morality is achieved, the premise that everybody wants to achieve that cannot be assumed as a basis for objective morality.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb4253c1" class="outline-2">
+<h2 id="orgb4253c1"><span class="section-number-2">3.</span> Why It Is Actually Misleading To Think Of The Libertarian NAP As A Single Principle</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Although the Libertarian NAP is defined as an ethical rule prohibiting all actions that violate negative rights, there is disagreement among Libertarians regarding what should and should not count as negative rights.
+</p>
+
+<p>
+Libertarians might be inclined to believe that it&rsquo;s obvious as to what counts as a negative right since it can be asked as a yes/no question, but it&rsquo;s actually not that simple because there are lots of gray areas.
+</p>
+
+<p>
+And even if you try to resolve the gray areas by definitively drawing a line in the sand, this is not going to work for everybody. Some people are going to disagree with the ultimate decision, whether that&rsquo;s a small minority, or whether the disagreement is split half and half among the population.
+</p>
+
+<p>
+When I used to be a Libertarian, this I used to believe this (that it is obvious regarding what does and does not count as negative rights) until I started asking deeper questions about ethics (e.g. Georgism) and became a moral relativist.
+</p>
+
+<p>
+For example, two Libertarians might say that they both believe in the NAP, but if you dig deeper and ask more specific questions, they actually disagree on a number of things (abortion, IP rights, rainwater rights, etc).
+</p>
+
+<p>
+Is abortion a negative right, or does the fetus have a negative right to life even though it has not been born yet (and lacks cognitive abilities)?
+</p>
+
+<p>
+[LIST OF ETHICAL TOPICS THAT LIBERTARIANS WILL DISAGREE ON]
+</p>
+
+<p>
+This isn&rsquo;t even a complete list of all the ways how Libertarians might disagree with each other.
+</p>
+
+<p>
+This shows that it&rsquo;s not sufficient to define a legal code only according to the NAP. A legal code would have to be much more specific and rigid because people will disagree on what counts as negative rights and then some.
+</p>
+
+<p>
+With all that being said, it&rsquo;s more accurate to think of the Libertarian NAP is a spectrum of NAPs that tends to favor negative rights, depending on what people should and should not count as negative rights.
+</p>
+</div>
+
+<div id="outline-container-orga5ac3ad" class="outline-3">
+<h3 id="orga5ac3ad"><span class="section-number-3">3.1.</span> Aggression Is Subjective, So The NAP And Every Interpretation Of The NAP Is Also Subjective</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+There are hundreds to thousands of different jurisdictions and sub-jurisdictions that you could move to if you don&rsquo;t like the laws that come with living where you are now. With so many options for &ldquo;opting-out&rdquo; available to you, how could you reasonably argue that it&rsquo;s not possible for you to opt-out of the laws that you live under today? I don&rsquo;t see how Ancapistan would be any different. If Ancaps can&rsquo;t even be satisfied with migrating to a different jurisdiction with different laws when there are at least hundreds to choose from, this suggests that Propertarianism and the freedom to migrate somewhere else (or opt-out as you say) won&rsquo;t be sufficient for resolving every human&rsquo;s moral disagreements with one another.
+</p>
+
+<p>
+Of course, you&rsquo;re assuming that all, most, or some of them would each do their best to conform with their own versions of the NAP, but it&rsquo;s not clear how you could even guarantee that each Ancap-citadel would try to follow the NAP in the first place, especially since Ancaps can&rsquo;t agree with each other on what counts as a violation of the NAP, much less since an Ancap society has never existed (and never will).
+</p>
+
+<p>
+However, since people cannot universally agree on what does or does not count on aggression, I would argue that in a way, this world already has exactly what Ancaps are asking for. If you disagree with the Canadian version of the NAP, then you can migrate to the United States and live under the American version of the NAP instead. If you still don&rsquo;t like that, then you can also choose to opt-out for the Mexican NAP, the Japanese NAP, the Australian NAP, the German NAP, the Mongolian NAP, the Nigerian NAP, the Swiss NAP, and so forth. If you just do some researching, you can probably find a legal jurisdiction that has a decent interpretation of the NAP that you&rsquo;re looking for.
+</p>
+
+<p>
+Aggression is subjective, so it&rsquo;s no surprise that there are multiple NAPs, one for every jurisdiction.
+</p>
+
+<p>
+There is a conflict between Alloidal-Voluntaryists&rsquo; support for the Libertarian NAP and their support for Propertarianism.
+</p>
+
+<p>
+Although we already live in a Propertarian world (considering that different countries have different laws for enforcing their different ethical views), Voluntaryists and Libertarians are still unhappy with this because the Voluntaryist / Libertarian spectrum of NAPs is not enforced to a sufficient extent of their liking.
+</p>
+
+<p>
+In an ideal world, it&rsquo;d be great if everybody could be happy and there was equity among the humans. While I do want everybody to be as happy as the next person, my point is that I don&rsquo;t have any ethical obligations to ensure that that happens. Evolution is the game that runs literally everything, so that&rsquo;s the game everybody <b>has to</b> play, even if it comes at the cost of others. This does make life a zero-sum game since there&rsquo;s a winner for every loser, but at least it&rsquo;s not a negative sum game.
+</p>
+<ul class="org-ul">
+<li>For every prey that gets eaten alive, there is a predator who doesn&rsquo;t starve to death.</li>
+<li>For every prey that escapes, there is a predator who ends up starving to death.</li>
+<li>For every guy who misses a job opportunity, someone else will get it instead.</li>
+<li>For every male that doesn&rsquo;t get to mate with the prized female, some other victorious male does.</li>
+<li>For every slave, there is a slave owner who profits big time.</li>
+<li>For every guy who lost money on the stock market, someone else gained money because for every buyer, there is a seller and vice versa.</li>
+<li>For every guy who lost scarce, precious resources, someone else acquired those valuable resources and used them to survive another day, become more reproductively successful, and have more offspring than the loser.</li>
+<li>And so forth.</li>
+</ul>
+<p>
+Since life is full of winners who come at the expense of losers, it&rsquo;s in everyone&rsquo;s self-interest to be a winner rather than a loser. In such cases, I am <b>not</b> obligated to care about whether that causes someone else to incur negative consequences.
+</p>
+
+<p>
+&ldquo;Slavery is a great idea. If we could own slaves, we would do so because it would make us and our Union of Egoists better off.&rdquo; –Followers of Philosopher Max Stirner
+</p>
+
+<p>
+For the record, I am not a follower of Max Stirner, nor do I endorse slavery, but why shouldn&rsquo;t those egoists own slaves if it makes them better off, and they&rsquo;re able to get away with it? It might suck from the slaves&rsquo; perspectives, but it sure would be a hugely profitable cash cow for the owners.
+</p>
+
+<p>
+There are NO rules in Game Theory that say or conclude that the owners should emancipate their slaves. The only rules of Game Theory are: 1. the players are rational or assumed to be rational, and 2. the players seek to satisfy their own interests and make themselves better off.
+</p>
+
+<p>
+If anything, the rules of Game Theory conclude that the owners SHOULD want to own slaves if they can get away with it, but you don&rsquo;t understand that apparently. And even more strangely, you can&rsquo;t explain where the ontology for your so-called &ldquo;objective morals&rdquo; comes from, nor can you prove its existence without making a fallacy.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org67d23aa" class="outline-2">
+<h2 id="org67d23aa"><span class="section-number-2">4.</span> Descriptive Ethics And Definitions Of Terms Used In Ethics</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Descriptive ethics, also known as comparative ethics, is the study of people&rsquo;s beliefs about morality.[1] It contrasts with prescriptive or normative ethics, which is the study of ethical theories that prescribe how people ought to act, and with meta-ethics, which is the study of what ethical terms and theories actually refer to. The following examples of questions that might be considered in each field illustrate the differences between the fields:
+</p>
+<ul class="org-ul">
+<li>Descriptive ethics: What do people think is right?</li>
+<li>Meta-ethics: What does &ldquo;right&rdquo; even mean?</li>
+<li>Normative (prescriptive) ethics: How should people act?</li>
+<li>Applied ethics: How do we take moral knowledge and put it into practice?</li>
+</ul>
+
+
+
+
+<p>
+In order for morality to be objective and empirical the same way mathematics is, it would have to be the case that morality is discovered, not invented. But when we look at the history of the Earth, life on Earth, and humans on Earth, it is possible to trace back along the timeline to some point where morality was never used, never thought of it, and had no existence on Earth at all. No conception of morality ever existed at all during times of scarce resources and no technology to acquire/make/use resources more effectively.
+Additional proof that morality is invented includes the undeniable fact that any so-called objective standard of morality is impossible to enforce without moral agents that voluntarily choose to force it.
+Mathematics is discovered, but the methods that humans use to explain and communicate math, in a way that makes sense to us, are invented.
+</p>
+
+<p>
+If it was the case that mathematics was entirely invented, and no mathematics or mathematical concepts could be discovered at all, then mathematics would be subjective, but it isn&rsquo;t. Mathematics is discovered and is objective because mathematics exists without humans, intelligent life, or even life in general.
+</p>
+
+<p>
+Nothing is objectively evil / immoral. Actions can be subjectively moral / immoral depending on the perspective they&rsquo;re viewed from, but there is never a single right or wrong answer to ethical questions.
+</p>
+
+<p>
+Which tribe should win in the Somali Civil War? Which president should Papua New Guinea elect? Which penguin in Antarctica has the best stones and should get all the mates?
+</p>
+
+<p>
+It is so liberating to let go of morality and throw it out the window. What I mean by that is that I no longer have to run around endlessly in circles debating back and forth about issues that never had a right or wrong answer in the first place, nor do I always have to be constantly wondering whether I did / will do the right thing or the wrong thing. It saves the mind a lot of wasted time and brain power that could be better spent on more productive philosophical questions instead.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7f3424f" class="outline-2">
+<h2 id="org7f3424f"><span class="section-number-2">5.</span> Why It&rsquo;s Dangerous To Have A Black-And-White Sense Of Morality</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+It is a <b>huge</b> mistake to view morality as black and white. Even if morality was objective, there&rsquo;s far more ways to be wrong than there are ways to be right, so anybody who merely <b>thinks</b> that they are imposing supposedly objective morality is statistically most likely to be wrong. Many people would also use their belief that they are imposing the one and only true &ldquo;objective&rdquo; morality as a justification to rule with an iron fist.
+</p>
+
+<p>
+i
+</p>
+
+<p>
+i
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Zero Contradictions</p>
+<p class="date">Created: 2022-11-01 Tue 16:01</p>
+</div>
+</body>
+</html>

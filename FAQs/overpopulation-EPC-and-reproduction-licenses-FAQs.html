@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-03 Thu 23:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Overpopulation, EPC, And Reproduction Licenses FAQs</title>
+<meta name="author" content="Zero Contradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Overpopulation, EPC, And Reproduction Licenses FAQs</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga23f787">1. Definitions</a></li>
+<li><a href="#org2c602be">2. What We Are Advocating For</a>
+<ul>
+<li><a href="#orgb695e1c">2.1. The Requirements For Being Granted A Reproduction License</a></li>
+</ul>
+</li>
+<li><a href="#org6302212">3. Why would you want to implement eugenics?</a></li>
+<li><a href="#orga107925">4. Why do you want to control reproduction?</a></li>
+<li><a href="#org005707e">5. How would you enforce such a system?</a></li>
+<li><a href="#orgc7ecf61">6. Wouldn&rsquo;t that be horribly authoritarian?</a></li>
+<li><a href="#org266a483">7. Wouldn&rsquo;t it be difficult to enforce?</a></li>
+<li><a href="#org0b4d5ee">8. Wouldn&rsquo;t Eugenics &ldquo;interfere with the natural order of things&rdquo;?</a></li>
+<li><a href="#org7fdab0f">9. Didn&rsquo;t the Nazis Try to Implement Eugenics?</a>
+<ul>
+<li><a href="#org8bf3b71">9.1. Why The Nazis Actually Failed To Implement Eugenics On A Scientific/Rational Basis</a></li>
+<li><a href="#org7320485">9.2. Written Differently, In A Possibly Better Way</a></li>
+</ul>
+</li>
+<li><a href="#org8c8fb24">10. Wouldn&rsquo;t Supporting Eugenics Entail Creating An Ethnostate?</a></li>
+<li><a href="#org5ab0f63">11. Wouldn&rsquo;t eugenics fail?</a></li>
+<li><a href="#orgad20afa">12. Wouldn&rsquo;t eugenics decrease genetic diversity?</a>
+<ul>
+<li><a href="#orga5df948">12.1. Eugenics As A Means To Increase Genetic Diversity, Rather Than To Reduce It</a></li>
+</ul>
+</li>
+<li><a href="#orgcf879b8">13. What if the reduction in genetic diversity causes unforeseen and unfavorable effects in the future?</a></li>
+<li><a href="#org84f8288">14. How would eugenics increase the productivity of a society?</a></li>
+<li><a href="#orgc41a82a">15. How do you separate environmental and genetic factors, regarding how productive someone is able to be towards everyone else in society?</a></li>
+<li><a href="#orge8ac99b">16. What about genetic engineering instead?</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga23f787" class="outline-2">
+<h2 id="orga23f787"><span class="section-number-2">1.</span> Definitions</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Let&rsquo;s start off by defining some terms that will come up in these frequently asked questions:
+</p>
+<ul class="org-ul">
+<li><b>Top-down Eugenics</b>: i</li>
+<li><b>Bottom-up Eugenics</b>: i</li>
+<li><b>Positive Eugenics</b>: i</li>
+<li><b>Negative Eugenics</b>: i</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2c602be" class="outline-2">
+<h2 id="org2c602be"><span class="section-number-2">2.</span> What We Are Advocating For</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+In order to prevent war, disease, and famine, there must be a maximum population limit enforced for the country&rsquo;s total number of citizens. In order to enforce that population limit, anybody who wants to have children must acquire a Reproduction License for each child that they want to have. Everybody else who is unauthorized to have (more) children must have mandatory contraception, since that is the only way to ensure that people do not create legally unauthorized offspring.
+</p>
+
+<p>
+<a href="https://brittonicmemetics.wordpress.com/2022/08/22/eugenics/">Brittonic Memetics: Eugenics</a>
+</p>
+</div>
+
+<div id="outline-container-orgb695e1c" class="outline-3">
+<h3 id="orgb695e1c"><span class="section-number-3">2.1.</span> The Requirements For Being Granted A Reproduction License</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>The Citizen must be law-abiding and have no criminal record,</li>
+<li>The Citizen must have paid all their Land Value Tax payments (if any),</li>
+<li>The Citizen must pay the Reproduction Tax for having a child, which is set according to market rates with respect to the <a href="../economics/why-georgism-and-EPC-both-imply-each-other.html">Supply, Demand, and Price of Reproduction Licenses</a>,</li>
+<li>The Citizen must have a high school education [at least],</li>
+<li>The Citizen must be legally married to someone who will sign a legal agreement with the government to help the raise the child,</li>
+<li>One of the couples in the marital agreement must be employed in a full-time job,</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6302212" class="outline-2">
+<h2 id="org6302212"><span class="section-number-2">3.</span> Why would you want to implement eugenics?</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+For one thing, we live in a time where there is great evolutionary mismatch between the people living in society, and the modern environment that we humans have created.
+</p>
+
+<p>
+Biological evolution is slower than cultural evolution and humans evolve more slowly than pathogens.
+</p>
+
+<p>
+One of the strongest, arguments in favor of eugenics is how evolution is <i>not</i> guided by a human brain. Again, it must be stated and emphasized that the humans that did get to pass their genes onto the next generation only had to be <i>smart enough</i> to build shelter, hunt and gather food/water, and raise healthy children for the next generation. It could be argued that evolution simply hasn&rsquo;t gone far enough in selecting more intelligent humans.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga107925" class="outline-2">
+<h2 id="orga107925"><span class="section-number-2">4.</span> Why do you want to control reproduction?</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+The social control of reproduction is not a new idea. It is a very old and almost universal practice. In the past, reproduction was controlled by the institution of marriage. Almost every society had some form of marriage that regulated human sexual behavior. Sex outside marriage was not allowed. We abandoned the traditional control of reproduction without understanding its function or the consequences of abandoning it. We are now seeing the consequences (and paying the costs) of abandoning marriage. It is time to replace marriage with a modern form of reproduction control.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org005707e" class="outline-2">
+<h2 id="org005707e"><span class="section-number-2">5.</span> How would you enforce such a system?</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+There are various ways to do it. A person who violates the policy could be sterilized and/or forced to be on birth control until they can repay society for the incurred costs of supporting the child. Supervised birth control and regular testing should be required for people on welfare and convicted criminals.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc7ecf61" class="outline-2">
+<h2 id="orgc7ecf61"><span class="section-number-2">6.</span> Wouldn&rsquo;t that be horribly authoritarian?</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+No. It would be no more authoritarian than limiting the freedom to drive or the freedom to kill other people. Reproduction has serious consequences that can be harmful to others, and so the imposition of social constraints on reproduction is justified for the same reason that social constraints on other behaviors are justified.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org266a483" class="outline-2">
+<h2 id="org266a483"><span class="section-number-2">7.</span> Wouldn&rsquo;t it be difficult to enforce?</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+No. It would be easier than enforcing many current laws, including traffic regulations and the law against murder. The law against murder is difficult to enforce because it is often difficult to identify murderers. Some murders go unsolved. No one uses this as an argument that murder should be legal. It would be much easier to identify people who have unlicensed children than it currently is to identify murderers. It&rsquo;s pretty hard to conceal a child.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0b4d5ee" class="outline-2">
+<h2 id="org0b4d5ee"><span class="section-number-2">8.</span> Wouldn&rsquo;t Eugenics &ldquo;interfere with the natural order of things&rdquo;?</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+That&rsquo;s a silly objection (and the naturalistic fallacy). What is the natural order of things? Until recently, most children died young. Now, with modern civilization (based on fossil fuels) we allow most children to live to adulthood. If eugenics violates the natural order then so does modern civilization. And without eugenics modern civilization is unsustainable. Eugenic population control is needed to balance the effects of modern prosperity on the human population. We could use eugenic population control to create a new &ldquo;natural order&rdquo; of sustainable prosperity. Why shouldn&rsquo;t we? Nature will not strike us down for using eugenics. In fact, the opposite is true. Nature will eventually destroy our civilization if we don&rsquo;t regulate our population eugenically.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7fdab0f" class="outline-2">
+<h2 id="org7fdab0f"><span class="section-number-2">9.</span> Didn&rsquo;t the Nazis Try to Implement Eugenics?</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-org8bf3b71" class="outline-3">
+<h3 id="org8bf3b71"><span class="section-number-3">9.1.</span> Why The Nazis Actually Failed To Implement Eugenics On A Scientific/Rational Basis</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+From a scientific perspective, the Nazis didn&rsquo;t advocate for policies that enforced positive eugenics. There is absolutely no scientific evidence that blonde hair, blue eyes, white skin, and other &ldquo;Aryan&rdquo; physical characteristics lead to higher intelligence. Insisting otherwise is pseudo-scientific and racist.
+</p>
+
+<p>
+For someone who purportedly promoted positive eugenics, Hitler only did that in name only, and in fact accomplished the exact opposite of that. That&rsquo;s what the Nazis <b>said</b> they were doing, but what were they <b>actually</b> doing? Instead of breeding people who were scientifically proven to be more intelligent, physically-fit, etc than the average human, he killed millions of people from the most successful ethnic group in history: the Jews. Given the Jews&rsquo; strong record of making scientific accomplishments, contributing to human progress, and acquiring positions of power, killing millions of them is the opposite of what someone should be doing if they want to promote positive eugenic traits like intelligence or physical fitness.
+</p>
+
+<p>
+Instead, the Nazis promoted racist, pseudo-scientific garbage, and used that as an excuse for killing some of the most productive members of society. I would like to very strongly emphasize to the fullest extent possible that Racism is NOT eugenics.
+</p>
+
+<p>
+However, it can be clearly argued that the Nazis did promote negative eugenics, to the extent that that they knew how to. Preventing physically disabled, mentally disabled, diseased, etc people from reproducing is undeniably a form of negative eugenics, which they did enforce, so it would be erroneous to say that the Nazis didn&rsquo;t enforce scientifically-based eugenics at all. They did some negative eugenics, but they also did the opposite of what positive eugenics should be like.
+</p>
+
+<p>
+Hitler supported racism, mass murder, and pseudo-science. What I am advocating for is REAL eugenics, i.e. policies that are backed by reasoning, scientific evidence, and non-partisanship.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7320485" class="outline-3">
+<h3 id="org7320485"><span class="section-number-3">9.2.</span> Written Differently, In A Possibly Better Way</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+Eugenics ≠ Nazism. There is absolutely no scientific evidence that blonde hair, blue eyes, white skin, and other &ldquo;Aryan&rdquo; physical characteristics lead to higher intelligence. So from a scientific perspective, the Nazis did NOT advocate for policies that enforced positive eugenics. For someone who purportedly promoted positive eugenics, Hitler only did that in name only, and in fact accomplished the exact opposite of that. Instead of breeding people who were scientifically proven to be more intelligent, physically-fit, etc than the average human, Hitler killed millions of people from the most successful ethnic group in history: the Jews. Given the Jews&rsquo; strong record of making scientific accomplishments, contributing to human progress, and acquiring positions of power, killing millions of them is the opposite of what someone should be doing if they want to promote positive eugenic traits like intelligence or physical fitness.
+</p>
+
+<p>
+Instead, the Nazis promoted racist, pseudo-scientific garbage, and used that as an excuse for killing some of the most productive members of society. I would like to very strongly emphasize to the fullest extent possible that Racism is NOT eugenics. The Nazis merely used eugenics as a cover justification for killing people during the Holocaust.
+</p>
+
+<p>
+However, it can be clearly argued that the Nazis did promote negative eugenics, to the extent that that they knew how to. Preventing physically disabled, mentally disabled, diseased, etc people from reproducing is undeniably a form of negative eugenics, which they did enforce, so it would be erroneous to say that the Nazis didn&rsquo;t enforce scientifically-based eugenics at all. They did some negative eugenics, but they also did the opposite of what positive eugenics should be like.
+</p>
+
+<p>
+Hitler supported racism, mass murder, and pseudo-science. What I am advocating for is REAL eugenics, i.e. policies that are backed by reasoning, scientific evidence, and non-partisanship.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8c8fb24" class="outline-2">
+<h2 id="org8c8fb24"><span class="section-number-2">10.</span> Wouldn&rsquo;t Supporting Eugenics Entail Creating An Ethnostate?</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+No, understanding evolution and the human condition would rationally conclude a eugenostate, not an ethnostate. For more information, <a href="https://thewaywardaxolotl.blogspot.com/2020/01/eugenostate-versus-ethnostate.html?view=classic">see: Eugenostate versus Ethnostate.</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5ab0f63" class="outline-2">
+<h2 id="org5ab0f63"><span class="section-number-2">11.</span> Wouldn&rsquo;t eugenics fail?</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+If we are talking about top-down eugenics, then yes, that would fail for the same reason why Communism always fails.
+</p>
+
+<p>
+But what we are advocating for is bottom-up eugenics, then that would succeed for the same reason why Capitalism does.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad20afa" class="outline-2">
+<h2 id="orgad20afa"><span class="section-number-2">12.</span> Wouldn&rsquo;t eugenics decrease genetic diversity?</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+Yes in the sense that it would definitely decrease the frequency of genes that cause people to be dumber, more violent, less productive, etc, but that&rsquo;s exactly what we want. How could there possibly be any downsides to removing them from the gene pool? And what benefits would there be to keeping those genes within the gene pool?
+</p>
+
+<p>
+Aside from that, under the solution that we&rsquo;re proposing, the goal of eugenics wouldn&rsquo;t be to increase or decrease genetic diversity. Contrary to this question, eugenics could actually increase genetic diversity if there were desirable rare genes that got selected for.
+</p>
+</div>
+
+<div id="outline-container-orga5df948" class="outline-3">
+<h3 id="orga5df948"><span class="section-number-3">12.1.</span> Eugenics As A Means To Increase Genetic Diversity, Rather Than To Reduce It</h3>
+<div class="outline-text-3" id="text-12-1">
+<p>
+So the strongest argument <b>against</b> eugenics might be that it reduces genetic diversity, but what if a eugenics policy merely only aims to alter the proportions to which certain genes and alleles exist within the population, not to completely eliminate one gene in favor of another? For instance, if two hypothetical genes A and B exist in a population at percentages 80% and 20% respectively, what if the goal was to cause those genes to exist at 50% each? As another example, it is known that most humans have trichromatic vision and that tetrachromatic vision only exists in very, very few humans, perhaps only women exclusively. If a eugenics or genetic engineering policy aimed to increase the percentage of people with tetrachromatic vision in the population, then this would be another example of eugenics leading to an increase in genetic diversity, and one that seems like it should be very favorable.
+</p>
+
+<p>
+Going even further, if the goal of a eugenics policy was to <b>increase</b> genetic diversity rather than to <b>decrease</b> it, this would lead to some very interesting things to ponder about. For one thing, the strongest argument against eugenics that it would decrease genetic diversity would not apply.
+</p>
+
+<p>
+Alternatively, a eugenics policy might aim to modify the genetic composition to be more uneven, like modifying genes A and B to exist from 50% each to percentage ratios like 70/30, 80/20, or even 90/10, but not to 100/0% where one of the genes would be completely eliminated from the population.
+</p>
+
+<p>
+It could potentially be very beneficial for society to breed people with type-O blood (the universal blood donor) that have a strong sense for altruism or wanting to help people that they are very likely to donate lots and lots of blood to ensure a stable supply for society.
+</p>
+
+<p>
+For that matter, the same could be even more easily said for the people who possess that extremely rare blood type that is even more beneficial than type-O blood. In Australia, there is someone whose donated blood has been used to develop some medication that has saved the lives of an estimated ~2 million people.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcf879b8" class="outline-2">
+<h2 id="orgcf879b8"><span class="section-number-2">13.</span> What if the reduction in genetic diversity causes unforeseen and unfavorable effects in the future?</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+How would that happen in the first place, if we are using bottom-up eugenics, and are thus not selecting for any particular genes?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org84f8288" class="outline-2">
+<h2 id="org84f8288"><span class="section-number-2">14.</span> How would eugenics increase the productivity of a society?</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+The psychological need to go through the power process is one of the most powerful reasons why many people (myself included) would not steal things that we desire or cheat/slack off on the job in life. The eugenic selection of people who have this strong psychological need would naturally reduce crime rates and improve the progress society is capable of.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc41a82a" class="outline-2">
+<h2 id="orgc41a82a"><span class="section-number-2">15.</span> How do you separate environmental and genetic factors, regarding how productive someone is able to be towards everyone else in society?</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+Recall: &ldquo;Fundamental Attribution Error&rdquo;
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge8ac99b" class="outline-2">
+<h2 id="orge8ac99b"><span class="section-number-2">16.</span> What about genetic engineering instead?</h2>
+<div class="outline-text-2" id="text-16">
+<p>
+If genetic engineering becomes popular and successful, it&rsquo;s possible that any discussion about requiring positive and/or negative eugenics prior to having children could become an outdated idea.
+</p>
+<ul class="org-ul">
+<li>Anybody who wants children could have children, as long as they are genetically improved.</li>
+<li>Eugenics has a lot of stigma since it is associated with Nazism and racism, but eugenics doesn&rsquo;t have to be racist. For that matter, eugenics wouldn&rsquo;t be discussed at all if genetic engineering became a social norm.</li>
+<li>What would be the consequences on society if a new generation of humans were genetically engineered to be better in every way possible?</li>
+</ul>
+
+<p>
+Genetic engineering could do a number of things to improve humans:
+</p>
+<ul class="org-ul">
+<li>Add ability to automatically produce their own vitamin C.</li>
+<li>Remove all wisdom teeth</li>
+<li>i</li>
+</ul>
+
+<p>
+Another mechanism of biological evolution is epigenetics, or changes not to the DNA sequence itself, but rather the way it is expressed.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Zero Contradictions</p>
+<p class="date">Created: 2022-11-03 Thu 23:40</p>
+</div>
+</body>
+</html>
