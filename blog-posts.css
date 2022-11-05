@@ -83,6 +83,7 @@ ul li, ol li {
 }
 
 table {
+    max-width: 100%;
     font-size: 1.3em;
     margin: 15px auto 15px auto;
 }
@@ -154,7 +155,7 @@ html {
 body {
     margin: 0 auto;
     border: 1pt solid #93a1a1;
-    padding: 4em;
+    padding: 3%;
     max-width: 20cm;
     background-color: #B0C4DE;
     font-size: 100%;
