@@ -1,0 +1,135 @@
+SCIENTIFIC OBJECTIONS TO EUGENICS
+How is eugenics scientifically invalid?
+
+Here’s a short summary, in case the rest is too long to read.
+
+    Breeding for only certain particular characteristics works, but tends to introduce other problems, so has never been considered a good idea for use on human beings, by anyone of significance.
+    Breeding for some general set of characteristics is liable to reduce evolutionary fitness (the ability to reproduce) in ways that are hard to foresee. The Nazis nevertheless tried this type of “positive” eugenics with their “lebensborn” program.
+    Breeding out genetic diseases is often a very slow process and doesn’t always work at all. Other early 20th century eugenicists tried this, before abandoning it due to the barbarity involved.
+
+Negative eugenics (eliminating certain characteristics) works up to a point, but as practised in the past, was barbaric. Positive eugenics (breeding for sets of characteristics) works, but produces a set of human beings who may or may not be properly equipped to deal with all possible circumstances that life may throw at them.
+
+The eugenics of the early 20th century got mixed up with pseudoscientific ideas about racial superiority, and that bit was entirely subjective. I can’t say it was scientifically invalid, because it wasn’t scientific.
+
+Is it scientifically valid or invalid that oranges are better than apples? There is no science in that; it’s just a matter of subjective judgement. The Nazis felt that ethnic Nordic-type Germans represented the best ‘race’ and combined that with their eugenics program, but there’s no science in their choice.
+
+However, this does point out a general problem with eugenics, which will tend to strike the reader of Francis Galton’s book Inquiries into Human Faculty and its Development (1883), where Galton coins the term “eugenics”.
+
+As part of his effort to connect appearance and behaviour, Galton presents us with composite photos of various categories of people. He has two composites of criminals for instance, which he says he cannot look at without shuddering (page 9, here: http://galton.org/books/human-faculty/text/human-faculty.pdf
+
+)
+
+He also has a composite of “11 privates and 12 officers”. To my mind this composite looks like a slightly crueller version of Freddy Mercury. Galton feels that we should tend to stop people from breeding if they don’t look or behave anything like the people of this composite (how we are to assess the women, I don’t think he mentions), and encourage people to breed if they look and behave somewhat like this.
+
+Freddy Mercury: Galton’s ideal man? Maybe he didn’t have quite the sort of personality that Galton had in mind though.
+
+We cannot simply breed for particular characteristics, because other characteristics would be lost, or would develop in odd ways. We see this with purebred dogs, which often end up with characteristic health problems due to having been bred for very particular desired characteristics.
+
+“What we don’t breed for, we breed against.”
+
+This leads to hybrid vigour in things that have been artificially bred, when they are randomly crossed. By artificially breeding things, we have weakened all sorts of characteristics that helped them survive in the wild. A random cross helps recover some of the lost characteristics. Still, a cross between a poodle and a Dachsund would be no match for a wolf in the wild, yet both are ultimately bred from wolves. The vigour of the original wild-adapted species is not completely recovered.
+
+Humans that were successfully bred to compete and reproduce in our society as it is now, might fall over badly if circumstances changed slightly. I think we can easily imagine this happening; we might breed against aggression for instance, seeking to reduce criminal tendencies, then find people cannot cope with war or disaster, when war or disaster strikes.
+
+Another example: in modern industrial societies, people tend to become overweight. That’s because we are adapted to withstand starvation conditions in pre-industrial societies. If we breed people so that they do not become overweight, and then conditions change so that we again face starvation, we may not survive.
+
+Since we cannot simply sensibly breed for things like IQ alone, we end up, like Hitler, having to make a subjective choice about who are the best people to breed from, based on multiple different characteristics. Hitler chose blond Aryan types with unswerving loyalty to Nazi ideology. Essentially we are looking at the people we choose, applying our subjective judgement, and saying “more of those, please; I think those people will get on better in the future than the people that currently exist”.
+
+Ethnic groups do have a tendency to do this “automatically” to some extent anyway. This is an aspect of in-group preference. We tend to reproduce with people who resemble ourselves.
+
+Eugenics, as imagined in the early 20th century, involved some person or group of people taking control of that process. This suffers from the same problem that central planning suffers from in communist economies; central planners lack detailed local knowledge, in this case of the people they propose to breed from. It also reduces the gene pool, but a committee cannot guess which genes will prove useful in the future.
+
+I think this highlights not merely Nazi caprice, but a fundamental problem with eugenics. Had the Nazi breeding program continued for long enough, it probably would have eventually bred people who were “unable to survive in the wild”; people who were so ruthless that other nations conspired to attack them out of necessity, or people who lacked the ability to think independently, perhaps.
+
+Eugenicists and the critics of eugenics in general were aware of this problem. G. K. Chesterton talks about it in his book Eugenics and Other Evils
+
+.
+
+H. G. Wells, as a Fabian socialist, was more or less in favour of eugenics. But he also saw that it couldn’t really work, as a positive breeding program, at least not with the state of knowledge at the time (and not now either). He and many others therefore argued that eugenics should be restricted to eliminating genetic diseases.
+
+It was known and understood at the time that a vast number of people would have to to be prevented from breeding in order to eliminate a genetic disease. I have no source for this, but I remember seeing a documentary on the Nazi eugenics program in which a woman who’d actually worked in it said that they expected it to take them nine hundred years to eliminate genetic diseases.
+
+Partly because of this, other arguments were frequently used in favour of what was basically still eugenics. Brits were sceptical of eugenics, so in the archives of the British parliament, when we see someone arguing in favour of sterilising people who are “feeble-minded”, we often see them arguing that this has nothing to do with eugenics or else is not motivated solely by eugenics, but merely saves on the cost of looking after possible progeny of those people, who were often quite likely to be “feeble-minded” themselves.
+
+The same problem does still arise today, with similar attached ethical dilemmas. It is not now usually considered ethical to solve the problem via surgical sterilisation.
+
+Early 20th century eugenicists weren’t even sure which diseases were genetic and which weren’t. Indeed, there isn’t a clear line to be drawn in every case. Many diseases are far more likely in certain genotypes than in others, but likely have an environmental cause that has not yet been identified. Multiple sclerosis would be an example of such a disease, but there are very many others. Most diseases that have environmental causes have some genetic susceptibility component. Not everyone is equally susceptible to any given disease.
+
+Leaving aside the barbarity of it, the Nazi attempt to eliminate certain genetic diseases could have worked for some diseases, but it really would have taken an extremely long time in the case of many diseases. In some cases, actual elimination of the disease would not have been possible.
+
+Since many genetic diseases involve recessive genes and you only get the disease if you get two copies of the gene, those genes could not have been completely eliminated by breeding, using the technology of the time. The Nazis didn’t always know which diseases arose in this way.
+
+Eliminating the negative effects of recessive genes (but not necessarily the genes themselves) can now be done via embryo selection techniques; this may sometimes have downsides, but the diseases are so horrible that there has been relatively little opposition to these techniques. In general, few people oppose the filtering out of disease-causing genes, where people would otherwise directly end up with the disease.
+
+Breeding Out Disease
+
+The key problem with eugenics was just the barbarity of it. In the near future it will be possible to select embryos on the basis of things like IQ, height and so on, and then we’ll be faced with the ethical question of whether to let couples conceiving via IVF to get into that or not. I don’t think it’s really very clear whether the consequences of it will be good or bad. It’s an untried experiment. Untried experiments have a certain danger attached to them.
+
+On the other hand, the percentage of couples conceiving via IVF is very low, so this won’t make much difference to gene pools overall. If IVF were to become extremely widespread and we were to allow this technique, we’d have to then wonder whether couples would be breeding a set of human beings that will actually succeed, or a set of human beings that will fall at the first serious hurdle. We know of ourselves, in our “wild” unbred state, that we have faced many challenges and have survived. We don’t know this of any artificially-bred collection of human beings, who would lack the full and diverse set of genes that presently exist in any given human population.
+
+Several people have commented that eugenics was not only a Nazi thing. I mention the Nazis a lot here for two reasons:
+
+    Nazi Germany was the only country, to my knowledge, to implement a “positive eugenics” (breeding) program.
+    They forcibly sterilised a greater number of people than any other country in the first half of the 20th century, during the “honeymoon” period of eugenics; perhaps around 300,000, although estimates vary. Probably around 1–3% of those people died as a result of their unnecessary operations.
+
+But yes, forced sterilisation (“negative eugenics) occurred in the USA in California and Indiana (other states implemented laws but didn’t apply them quite so enthusiastically), in Sweden, Denmark, Norway and Switzerland. And probably some others.
+
+Perhaps needless to say, some countries effectively attempted to implement a form of eugenics by just murdering people. Communist countries could be accused of that, but the case is not so clear for eugenic-like considerations playing a part.
+
+Historically the Nazis were latecomers to the eugenics table, but they more than made up for that with sheer enthusiasm.
+
+Eugenics as an idea had its inception in Britain, but Britain did not officially implement forced sterilisation, although the idea was discussed in parliament; America took up the idea and actually implemented forced sterilisation, then that was followed by Sweden opening the world’s first “Race Biology Institute” in Uppsala (1922). There then followed a raft of further eugenics laws implementing forced sterilisation in various countries, particularly around 1933.
+
+Laws were not all repealed till the 1970s or later, although the sheen clearly wore off the idea for most people, post-Naziism.
+
+But then there were other attempts at it around the globe. Often the motive was not completely clear: were forced sterilisations really performed with eugenics as a motive, for instance in India in the 1970s to name but one such country, or was the idea to reduce the quantity of people living in poverty? To what extent was compulsion really involved?
+
+None of this is the real subject of this answer, which merely tries to answer the question about the scientific validity of eugenics.
+
+
+
+
+
+
+
+What are the consequences of eugenics?
+
+The other answers point to flaws in the IQ system. That is all well and good, but as our ability to measure intelligence improves, it is almost certain a reliable standard will develop in the future.
+
+That being said, eugenics is not a good idea for society even excluding morality
+
+Are you familiar with the concept of vestigial organs? Simply put, they are organs that at one time science did not know the purpose of. It was assumed that they were merely leftovers of evolution and served no purpose. Thus they could be removed at will to no harm to the possessor.
+
+However, we have since learned that many of these organs do have important, if not obvious functions.
+
+The same in many ways is true of society. It might seem obvious at first that cutting off members of society that are less capable will improve society. But this is a flawed value system. You are putting emphasis on a single aspect of value, and on nothing else.
+
+It is simply bad engineering
+
+Look at any failed engineering design. Many will share a common trait. Overemphasis on one aspect at the expense of all others. The Maus tank for example had armor so thick that it couldn’t cross bridges.
+
+Richard, how does that apply to eugenics?
+
+Eugenics is a form of engineering. You are attempting to genetically engineer a better society. It plays by the same rules.
+
+A focus on intelligence ignores:
+
+-Empathy (actually bloody important, I’ll touch on that in a minute)
+
+-Creativity (Doing math fast != writing next hit novel, despite some correlation)
+
+-Cooperation (you know, the foundation of society)
+
+-Sanity (the smarter you are, the more likely you are to be crazy)
+
+-Contentment (If everyone legitimately wants to rule the world, non-stop rivalry will collapse the system. This has actually happened in cut-throat businesses)
+
+Even worse, eugenics focused on intelligence ignores human natural selection!
+
+It has been shown repeatedly throughout history that loners die, but groups survive. Humanity as a species survives this planet through cooperation, thus by nature we tend towards empathy. By encouraging a focus on intelligence at all cost, you are going to find an increase in psychopathy. These people do not cooperate, and any society built entirely of psychopaths is going to collapse. Some of the harshest, natural selection style work places have worse performance than those that encourage cooperation.
+
+Conclusion:
+
+We need a well-balanced group of people in order to have a healthy society. We need “dumb” ones who are content and happy with performing minor services. We need “genius” ones who are ambitious and hard-working. We need a whole lot of reasonably capable and cooperative people to keep the cogs working.
+
+Anything other than a well-balanced mix would be a disaster for society.

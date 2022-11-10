@@ -3,30 +3,58 @@ html, body, div, span, h1, h2, h3, p, a, img, strong, ol, ul, li { margin: 0; pa
 
 /*** universal ***/
 a {
-    color: blue;
+    color: mediumblue;
     font-weight: bold;
     line-height: 1.3em;
 }
-
 a.my-essays {
     color: red;
     font-weight: bold;
     line-height: 1.3em;
 }
-
 a.videos {
     color: green;
     font-weight: bold;
     line-height: 1.3em;
 }
+a:focus {
+    outline: thin dotted;
+}
 
+/* .navbar Is Used For <nav> */
+nav {
+    list-style-type: none;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    overflow: auto;
+    max-width: 1000px;
+    background-color: #0088bb;
+}
+
+li.category-page {
+    display: inline-block;
+    padding: 14px 16px;
+    text-align: center;
+    float: left;
+    font-size: 110%;
+    text-decoration: none;
+}
+li.category-page a {
+    text-decoration: none;
+    color: white;
+}
+li.category-page:hover {
+    background-color: #0fb4e7;
+    /* border-bottom: 2px solid white; */
+}
 a:hover {
     background: blue;
     color: white;
 }
-
-a:focus {
-    outline: thin dotted;
+li.category-page a:hover {
+    background: none;
+    color: white;
+    text-decoration: none;
 }
 
 p {
@@ -121,63 +149,8 @@ footer {
     font-size: 1.25em;
 }
 
-
-
-
-
-
-
-/* #category-bar, Used For <div> */
+/* #category-bar is used for <div> */
 #category-bar {
-    overflow: auto;
     box-sizing: border-box;
+    overflow: auto;
 }
-
-/* .navbar Is Used For <nav> */
-nav {
-    list-style-type: none;
-    margin: 0 auto 0 auto;
-    padding: 0;
-    overflow: hidden;
-    overflow: auto; /* Enable scrolling if the navbar has too much content */
-    max-width: 1000px;
-    background-color: #0fb4e7;
-}
-
-/* #navigation-pages-list is used for <ul> */
-/* nav.navigation-pages-list > li > a{ */
-/*     color:#fff; */
-/*     padding:15px 15px; */
-/*     outline:none; */
-/* } */
-
-li.category-page {
-    display: block;
-    /* display: inline; */
-    text-align: center;
-    float: left;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color on hover */
-li.category-page:hover {
-    background-color: #0088ff;
-    /* border-bottom: 2px solid white; */
-}
-/* .active { */
-/*     background-color: #04AA6D; */
-/*     color: white; */
-/* } */
-
-/* category-page is used for <li> */
-/* .category-page > li a { */
-/*     display: block; */
-/*     /\* width: 60px; *\/ */
-/*     background-color: #dddddd; */
-/*     color: white; */
-/*     border-bottom: 1px solid #555; */
-/*     text-align: center; */
-/*     padding: 14px 16px; */
-/*     text-decoration: none; */
-/* } */
