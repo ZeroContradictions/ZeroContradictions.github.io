@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-11-07 Mon 23:48 -->
+<!-- 2022-11-13 Sun 07:45 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>This Blog's Design</title>
@@ -198,7 +198,7 @@
 </head>
 <body>
 <div id="org-div-home-and-up">
- <a accesskey="h" href=""> UP </a>
+ <a accesskey="h" href="../index.html"> UP </a>
  |
  <a accesskey="H" href="../index.html"> HOME </a>
 </div><div id="content" class="content">
@@ -207,14 +207,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgd11ad49">1. Why This Blog Is Designed The Way It Is</a></li>
-<li><a href="#org11c455b">2. How I Created All The HTML And CSS Pages</a></li>
+<li><a href="#orgccb343f">1. Why This Blog Is Designed The Way It Is</a></li>
+<li><a href="#orgd05ed16">2. How I Created All The HTML And CSS Pages</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgd11ad49" class="outline-2">
-<h2 id="orgd11ad49"><span class="section-number-2">1.</span> Why This Blog Is Designed The Way It Is</h2>
+<div id="outline-container-orgccb343f" class="outline-2">
+<h2 id="orgccb343f"><span class="section-number-2">1.</span> Why This Blog Is Designed The Way It Is</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 This philosophy blog was intended to be structured similarly to the <a href="https://drudgereport.com">Drudge Report</a> and <a href="https://www.philosophybasics.com">PhilosophyBasics.com</a>, but with better and more modern HTML/CSS code.
@@ -230,23 +230,25 @@ One hope of mine is that the blog&rsquo;s homepage could evolve to be a substitu
 </div>
 </div>
 
-<div id="outline-container-org11c455b" class="outline-2">
-<h2 id="org11c455b"><span class="section-number-2">2.</span> How I Created All The HTML And CSS Pages</h2>
+<div id="outline-container-orgd05ed16" class="outline-2">
+<h2 id="orgd05ed16"><span class="section-number-2">2.</span> How I Created All The HTML And CSS Pages</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="../evolution-of-my-philosophy/timeline-and-evolution-of-my-philosophical-and-political-beliefs.html">When I first started thinking about philosophy</a> and typing down my philosophical thoughts in Vim, I wouldn&rsquo;t have predicted that it would be my first steps towards creating a blog. But the idea of doing such an endeavor did gradually emerge in my mind as the typed text that I had saved to my hard drive grew more and more every day, week, and month. I became particularly motivated to start this project when I saw other philosophy blogs and websites like <a href="http://www.justopia.org/">Justopia.org</a>, <a href="https://thewaywardaxolotl.blogspot.com/">The Wayward Axolotl</a>, <a href="https://www.philosophybasics.com/">Philosophy Basics</a>, and others, so I got the ball rolling with Emacs and made it happen.
 </p>
 <ol class="org-ol">
-<li>I have been typing down my philosophical beliefs for the last 4 years prior to creating this blog, all in plain text.</li>
-<li>I started off using Vim, but a year later, I switched to Emacs, and as such, I learned how to use Org-Mode, and I started converting all my old philosophy .txt files into .org mode files.</li>
+<li>I have been typing down my philosophical beliefs for the last 4 years prior to creating this blog, all in plain text. I started off typing them in Vim, but a year later, I switched to <a href="../miscellaneous/why-emacs-is-the-ultimate-computer-application.html">Emacs</a>, and as such, I learned how to use <a href="https://en.wikipedia.org/wiki/Org-mode">Org-Mode</a>, and I started converting all my old philosophy .txt files into .org mode files.</li>
 <li>Once my files were written in Org-Mode Markup Language, I could use Emacs to export the .org files into .html files, and those are what get displayed on this blog.</li>
 <li>I created the homepage&rsquo;s .html file by using this template that I found at joshcanhelp.com: <a href="https://www.joshcanhelp.com/the-drudge-report-style-3-column-link-page-template/">JoshCanHelp Drudge Report HTML Template</a>. I customized it with my own style and formatting, and replaced all the old HTML4 code with HTML5 code.</li>
-<li>I created the CSS page by taking the code embedded inside the .html template that I found, placing it in a separate .css file, and modifying it. I wanted to enhance the CSS file, so I learned how to read and write CSS from this Wikibooks link: <a href="https://en.wikibooks.org/wiki/Cascading_Style_Sheets">Wikibooks: Cascading Style Sheets</a>, and every time I had a CSS question that wasn&rsquo;t answered by Wikibooks, I googled it. W3 Schools, GeeksForGeeks, MDN Web Docs, and StackExchange were the most helpful sites.</li>
+<li>I created the CSS page by taking the code embedded inside the .html template that I found, placing it in a separate .css file, and modifying it. I wanted to enhance the CSS file, so I learned how to read and write CSS from this Wikibooks link: <a href="https://en.wikibooks.org/wiki/Cascading_Style_Sheets">Wikibooks: Cascading Style Sheets</a>, and every time I had a CSS question that wasn&rsquo;t answered by Wikibooks, I googled it. W3 Schools, GeeksForGeeks, MDN Web Docs, and StackExchange were the most helpful sites. My Firefox CSS Viewer browser extension also helped me out.</li>
 <li>I finished the copy-editing on all my .org files to make the HTML output of what I had written readable and presentable.</li>
 <li>I chose github.io to host this site, since it&rsquo;s capable of hosting raw .html pages.</li>
 <li>I learned how to use Git.</li>
 <li>I published this site.</li>
 </ol>
+<p>
+If the .org files contain content that I don&rsquo;t want to publish just yet, I can temporarily comment that stuff out before exporting the .org files to .html. This makes the organization of all my files much easier since I can keep what I&rsquo;m publishing and what I&rsquo;m not publishing all in the same place. I also use <a href="https://en.wikipedia.org/wiki/FreeFileSync">FreeFileSync</a> to further improve my organization since it makes it possible to separate my brainstorming directories from my GitHub directories, although using a .gitignore file instead could work just as well.
+</p>
 
 <p>
 However, I&rsquo;m not finished designing this website yet. Ideally, I would like to display an identical header and footer on each page, and make modifications to the website and webpages to make everything more navigable, but I will probably have to learn how to write some PHP code before I can make that happen.
@@ -256,7 +258,7 @@ However, I&rsquo;m not finished designing this website yet. Ideally, I would lik
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: ZeroContradictions</p>
-<p class="date">Created: 2022-11-07 Mon 23:48</p>
+<p class="date">Created: 2022-11-13 Sun 07:45</p>
 </div>
 </body>
 </html>
