@@ -43,7 +43,15 @@ li.category-page a {
     text-decoration: none;
     color: white;
 }
+li#category-page-current {
+    background-color: #0fb490;
+    /* border-bottom: 2px solid white; */
+}
 li.category-page:hover {
+    background-color: #0fb4e7;
+    /* border-bottom: 2px solid white; */
+}
+li#category-page-current:hover {
     background-color: #0fb4e7;
     /* border-bottom: 2px solid white; */
 }
