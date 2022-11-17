@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-17 Thu 00:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Glossary And Philosophical Neologisms</title>
+<meta name="author" content="ZeroContradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../miscellaneous.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Glossary And Philosophical Neologisms</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#intro">1. Why I&rsquo;m Writing This Glossary</a></li>
+<li><a href="#epistemology">2. Epistemology Glossary</a>
+<ul>
+<li><a href="#orgd5e40db">2.1. Definitions From: How-Before-Why-Problem</a></li>
+</ul>
+</li>
+<li><a href="#further-epistemology">3. Further Epistemology Glossary</a></li>
+<li><a href="#eugenics">4. Eugenics Glossary</a></li>
+<li><a href="#axiology">5. Axiology Glossary</a></li>
+<li><a href="#human-nature">6. Human Nature Glossary</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-intro" class="outline-2">
+<h2 id="intro"><span class="section-number-2">1.</span> Why I&rsquo;m Writing This Glossary</h2>
+<div class="outline-text-2" id="text-intro">
+<p>
+In my opinion, the term &ldquo;virtue-signaling&rdquo; should&rsquo;ve been first coined by Ted Kaczynski, and it&rsquo;s a shame that he wasn&rsquo;t the one to invent the term. He had a golden opportunity to invent the term and become known for inventing it when he was addressing it in his 1995 manifesto &ldquo;Industrial Society and Its Future&rdquo;. He repeatedly wrote in the manifesto that he just couldn&rsquo;t think of a better term to describe what he was trying to talk about. Kaczynski hit the nail on the hammer that [virtue signaling] is largely a result of the Power Process being disrupted in industrial-technological society, but unfortunately he referred to &ldquo;virtue signaling&rdquo; as &ldquo;leftism&rdquo; in his manifesto since the term had not been invented yet and he hadn&rsquo;t thought of it. This naturally drew a lot of criticism from leftists, but it would have drawn less hostile criticism if he would have been the first to coin the neologism, especially since it would&rsquo;ve communicated a more specific meaning and would&rsquo;ve been more easily differentiable as a different concept.
+</p>
+
+<p>
+There is a lot I could say about semantic fields and how the invention of new words for specific concepts leads to faster neurological retrieval of those concepts, but writing about it would overwhelm me at the moment. By coining my own neologisms, it will help to popularize this blog since it will gain more notoriety for being the first or among the first sources to have ever used the term, if it catches on in popular language.
+</p>
+
+<p>
+Many of the terms defined on this webpage were not invented by myself, but they are displayed here anyway for quick reference, and so that newcomers to this website can learn its jargon quickly.
+</p>
+</div>
+</div>
+
+<div id="outline-container-epistemology" class="outline-2">
+<h2 id="epistemology"><span class="section-number-2">2.</span> Epistemology Glossary</h2>
+<div class="outline-text-2" id="text-epistemology">
+<p>
+Disclaimer: I did not invent some of these terms, but I&rsquo;m providing definitions for them since they will be used frequently throughout this blog.
+</p>
+
+<ul class="org-ul">
+<li><b>Epistemology</b>: i</li>
+<li><b>Reason</b>: i</li>
+<li><b>Reasoning Skills</b>: the same thing as critical thinking skills, but better wording IMO.</li>
+<li><b>Empirically-Grounded Coherentism</b>: Coherentism where beliefs are ultimately based one&rsquo;s own empiricism.</li>
+<li><b>Epistemological Nexus</b>: (Currently no definition exists, but this term could be used to identify or describe <b>something</b> that previously had no specific name.</li>
+<li><b>Materialism</b> (Metaphysics): i</li>
+<li><b>Determinism</b>: i</li>
+<li><b>Metaphysical Free Will (MFW)</b>: Determinism is false (MFW is the opposite of determinism). This is essentially the same thing as <a href="https://en.wikipedia.org/wiki/Libertarianism_(metaphysics)">Libertarian Free Will</a>, which does not exist in reality, and can be disproven by proof by contradiction.</li>
+<li><b>Subconscious Epistemic Free Will (SEFW)</b>: The ability for you to <b>subconsciously choose</b> <b>something</b>, regardless of whether you can actually do it or not, and also regardless of whether determinism is true or false. Having subconscious choices is the exactly same thing as having needs, desires, or preferences. If SEFW exists, then value also exists. ALL sentient organisms have SEFW.</li>
+<li><b>Conscious Epistemic Free Will (CEFW)</b>: The ability for you to <b>consciously choose</b> to do what you want, regardless of whether you can actually do it or not, and also regardless of whether determinism is true or false. CEFW is more complex than SEFW since it requires more than just merely desiring things that would satisfy one&rsquo;s needs/desires. It also requires understandingly what exactly that you want, and knowing how to get it.</li>
+<li><b>Attainable Free Will (AFW)</b>: The two conditions that: 1. you can choose to do as you want, and 2. you are able to do it within your current circumstances. Since being conscious is a requirement in order to be &rsquo;capable&rsquo; of doing something, Attainable Free Will has to be conscious by definition, and it would be the case that Subconscious Attainable Free Will does not exist. Likewise,  Conscious Attainable Free Will is the exact same thing as AFW.</li>
+<li><b>&ldquo;We don&rsquo;t know what we don&rsquo;t know&rdquo;</b> / <b>Plato&rsquo;s Problem Clause</b>: &ldquo;According to all available evidence and my current knowledge, this is the correct conclusion | the correct conclusion is: &#x2026;&rdquo;</li>
+<li>*Humble Skepticism (or some other better term?): The willingness to be open to new ideas and the ability to admit when one is wrong.</li>
+<li><b>Cultural Education/Indoctrination/Instillation/&#x2026;</b>: &#x2026;</li>
+<li><b>Measurement Omission</b>: The process in which the human mind forms abstract patterns from its sensory input that form the basis for concepts. Measurement Omission is necessary for forming many concepts, namely <a href="https://en.wikipedia.org/wiki/Type%E2%80%93token_distinction">types from tokens</a> that one observes.</li>
+<li><b>Faith</b>: i</li>
+<li><b>Rationalized</b>: Attempting to make something seem reasonable, even if actually isn&rsquo;t. This term can be applied to both metaphysics/epistemology or ethical / political philosophy, and while it can always describe someone&rsquo;s attitude or actions towards facts about the former, it seems less applicable to apply it to people&rsquo;s ethical or political opinions since morality is subjective, and most of the time when people do rationalize their ethical or political opinions, it is typically done in an attempt to justify oneself according to the Law of Egoism, in which case self-justification or self-rationalization may be better terms.</li>
+<li><b>Self-Justification</b> / <b>Self-Rationalization</b>: The psychological tendency for life to justify its own existence, beliefs, and actions for the sake of its own continued existence, even if their beliefs are wrong, their existence doesn&rsquo;t accomplish anything meaningful according to rational beings, and their actions work against post-moral cooperation ethics.</li>
+</ul>
+</div>
+
+<div id="outline-container-orgd5e40db" class="outline-3">
+<h3 id="orgd5e40db"><span class="section-number-3">2.1.</span> Definitions From: How-Before-Why-Problem</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>&ldquo;<i>How?</i>&rdquo;: i</li>
+<li>&ldquo;<i>Why?</i>&rdquo;: i</li>
+<li>make-believe (uncountable):
+<ul class="org-ul">
+<li>(childish) The quality or act of pretending; acting as if something is true when in fact one knows it is not.</li>
+<li>(childish) The action of pretending or imagining that things are better than they really are.</li>
+</ul></li>
+<li>The Religious / Make-Believe Approach (for Understanding the Universe): Attempting to explain the &ldquo;<i>why</i>&rdquo; questions and then explain the &ldquo;<i>how</i>&rdquo; questions.</li>
+<li>The Scientific Approach (for Understanding the Universe): Attempting to explain <i>how</i> things work <b>before</b> explaining <i>why</i> things work the way they do (if one can even get to the latter part).</li>
+<li>The Principle Of Explaining &ldquo;<i>How</i>&rdquo;? Before &ldquo;<i>Why</i>&rdquo;?: i</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-further-epistemology" class="outline-2">
+<h2 id="further-epistemology"><span class="section-number-2">3.</span> Further Epistemology Glossary</h2>
+<div class="outline-text-2" id="text-further-epistemology">
+<ul class="org-ul">
+<li><b>Knowledge</b>: i</li>
+<li><b>Truth</b>: i</li>
+<li><b>True</b>: i</li>
+<li><b>False</b>: i</li>
+<li><b>Information Compression Theory of Truth</b>: i</li>
+<li><b>Pragmatist Theory of Truth</b>: i</li>
+<li><b>Correspondence Theory of Truth</b>: i</li>
+<li><b>Statement</b>: i</li>
+<li><b>Proposition</b>: i</li>
+<li><b>Formula</b>: i</li>
+<li><b>Sentence</b>: i</li>
+<li><b>Hypothesis</b>: i</li>
+<li><b>Conjecture</b>: i
+<ul class="org-ul">
+<li>If a claim is plausible, but there is no evidence for it, then the claim is a conjecture.</li>
+</ul></li>
+<li><b>Conclusion</b>: i</li>
+<li><b>Principle</b>: i</li>
+<li><b>Theory</b>: i
+<ul class="org-ul">
+<li>A theory is a set of sentences which is closed under logical implication. That is, given any subset of sentences {s<sub>1,s</sub><sub>2</sub>,&#x2026;} in the theory, if sentence r is a logical consequence of {s<sub>1,s</sub><sub>2</sub>,&#x2026;}, then r must also be in the theory.
+<ul class="org-ul">
+<li>Weisstein, Eric W. &ldquo;Theory.&rdquo; From MathWorld&#x2013;A Wolfram Web Resource. <a href="https://mathworld.wolfram.com/Theory.html">https://mathworld.wolfram.com/Theory.html</a></li>
+</ul></li>
+</ul></li>
+<li><b>Theorem</b>: Are theorems a type of tautology or are tautologies a type of theorem?
+<ul class="org-ul">
+<li>A sentence is a theorem iff it is the conclusion of a valid argument with the empty set of premises (so that any assignment of values to variables appearing in the sentence makes it true).</li>
+</ul></li>
+<li><b>Fact</b>: i</li>
+<li><b>Lemma</b>: A subsidiary or intermediate theorem in an argument or proof.</li>
+<li><b>Assumption</b>: i</li>
+<li><b>Explicit Premise</b>: i</li>
+<li><b>Implicit / Unstated Premise</b>:</li>
+<li><b>Axiom</b>: i</li>
+<li><b>Postulate</b>: The same thing as axiom, right?</li>
+<li><b>Corollary</b>: i</li>
+<li><b>Law</b>: i</li>
+<li><b>Definition of absurdity / &ldquo;the absurd&rdquo;</b>: The quality of being impossible to be conceptualized; something that makes no sense because it is contradictory.</li>
+<li><b>Confidence in X</b>: The belief that X is likely to be true.</li>
+<li><b>Confidence Level in Believing X</b>: The amount of confidence that the belief in X is likely to be true.</li>
+<li><b>Skepticism</b>: i</li>
+<li><b>(Blind) Faith</b>: High confidence in a belief, based on a perceived degree of warrant <b>without using reason</b>; the suspension of skepticism without using reason.</li>
+<li><b>Noun</b>: A word that is a person, place, thing, or idea.</li>
+<li><b>Noun Phrase</b>: A phrase that has a noun or pronoun as its head or performs the same grammatical function as a noun.</li>
+<li><b>Concept</b>: Anything that a person could possibly think of. Identifiably concepts have names or explicit descriptions attached to them, whereas unidentiable concepts do not. An identitifiable concept that has a word/name/referrant that can refer to it can also be classified as a noun and any semantic attributes that are attached to that noun.</li>
+<li><b>Property</b>: i</li>
+<li><b>Contradiction</b>: i</li>
+<li><b>Performative Contradiction</b>: i</li>
+<li><b>Tautology</b>: i</li>
+<li><b>Ontology</b>: i</li>
+<li><b>Basic Belief</b>: i;</li>
+<li><b>Self-Evident</b>: i;</li>
+<li><b>Three-Valued Logic</b>: A logical structure which does not assume the law of the excluded middle. Three truth values are possible: true, false, or undecided. There are 3072 such logics.</li>
+<li><b>Rational Ignorance</b>: i</li>
+<li><b>Philosophical Razor</b>: i</li>
+<li><b>Consciousness</b>: i</li>
+<li><b>Levels of Consciousness</b>: i</li>
+<li><b>Nature</b>: i
+<ul class="org-ul">
+<li>What is nature? Define it, especially as it relates to the Appeal to Nature Fallacy.</li>
+</ul></li>
+<li><b>Axiomatic Set Theory</b>: A version of set theory in which axioms are taken as uninterpreted rather than as formalizations of pre-existing truths.</li>
+<li><b>Paradox</b>: A statement which appears self-contradictory or contrary to expectations, also known as an antinomy.</li>
+<li><b>Antinomy</b>: A paradox or contradiction.</li>
+<li><b>Pseudoparadox</b>: an apparent paradox, such as the catalogue paradox, for which there is no underlying actual contradiction.</li>
+<li><b>Raison d&rsquo;être</b>: Reason for being. The claimed reason for the existence of something or someone; the sole or ultimate purpose of something or someone.</li>
+<li>i</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-eugenics" class="outline-2">
+<h2 id="eugenics"><span class="section-number-2">4.</span> Eugenics Glossary</h2>
+<div class="outline-text-2" id="text-eugenics">
+<ul class="org-ul">
+<li><b>Eugenics</b>: i</li>
+<li><b>Dirigiste (Top-down) Eugenics</b>: i</li>
+<li><b>Laissez-Faire (Bottom-up) Eugenics</b>: i</li>
+<li><b>Positive Eugenics</b>: i</li>
+<li><b>Negative Eugenics</b>: i</li>
+<li><b>Dysgenics</b>: i</li>
+<li><b>Reproduction License</b>: i</li>
+<li><b>Georgism</b>: i</li>
+<li><b>Racism</b>: i</li>
+<li><b>Nazism</b>: i</li>
+<li><b>Overpopulation</b>: i</li>
+<li><b>Malthusianism</b>: i</li>
+<li><b>Cornucopianism</b>: i</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-axiology" class="outline-2">
+<h2 id="axiology"><span class="section-number-2">5.</span> Axiology Glossary</h2>
+<div class="outline-text-2" id="text-axiology">
+<ul class="org-ul">
+<li><b>Morality</b>: i</li>
+<li><b>Post-Moralism</b>: The philosophical position that game theory is the best way to understand morality. It is similar to moral relativism since it posits that morality can only be perspective-dependent, but it&rsquo;s different since it also embraces the game-theoretic assumptions of selfishness and rationality.</li>
+</ul>
+
+<ul class="org-ul">
+<li><b>Moral Objectivism</b>: i</li>
+<li><b>Moral Relativism</b>: i</li>
+<li><b>Moral Nihilism</b>: i</li>
+<li><b>Moral Realism</b>: i</li>
+<li><b>Selfishness</b>: Acting for your own benefit, regardless of others.</li>
+<li><b>Altruism</b>: Acting for the benefit of others.</li>
+<li><b>Cynicalism</b>: Selfishness, except that you take what you can, and give nothing back. A cynical person does not use a moral accounting system.
+<ul class="org-ul">
+<li>NOTE: I am aware that I am defining Cynicalism in a non-standard way, but I am doing so because I feel that the most common definition of &ldquo;Cynicalism&rdquo; is too closely related to the definition for &ldquo;Selfishness&rdquo;, and I feel that &ldquo;Cynicalism&rdquo; would be better used to convey a shade of meaning that most people tend to mistakenly associate with the headword &ldquo;Selfishness&rdquo;. By explicitly defining &ldquo;Selfishness&rdquo; and &ldquo;Cynicalism&rdquo;, I can contrast the two definitions to show what &ldquo;Selfishness&rdquo; is not what most people think it is.</li>
+</ul></li>
+<li><b>Moral Accounting System</b> (MAS): The system of emotions in a human&rsquo;s brain (and some other species&rsquo; brains too) that motivates people to do give-and-take behavior, or exchanges of labor. Evolution caused the MAS to develop in humans since they are more reproductively successful when they engage in give and take behavior within human tribes. The MAS is the primary reason why people are not <b>cynical</b>, and the behavior that MASs encourage does not count as &ldquo;reciprocal altruism&rdquo; since &ldquo;reciprocal altruism&rdquo; is an oxymoron.</li>
+<li><b>Utopian Ideology</b>: Any naive ideology that people will believe in order to claim moral superiority and maintain the illusion of knowledge. <b>Utopian Ideologies</b> typically use the <b>Rhetoric of Exploitation</b>, simple-minded worldviews, moral narratives, visionary fantasies, and effective memetic propagations to delude people and spread the ideology. Read more: <a href="https://thewaywardaxolotl.blogspot.com/2014/07/the-communists-who-took-power-in.html?view=classic">Utopian Ideology</a></li>
+<li><b>The Rhetoric of Exploitation</b>: A Classic Tactic used by Utopian Ideologists to replace rationalist thinking with rhetoric and self-righteous nonsense. The key is to use selective metaphors and phrases and portray the &ldquo;oppressors&rdquo; as having agency and the &ldquo;victims&rdquo; as having no agency. Read more: <a href="https://thewaywardaxolotl.blogspot.com/2013/12/the-rhetoric-of-exploitation_21.html?view=classic">The Rhetoric of Exploitation</a></li>
+<li><b>Collectivism</b>: When individuals place the collective above the individual for the sake of the collective.</li>
+<li><b>Collaboration</b>: When rational individuals work together to achieve their self-interests, which just happen to be shared common goals, however, they <b>never</b> place the group above the individuals for the sake of the group.</li>
+<li>i</li>
+<li>i</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-human-nature" class="outline-2">
+<h2 id="human-nature"><span class="section-number-2">6.</span> Human Nature Glossary</h2>
+<div class="outline-text-2" id="text-human-nature">
+<ul class="org-ul">
+<li><b>Over-Socialized</b>: i. This term is thought to have been coined by the Unabomber.</li>
+<li><b>Power Process</b>: i. This term was coined by the Unabomber.</li>
+<li><b>Cooperationist Economics</b>: Economic policies that promote the greatest production possible according to the post-moral cooperationist ethics (and as such, a system of land rent and citizen&rsquo;s dividend is implied)</li>
+<li><b>Productionist Eugenics</b>: Eugenics based upon someone&rsquo;s ability to contribute to society.</li>
+<li><b>Pro-Diversity Eugenics</b>: Eugenics that aim to increase instances of favorable genetic diversity rather than reducing genetic diversity.</li>
+<li><b>Reason System</b>: A proposed alternative to democracy that might work better in some cases, or the name of debate software that I was conceptualizing about that would facilitate better debating</li>
+<li><b>Law of Egoism</b>: Corollary to the Law of Biological Evolution.</li>
+<li><b>Hedonism</b>: i</li>
+<li><b>Utilitarianism</b>: i</li>
+<li><b>Efilism</b>: A negative-utilitarian philosophy supported by the observation and analysis of determinism, materialism, and unintelligent design, taken to the conclusion of the <a href="https://en.wikipedia.org/wiki/Negative_utilitarianism#The_benevolent_world-exploder">Benevolent World-Exploder Proposal</a>.</li>
+<li><b>Unintelligent Design</b>: A range of biological phenomena characterized by Darwinian Evolution and unneccessary suffering, including the consumption, competition, reproduction, and death experienced by all sentient life.</li>
+<li><b>Benevolent World-Exploder Proposal</b>: An absolutist, negative-utilitarian ethic in favor of annihilating the Earth and euthanizing all its sentient life.</li>
+<li><b>Hedonistic Imperative</b>: An absolutist, negative-utilitarian ethic in favor of genetically re-engineering all sentient life to be devoid of suffering.</li>
+<li><b>Rothbardian Anarcho-Capitalism</b> (RAC): Anarcho-Capitalism as it was first conceived by Murray Rothbard. Under RAC, multiple political corporations can have overlapping authority on the same plot of territory.</li>
+<li><b>Private Cities Anarcho-Capitalism</b> (PCAC): Anarcho-Capitalism, except that only <i>one</i> political corporation can have control over a plot of territory. Different communities that favor different laws, legal codes, customs, and such would each form their own private city where their ideals are exclusively enforced.</li>
+<li><b>Autizmo</b>: The Internet slang sense of Autism.</li>
+<li><b>Autism</b>: Actual Autism Spectrum Disorder.</li>
+<li>i</li>
+<li>i</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ZeroContradictions</p>
+<p class="date">Created: 2022-11-17 Thu 00:56</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-16 Wed 04:58 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Post-Moralism, Selfishness, And Altruism FAQs</title>
+<meta name="author" content="ZeroContradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../realism-and-FAQs.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Post-Moralism, Selfishness, And Altruism FAQs</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#definitions">1. Definitions</a></li>
+<li><a href="#origin-of-morality">2. Where does morality come from?</a></li>
+<li><a href="#definition-of-selfishness">3. Wouldn&rsquo;t a more coherent definition of the word &ldquo;selfishness&rdquo; be &ldquo;pursuing your own interests at the expense of others&rdquo;?</a></li>
+<li><a href="#altruism-and-evolution">4. Isn&rsquo;t Altruism part of human evolution?</a></li>
+<li><a href="#helping-others">5. Doesn&rsquo;t helping out your friends and family count as altruism?</a></li>
+<li><a href="#cynicalism-is-not-selfishness">6. Isn&rsquo;t it misguided to have such a cynical view of human nature?</a></li>
+<li><a href="#living-post-moral">7. How do Post-Moralists live their lives?</a>
+<ul>
+<li><a href="#post-moralism-and-crimes">7.1. Aren&rsquo;t post-moral people more likely to commit theft, murder, rape, and other crimes?</a></li>
+</ul>
+</li>
+<li><a href="#selfishness-and-morality">8. Isn&rsquo;t selfishness immoral?</a></li>
+<li><a href="#selfishness-and-civilization">9. Wouldn&rsquo;t a selfish civilization fail?</a></li>
+<li><a href="#altruism-and-civilization">10. Isn&rsquo;t Altruism the foundation of human civilization?</a></li>
+<li><a href="#moral-progress">11. Isn&rsquo;t the moral progress that has been happening gradually throughout history evidence that morality is objective?</a></li>
+<li><a href="#morality-and-technology">12. Aren&rsquo;t technological advancement and improvements in the human standard of living driven by improving morality?</a></li>
+<li><a href="#morality-and-inferiors">13. Aren&rsquo;t people who treat their inferiors more moral than those who don&rsquo;t?</a></li>
+<li><a href="#the-NAP">14. Isn&rsquo;t the Libertarian Non-Aggression Principle (NAP) the objective origin of morality?</a></li>
+<li><a href="#utilitarianism">15. Isn&rsquo;t Negative Utilitarianism / Average Utilitarianism the best way to define morality?</a></li>
+<li><a href="#mirror-neurons">16. Doesn&rsquo;t morality ultimately originate from mirror neurons and the materialist / psychological conditions of the human brain?</a></li>
+<li><a href="#universally-preferable">17. Isn&rsquo;t morality the same thing as &ldquo;universally preferable behavior&rdquo;?</a></li>
+<li><a href="#not-an-appeal-to-people">18. Isn&rsquo;t it an appeal to the people fallacy to say that morality is subjective?</a></li>
+<li><a href="#not-a-subjectivist-fallacy">19. Isn&rsquo;t it a subjectivist fallacy to insist that morality is perspective-dependent?</a></li>
+<li><a href="#ethics-and-mathematics">20. Isn&rsquo;t Ethics like Mathematics, as in &ldquo;objective but not empirical&rdquo;?</a></li>
+<li><a href="#org275bb7e">21. i</a></li>
+<li><a href="#orgdb1e7b8">22. i</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<p>
+Note: I haven&rsquo;t finished writing this file yet.
+</p>
+
+<div id="outline-container-definitions" class="outline-2">
+<h2 id="definitions"><span class="section-number-2">1.</span> Definitions</h2>
+<div class="outline-text-2" id="text-definitions">
+<p>
+For clarity, these are the definitions that will be used throughout this FAQs post:
+</p>
+<ul class="org-ul">
+<li><b>Morality</b>: i</li>
+<li><b>Moral Objectivism</b>: i</li>
+<li><b>Moral Relativism</b>: i</li>
+<li><b>Post-Moralism</b>: The same as <b>Moral Relativism</b>, except i</li>
+<li><b>Moral Nihilism</b>: i</li>
+<li><b>Moral Realism</b>: i</li>
+<li><b>Selfishness</b>: i</li>
+<li><b>Altruism</b>: i</li>
+<li><b>Egoism</b>: i</li>
+<li><b>Moral Accounting System</b>: i</li>
+<li><b>Cynicalism</b>: Selfishness, except that you take what you can, and give nothing back.</li>
+<li><b>i</b>: i</li>
+<li><b>i</b>: i</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-origin-of-morality" class="outline-2">
+<h2 id="origin-of-morality"><span class="section-number-2">2.</span> Where does morality come from?</h2>
+<div class="outline-text-2" id="text-origin-of-morality">
+<p>
+Morality is a delusion:
+</p>
+<ul class="org-ul">
+<li><a href="../axiology/why-objective-morality-is-absolute-nonsense.html">Post-Moralism: Why Objective Morality is Absolute Nonsense</a></li>
+<li><a href="../axiology/how-technology-creates-the-illusion-of-moral-progress.html">How Technology Creates the Illusion of &ldquo;Moral Progress&rdquo;</a></li>
+<li><a href="https://thewaywardaxolotl.blogspot.com/2020/07/what-is-morality.html?view=classic">https://thewaywardaxolotl.blogspot.com/2020/07/what-is-morality.html?view=classic</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-definition-of-selfishness" class="outline-2">
+<h2 id="definition-of-selfishness"><span class="section-number-2">3.</span> Wouldn&rsquo;t a more coherent definition of the word &ldquo;selfishness&rdquo; be &ldquo;pursuing your own interests at the expense of others&rdquo;?</h2>
+<div class="outline-text-2" id="text-definition-of-selfishness">
+<p>
+No, not at all. i
+</p>
+
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-altruism-and-evolution" class="outline-2">
+<h2 id="altruism-and-evolution"><span class="section-number-2">4.</span> Isn&rsquo;t Altruism part of human evolution?</h2>
+<div class="outline-text-2" id="text-altruism-and-evolution">
+<p>
+No, it isn&rsquo;t. All of the so-called examples of altruism in human evolution are misunderstandings of how evolution actually works:
+</p>
+<ul class="org-ul">
+<li><a href="https://thewaywardaxolotl.blogspot.com/2015/04/altruism-and-selfishness.html?view=classic">Altruism and Selfishness</a></li>
+<li><a href="https://thewaywardaxolotl.blogspot.com/2014/04/bees-are-not-social.html?view=classic">Bees are not Altruistic</a></li>
+<li><a href="https://www.youtube.com/watch?v=K97OP2p9JTQ">Pathological Altruism</a></li>
+<li><a href="https://thewaywardaxolotl.blogspot.com/2019/07/kin-selection-theory-is-wrong.html?view=classic">Why Kin Selection Theory is Wrong</a></li>
+<li><a href="https://thewaywardaxolotl.blogspot.com/2014/04/family-and-society.html?view=classic">Family, Transfers of Energy, and Exchanges of Labor</a></li>
+</ul>
+<p>
+If anything, altruism is self-defeating, and any attempt to establish altruism in nature would be quickly erased as soon as evolution takes back the helm and reinstates selfishness.
+</p>
+</div>
+</div>
+
+<div id="outline-container-helping-others" class="outline-2">
+<h2 id="helping-others"><span class="section-number-2">5.</span> Doesn&rsquo;t helping out your friends and family count as altruism?</h2>
+<div class="outline-text-2" id="text-helping-others">
+<p>
+Usually no, and this is also a misunderstanding of what true altruism actually is. When people are helping out their family and friends, that is typically people doing transactions between their <i>moral accounting systems</i>. For more information, <a href="https://thewaywardaxolotl.blogspot.com/2014/04/family-and-society.html?view=classic">see: Family, Transfers of Energy, and Exchanges of Labor</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-cynicalism-is-not-selfishness" class="outline-2">
+<h2 id="cynicalism-is-not-selfishness"><span class="section-number-2">6.</span> Isn&rsquo;t it misguided to have such a cynical view of human nature?</h2>
+<div class="outline-text-2" id="text-cynicalism-is-not-selfishness">
+<p>
+I wouldn&rsquo;t equate selfishness to &ldquo;cynicalism&rdquo;, hence why I define the two differently. If someone is selfish, then they are prioritizing the pursuit of their self interests first and foremost, but they will often have to obey their moral accounting systems as a means to an end.
+</p>
+
+<p>
+I define cynicalism as being selfish, except that you don&rsquo;t adhere to your moral accounting system. If someone helps out a cynical person, the cynical person would accept the help, but then they wouldn&rsquo;t help the helper back.
+</p>
+
+<p>
+[Elaborate]
+</p>
+</div>
+</div>
+
+<div id="outline-container-living-post-moral" class="outline-2">
+<h2 id="living-post-moral"><span class="section-number-2">7.</span> How do Post-Moralists live their lives?</h2>
+<div class="outline-text-2" id="text-living-post-moral">
+<p>
+i
+</p>
+</div>
+
+<div id="outline-container-post-moralism-and-crimes" class="outline-3">
+<h3 id="post-moralism-and-crimes"><span class="section-number-3">7.1.</span> Aren&rsquo;t post-moral people more likely to commit theft, murder, rape, and other crimes?</h3>
+<div class="outline-text-3" id="text-post-moralism-and-crimes">
+<p>
+Nope, in a civilized society, ideologically post-moral people are no more likely to commit crime than purportedly &ldquo;altruistic&rdquo; people.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-selfishness-and-morality" class="outline-2">
+<h2 id="selfishness-and-morality"><span class="section-number-2">8.</span> Isn&rsquo;t selfishness immoral?</h2>
+<div class="outline-text-2" id="text-selfishness-and-morality">
+<p>
+No, there is no such thing as objective morality, so it would be nonsensical to insist that selfishness is &ldquo;objectively immoral&rdquo;. Selfishness is not subjectively immoral either because morality depends on perspective, and from the perspective of any selfish person, being selfish is the &ldquo;moral&rdquo; thing for them to be. Not to mention that being altruistic interferes with the balance of nature, and is ultimately self-defeating since altruistic genes and memes die off pretty quickly.
+</p>
+</div>
+</div>
+
+<div id="outline-container-selfishness-and-civilization" class="outline-2">
+<h2 id="selfishness-and-civilization"><span class="section-number-2">9.</span> Wouldn&rsquo;t a selfish civilization fail?</h2>
+<div class="outline-text-2" id="text-selfishness-and-civilization">
+<p>
+No, not at all. Collaboration, Cooperation, and Selfishness are the foundations of human civilization, not Altruism and Collectivism.
+</p>
+</div>
+</div>
+
+<div id="outline-container-altruism-and-civilization" class="outline-2">
+<h2 id="altruism-and-civilization"><span class="section-number-2">10.</span> Isn&rsquo;t Altruism the foundation of human civilization?</h2>
+<div class="outline-text-2" id="text-altruism-and-civilization">
+<p>
+No, not at all. Collaboration, Cooperation, and Selfishness are the foundations of human civilization, not Altruism and Collectivism.
+</p>
+</div>
+</div>
+
+<div id="outline-container-moral-progress" class="outline-2">
+<h2 id="moral-progress"><span class="section-number-2">11.</span> Isn&rsquo;t the moral progress that has been happening gradually throughout history evidence that morality is objective?</h2>
+<div class="outline-text-2" id="text-moral-progress">
+<p>
+No, it isn&rsquo;t. &ldquo;Moral progress&rdquo; is an illusion, and the creation of the illusion is explained in this blog post: <a href="../axiology/how-technology-creates-the-illusion-of-moral-progress.html">How Technology Creates the Illusion of &ldquo;Moral Progress&rdquo;</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-morality-and-technology" class="outline-2">
+<h2 id="morality-and-technology"><span class="section-number-2">12.</span> Aren&rsquo;t technological advancement and improvements in the human standard of living driven by improving morality?</h2>
+<div class="outline-text-2" id="text-morality-and-technology">
+<p>
+No, this is backwards. &ldquo;Moral progress&rdquo; is an illusion, and the illusion is created by technological advancements, as explained in this blog post: <a href="../axiology/how-technology-creates-the-illusion-of-moral-progress.html">How Technology Creates the Illusion of &ldquo;Moral Progress&rdquo;</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-morality-and-inferiors" class="outline-2">
+<h2 id="morality-and-inferiors"><span class="section-number-2">13.</span> Aren&rsquo;t people who treat their inferiors more moral than those who don&rsquo;t?</h2>
+<div class="outline-text-2" id="text-morality-and-inferiors">
+<p>
+No, and this is a very naive and misguided understanding of human nature. i
+</p>
+
+<p>
+[Elaborate]
+</p>
+</div>
+</div>
+
+<div id="outline-container-the-NAP" class="outline-2">
+<h2 id="the-NAP"><span class="section-number-2">14.</span> Isn&rsquo;t the Libertarian Non-Aggression Principle (NAP) the objective origin of morality?</h2>
+<div class="outline-text-2" id="text-the-NAP">
+<p>
+No, and for several reasons.
+</p>
+
+<p>
+[Elaborate]
+</p>
+
+<p>
+[Link other content here]
+</p>
+</div>
+</div>
+
+<div id="outline-container-utilitarianism" class="outline-2">
+<h2 id="utilitarianism"><span class="section-number-2">15.</span> Isn&rsquo;t Negative Utilitarianism / Average Utilitarianism the best way to define morality?</h2>
+<div class="outline-text-2" id="text-utilitarianism">
+<p>
+No. Utilitarianism is defined as maximizing &ldquo;well-being&rdquo;, and &ldquo;well-being&rdquo; is subjective. That&rsquo;s why there&rsquo;s many different types of Utiliarianism.
+</p>
+
+<p>
+[Elaborate]
+</p>
+
+<p>
+[The Connection Between The Various Types Of Utiliarianism With The Various Types Of Hedonism]
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Question</th>
+<th scope="col" class="org-left">Mainstream</th>
+<th scope="col" class="org-left">Efilism</th>
+<th scope="col" class="org-left">Zero Contradictions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">If Life Violent?</td>
+<td class="org-left">It shouldn&rsquo;t be</td>
+<td class="org-left">Yes, and life is worse thing ever.</td>
+<td class="org-left">Yes, but this isn&rsquo;t necessarily a &ldquo;bad&rdquo; thing.</td>
+</tr>
+
+<tr>
+<td class="org-left">Hedonism/Utilitarianism?</td>
+<td class="org-left">Positive &amp; Negative Utilitarianism</td>
+<td class="org-left">Supremacy of Negative Utilitarianism</td>
+<td class="org-left">N/A, they balance out, and it&rsquo;s subjective.</td>
+</tr>
+
+<tr>
+<td class="org-left">Altruism?</td>
+<td class="org-left">Yes.</td>
+<td class="org-left">Yes, absolutely.</td>
+<td class="org-left">No, because nature is intrinsically selfish.</td>
+</tr>
+</tbody>
+</table>
+
+
+<hr />
+<p>
+Most people and all Efilists are Utilitarians. The difference is that most people will assign some value to positive hedonism, whereas Efilists will assign either no value to positive hedonism or value it as completely subordinate to Utilitarianism (Positive Hedonism is only valuable if Negative Hedonism is satisfied). In addition, Efilists recognize that life is inherently violent.
+</p>
+
+<p>
+Positive and Negative Utilitarianism only differ by the type of hedonism that they favor.
+</p>
+<hr />
+</div>
+</div>
+
+<div id="outline-container-mirror-neurons" class="outline-2">
+<h2 id="mirror-neurons"><span class="section-number-2">16.</span> Doesn&rsquo;t morality ultimately originate from mirror neurons and the materialist / psychological conditions of the human brain?</h2>
+<div class="outline-text-2" id="text-mirror-neurons">
+<p>
+No, and there is plenty of evidence to demonstrate why this argument is false, fallacious, and not evidence in favor of &ldquo;moral realism&rdquo;.
+[elaborate]
+</p>
+</div>
+</div>
+
+<div id="outline-container-universally-preferable" class="outline-2">
+<h2 id="universally-preferable"><span class="section-number-2">17.</span> Isn&rsquo;t morality the same thing as &ldquo;universally preferable behavior&rdquo;?</h2>
+<div class="outline-text-2" id="text-universally-preferable">
+<p>
+No, and this is demonstrably false.
+[elaborate]
+</p>
+</div>
+</div>
+
+<div id="outline-container-not-an-appeal-to-people" class="outline-2">
+<h2 id="not-an-appeal-to-people"><span class="section-number-2">18.</span> Isn&rsquo;t it an appeal to the people fallacy to say that morality is subjective?</h2>
+<div class="outline-text-2" id="text-not-an-appeal-to-people">
+<p>
+No, Appeal to the People might be a valid fallacy for epistemological or scientific reasoning, but Appeal to the People is NOT a legitimate Fallacy when reasoning about ethical or political philosophy. Epistemology and Science are based on sensory knowledge, whereas Ethics and Politics are based on value knowledge. If anything, you&rsquo;re the one making a Fallacy here by trying to apply sensory knowledge outside of its scope of appropriate use. Realizing this greater philosophical understanding for myself was one of the reasons why I stopped being an Ancap a few years ago.
+</p>
+</div>
+</div>
+
+<div id="outline-container-not-a-subjectivist-fallacy" class="outline-2">
+<h2 id="not-a-subjectivist-fallacy"><span class="section-number-2">19.</span> Isn&rsquo;t it a subjectivist fallacy to insist that morality is perspective-dependent?</h2>
+<div class="outline-text-2" id="text-not-a-subjectivist-fallacy">
+<p>
+No, If you&rsquo;re arguing that this is a Subjectivist Fallacy, then you lack massive understanding about the limits of human reason. Truly objective conclusions are impossible when reasoning about morality because morality is based on value, and value is subjective. The Subjectivist Fallacy never applies when reasoning about morality.
+</p>
+
+<p>
+Moreover, it can simultaneously be true for both: 1. a zebra to value the preservation of its own life over the starvation and eventual death of a hungry lion, and 2. a starving lion to value eating the zebra over any pain that the zebra might feel from being eaten alive. There are absolutely no contradictions in correctly asserting that morality is subjective.
+</p>
+</div>
+</div>
+
+<div id="outline-container-ethics-and-mathematics" class="outline-2">
+<h2 id="ethics-and-mathematics"><span class="section-number-2">20.</span> Isn&rsquo;t Ethics like Mathematics, as in &ldquo;objective but not empirical&rdquo;?</h2>
+<div class="outline-text-2" id="text-ethics-and-mathematics">
+<p>
+No, and it is highly dishonest to claim that because: 1. mathematics IS empirical, and 2. morality is subjective. Here&rsquo;s a short proof that morality is subjective:
+</p>
+
+<blockquote>
+<p>
+All values ultimately originate from sentient organisms. If there are no sentient life in the universe, then there is no value either.
+Suppose we introduce only one sentient organism into a universe with no existing life. It follows that all of the value in the universe is necessarily rated according to the single perspective of that living organism. Now suppose we introduce a second living organism with completely opposite goals from the first organism (e.g. a predator-prey relationship for instance). Now all the value in the universe is ranked according to two diametrically-opposed points of view.
+&ldquo;Objective value&rdquo; is therefore an oxymoron. How could value conceivable be objective if it is necessarily dependent on the perspective of sentient organisms?
+Morality is based on value. If objective value doesn&rsquo;t exist, then objective morality doesn&rsquo;t exist either. Morality is therefore subjective since it is based on value, which is based on the perspectives(s) of sentient life. QED.
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org275bb7e" class="outline-2">
+<h2 id="org275bb7e"><span class="section-number-2">21.</span> i</h2>
+<div class="outline-text-2" id="text-21">
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdb1e7b8" class="outline-2">
+<h2 id="orgdb1e7b8"><span class="section-number-2">22.</span> i</h2>
+<div class="outline-text-2" id="text-22">
+<p>
+i
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ZeroContradictions</p>
+<p class="date">Created: 2022-11-16 Wed 04:58</p>
+</div>
+</body>
+</html>

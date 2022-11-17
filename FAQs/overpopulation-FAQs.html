@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-16 Wed 14:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Overpopulation and Malthusianism FAQs</title>
+<meta name="author" content="ZeroContradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../realism-and-FAQs.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Overpopulation and Malthusianism FAQs</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#malthusianism-and-overpop-threat">1. How is overpopulation a threat to humanity? Hasn&rsquo;t Malthusianism been debunked?</a></li>
+<li><a href="#PC-and-eugenics">2. How is Population Control Related to Eugenics?</a></li>
+<li><a href="#georgism-and-EPC">3. How is Georgism Related to Population Control?</a></li>
+<li><a href="#peak-at-12-billion">4. Won&rsquo;t the world population peak at 11-12 billion people around 2060?</a></li>
+<li><a href="#pops-arent-self-regulating">5. Aren&rsquo;t human populations self-regulating enough to the point where we won&rsquo;t have to worry about population control?</a></li>
+<li><a href="#nowhere-close-bogus">6. But humanity is nowhere close to overpopulation!</a></li>
+<li><a href="#overpop-and-family-structures">7. How would population control affect family structures and people&rsquo;s lives?</a></li>
+<li><a href="#difficulty-to-enforce">8. Won&rsquo;t population control be too difficult to enforce?</a></li>
+<li><a href="#unintended-consequences-bogus">9. Won&rsquo;t population control have unintended consequences?</a></li>
+<li><a href="#org4ee49c2">10. Isn&rsquo;t the Earth perfectly capable of supporting a growing 8+ billion population?</a>
+<ul>
+<li><a href="#factors-of-overpop">10.1. Isn&rsquo;t overpopulation only dependent on the number of people?</a></li>
+<li><a href="#infinite-carrying-capacity-bogus">10.2. But every environment has a virtually infinite carrying capacity!</a></li>
+</ul>
+</li>
+<li><a href="#decreasing-birth-rate">11. Why should we worry about overpopulation when the birth rate is decreasing?</a></li>
+<li><a href="#support-of-eugenicists">12. But Eugenicists support overpopulation theory!</a></li>
+<li><a href="#orgbf68a30">13. i</a></li>
+<li><a href="#orgb21f604">14. i</a></li>
+<li><a href="#dominion-argument">15. God will solve it / the dominion argument</a></li>
+<li><a href="#excuse-for-authoritarianism">16. Won&rsquo;t governments use overpopulation as an excuse to become more authoritarian?</a></li>
+<li><a href="#technology-wont-save-us">17. Why do we need to worry about overpopulation when technology and freer markets could save us instead?</a></li>
+<li><a href="#rights">18. Having children is a right.</a></li>
+<li><a href="#addressing-need-for-continuous-growth">19. Constant growth is necessary, without a population increase who will support the older generations?</a></li>
+<li><a href="#abortion">20. But abortion is evil!</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<p>
+Note: I haven&rsquo;t finished writing this FAQs file yet.
+</p>
+
+<div id="outline-container-malthusianism-and-overpop-threat" class="outline-2">
+<h2 id="malthusianism-and-overpop-threat"><span class="section-number-2">1.</span> How is overpopulation a threat to humanity? Hasn&rsquo;t Malthusianism been debunked?</h2>
+<div class="outline-text-2" id="text-malthusianism-and-overpop-threat">
+<p>
+No, Malthusianism has not been debunked. The simplest way to disprove Cornucopianism (the opposite of Malthusianism) is to point out that it is absurd to insist that there can be infinite population growth within a finite environment.
+</p>
+
+<p>
+Moreover, just because we haven&rsquo;t face overpopulation yet, that doesn&rsquo;t mean that it will never happen. Everything that was thought impossible, but was possible, only seemed impossible until it actually happened. Even though Thomas Malthus&rsquo;s predictions on the world&rsquo;s maximum population have been proven wrong so far ever since the Industrial Revolution began, that doesn&rsquo;t make Cornucopians right because it&rsquo;s equivalent to saying &ldquo;Well I haven&rsquo;t died yet, so I will never die&rdquo;, even though that is absurd. Everybody knows that life cannot live forever, and likewise, everyone ought to know that infinite growth is impossible within a finite environment.
+</p>
+
+<p>
+<a href="../libertarianism/malthusianism.html">For more information, see: Malthusianism Vs Cornucopianism: Why Cornucopianism is Wrong</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-PC-and-eugenics" class="outline-2">
+<h2 id="PC-and-eugenics"><span class="section-number-2">2.</span> How is Population Control Related to Eugenics?</h2>
+<div class="outline-text-2" id="text-PC-and-eugenics">
+<p>
+When a population reaches the carrying capacity of its environment, competition and eugenic selection occur in order to select the organisms that are the most reproductively successful in the scarce resources environment.
+</p>
+
+<p>
+By removing the selectionary pressures on humanity and limitations that have traditionally limited the carrying capacity of the human population, not only does this cause dysgenics from the removal of said selectionary pressures, but it also causes overpopulation. That said, if we achieved legally-enforced population control for humanity, then we would be placing artificial selectionary pressures that will increase the eugenic quality of the human population, that would otherwise never occur.
+</p>
+
+<p>
+If someone is going to be in favor of population control, ought to be in favor of bottom-up eugenics as well (top-down eugenics would fail the same reason why command economies fail). Many people today are against eugenics because it would require restricting some people from having children, but population control does the same thing and population control will be necessary in order to prevent catastrophic disasters from happening in the future, so this is not a good argument against eugenics.
+</p>
+
+<p>
+<a href="./EPC-FAQs.html">For more information, see: EPC and Reproduction Licenses FAQs</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-georgism-and-EPC" class="outline-2">
+<h2 id="georgism-and-EPC"><span class="section-number-2">3.</span> How is Georgism Related to Population Control?</h2>
+<div class="outline-text-2" id="text-georgism-and-EPC">
+<p>
+Georgist reasoning compliments the population control scheme that we want to implement extremely well, and not by coincidence if we expand the notion of &ldquo;natural resources&rdquo; to also include the finite supply of organisms that can exist within a finite environment. Since life is a zero-sum competition game for energy when a population reaches its carrying capacity, anybody who has children in such an environment would be doing so at the cost of preventing other people to have children as well. This is very similar to how anybody who occupies a parcel of land prevents other people from using that parcel. I explain this topic in more detail in my blog post: <a href="../economics/georgism-EPC-connection.html">Why Georgism And EPC Both Imply Each Other</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-peak-at-12-billion" class="outline-2">
+<h2 id="peak-at-12-billion"><span class="section-number-2">4.</span> Won&rsquo;t the world population peak at 11-12 billion people around 2060?</h2>
+<div class="outline-text-2" id="text-peak-at-12-billion">
+<p>
+No, because Demographic Transition Theory <a href="https://thewaywardaxolotl.blogspot.com/2017/01/demography-and-destiny.html?view=classic">(DTT) is wrong and cannot be trusted</a>. In a nutshell, genes and memes that promote high fertility will be selected for over the next several generations, and that will cause the world population to spike upwards again in a century or so.
+</p>
+</div>
+</div>
+
+<div id="outline-container-pops-arent-self-regulating" class="outline-2">
+<h2 id="pops-arent-self-regulating"><span class="section-number-2">5.</span> Aren&rsquo;t human populations self-regulating enough to the point where we won&rsquo;t have to worry about population control?</h2>
+<div class="outline-text-2" id="text-pops-arent-self-regulating">
+<p>
+No, because Demographic Transition Theory <a href="https://thewaywardaxolotl.blogspot.com/2017/01/demography-and-destiny.html?view=classic">(DTT) is wrong and cannot be trusted</a>. In a nutshell, genes and memes that promote high fertility will be selected for over the next several generations, and that will cause the world population to spike upwards again in a century or so.
+</p>
+</div>
+</div>
+
+<div id="outline-container-nowhere-close-bogus" class="outline-2">
+<h2 id="nowhere-close-bogus"><span class="section-number-2">6.</span> But humanity is nowhere close to overpopulation!</h2>
+<div class="outline-text-2" id="text-nowhere-close-bogus">
+<p>
+That is false. There are plenty of signs and examples of overpopulation in various regions of the world:
+</p>
+<ul class="org-ul">
+<li>In 2022, the world is currently facing a global food shortage caused by extreme heats, droughts, the Russian invasion of Ukraine (which caused supply shortages for wheat, corn, vegetable oil, and more), and other factors. Moreover, the world is likely to face a recession soon, which will further exacerbate the problem. Here&rsquo;s a Wikipedia article with more information: <a href="https://en.wikipedia.org/wiki/2022_food_crises">https://en.wikipedia.org/wiki/2022_food_crises</a></li>
+<li>Another example of overpopulation is how the world is likely to face water shortages in the next several decades.
+<ul class="org-ul">
+<li>Here&rsquo;s a video on the upcoming Water Crisis in China and Southeast Asia. Over a billion people face uncertainty regarding their future water supplies: <a href="https://www.youtube.com/watch?v=nRUc4gTO-PE">China&rsquo;s Upcoming Water Crisis</a>
+<ul class="org-ul">
+<li>For instance, Beijing has had to cap its maximum population to 23 million people: <a href="https://www.reuters.com/article/us-china-parliament-capital-idUSKBN0M215620150306">https://www.reuters.com/article/us-china-parliament-capital-idUSKBN0M215620150306</a></li>
+</ul></li>
+<li>Water Scarcity is also a growing problem in India: <a href="https://en.wikipedia.org/wiki/Water_scarcity_in_India">https://en.wikipedia.org/wiki/Water_scarcity_in_India</a></li>
+<li>And Iran: <a href="https://en.wikipedia.org/wiki/Water_scarcity_in_Iran">https://en.wikipedia.org/wiki/Water_scarcity_in_Iran</a></li>
+<li>And Africa: <a href="https://en.wikipedia.org/wiki/Water_scarcity_in_Africa">https://en.wikipedia.org/wiki/Water_scarcity_in_Africa</a></li>
+<li>And Mexico: <a href="https://en.wikipedia.org/wiki/Water_scarcity_in_Mexico">https://en.wikipedia.org/wiki/Water_scarcity_in_Mexico</a></li>
+<li>Not even developed countries like the US can guarantee that they won&rsquo;t be facing water shortages in the near future. Just look at this photo of Hoover Dam and Lake Mead:      <img src="https://www.8newsnow.com/wp-content/uploads/sites/59/2021/07/Lake-Mead-compare-levels-07052021.jpg?resize=876,492" alt="Lake-Mead-compare-levels-07052021.jpg?resize=876,492" /></li>
+</ul></li>
+<li>i
+<ul class="org-ul">
+<li>i</li>
+<li>i</li>
+<li>i</li>
+</ul></li>
+<li>i</li>
+<li>i</li>
+<li>i</li>
+</ul>
+<p>
+Based on a correct understanding of how evolution works, a recognition that Earth has finite resources (with the above examples and then some), and an understanding that infinite population growth is mathematically unsustainable when resources are finite, we support legally-enforced population control via reproduction licenses. We don&rsquo;t support population control because we want eugenics, we support it because we want humanity to avoid famines and the wars that would result from said famines.
+</p>
+</div>
+</div>
+
+<div id="outline-container-overpop-and-family-structures" class="outline-2">
+<h2 id="overpop-and-family-structures"><span class="section-number-2">7.</span> How would population control affect family structures and people&rsquo;s lives?</h2>
+<div class="outline-text-2" id="text-overpop-and-family-structures">
+<p>
+Since population control would cause us to move from the traditionally high fertility levels that human societies have historically had to relatively low fertility levels, this would necessitate redefining the role of women in society, compared to what it has been traditionally (raising children and housekeeping). Since a society with population control would also be a society where women raise fewer children on average, this would mean that women would be spending more time doing other things, like working paid jobs in the economy.
+</p>
+</div>
+</div>
+
+<div id="outline-container-difficulty-to-enforce" class="outline-2">
+<h2 id="difficulty-to-enforce"><span class="section-number-2">8.</span> Won&rsquo;t population control be too difficult to enforce?</h2>
+<div class="outline-text-2" id="text-difficulty-to-enforce">
+<p>
+If a meteor was heading towards Earth, would you argue that we shouldn&rsquo;t destroy or redirect it, merely because it would be &ldquo;too difficult&rdquo; to try that?
+[elaborate]
+</p>
+</div>
+</div>
+
+<div id="outline-container-unintended-consequences-bogus" class="outline-2">
+<h2 id="unintended-consequences-bogus"><span class="section-number-2">9.</span> Won&rsquo;t population control have unintended consequences?</h2>
+<div class="outline-text-2" id="text-unintended-consequences-bogus">
+<p>
+If you were on the Titantic and heading towards an incoming iceberg, would you argue that we shouldn&rsquo;t redirect the ship&rsquo;s route, merely because that could possibly have &ldquo;unintended consequences&rdquo;? This argument could be applied to literally anything, and if taken to its logical conclusion, that would mean that we should never try or do anything out of the fear that even the slightest risk never makes any action worthwhile. One might as well never get out of bed at that point.
+</p>
+
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4ee49c2" class="outline-2">
+<h2 id="org4ee49c2"><span class="section-number-2">10.</span> Isn&rsquo;t the Earth perfectly capable of supporting a growing 8+ billion population?</h2>
+<div class="outline-text-2" id="text-10">
+</div>
+<div id="outline-container-factors-of-overpop" class="outline-3">
+<h3 id="factors-of-overpop"><span class="section-number-3">10.1.</span> Isn&rsquo;t overpopulation only dependent on the number of people?</h3>
+<div class="outline-text-3" id="text-factors-of-overpop">
+</div>
+</div>
+
+<div id="outline-container-infinite-carrying-capacity-bogus" class="outline-3">
+<h3 id="infinite-carrying-capacity-bogus"><span class="section-number-3">10.2.</span> But every environment has a virtually infinite carrying capacity!</h3>
+<div class="outline-text-3" id="text-infinite-carrying-capacity-bogus">
+<p>
+(As utterly insane as this sounds, there really are some <a href="../images/cornucopian-claiming-infinite-carrying-capacity.jpg">lunatics out there who actually believe this</a>, so this has to be addressed.)
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-decreasing-birth-rate" class="outline-2">
+<h2 id="decreasing-birth-rate"><span class="section-number-2">11.</span> Why should we worry about overpopulation when the birth rate is decreasing?</h2>
+<div class="outline-text-2" id="text-decreasing-birth-rate">
+</div>
+</div>
+
+<div id="outline-container-support-of-eugenicists" class="outline-2">
+<h2 id="support-of-eugenicists"><span class="section-number-2">12.</span> But Eugenicists support overpopulation theory!</h2>
+<div class="outline-text-2" id="text-support-of-eugenicists">
+</div>
+</div>
+
+<div id="outline-container-orgbf68a30" class="outline-2">
+<h2 id="orgbf68a30"><span class="section-number-2">13.</span> i</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb21f604" class="outline-2">
+<h2 id="orgb21f604"><span class="section-number-2">14.</span> i</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+i
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-dominion-argument" class="outline-2">
+<h2 id="dominion-argument"><span class="section-number-2">15.</span> God will solve it / the dominion argument</h2>
+<div class="outline-text-2" id="text-dominion-argument">
+</div>
+</div>
+
+<div id="outline-container-excuse-for-authoritarianism" class="outline-2">
+<h2 id="excuse-for-authoritarianism"><span class="section-number-2">16.</span> Won&rsquo;t governments use overpopulation as an excuse to become more authoritarian?</h2>
+<div class="outline-text-2" id="text-excuse-for-authoritarianism">
+</div>
+</div>
+
+<div id="outline-container-technology-wont-save-us" class="outline-2">
+<h2 id="technology-wont-save-us"><span class="section-number-2">17.</span> Why do we need to worry about overpopulation when technology and freer markets could save us instead?</h2>
+<div class="outline-text-2" id="text-technology-wont-save-us">
+</div>
+</div>
+
+<div id="outline-container-rights" class="outline-2">
+<h2 id="rights"><span class="section-number-2">18.</span> Having children is a right.</h2>
+<div class="outline-text-2" id="text-rights">
+</div>
+</div>
+
+<div id="outline-container-addressing-need-for-continuous-growth" class="outline-2">
+<h2 id="addressing-need-for-continuous-growth"><span class="section-number-2">19.</span> Constant growth is necessary, without a population increase who will support the older generations?</h2>
+<div class="outline-text-2" id="text-addressing-need-for-continuous-growth">
+</div>
+</div>
+
+<div id="outline-container-abortion" class="outline-2">
+<h2 id="abortion"><span class="section-number-2">20.</span> But abortion is evil!</h2>
+<div class="outline-text-2" id="text-abortion">
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ZeroContradictions</p>
+<p class="date">Created: 2022-11-16 Wed 14:04</p>
+</div>
+</body>
+</html>

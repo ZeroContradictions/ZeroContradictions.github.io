@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-16 Wed 07:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophical Foundations Part 5B: Formal Logic And Reasoning Skills</title>
+<meta name="author" content="ZeroContradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../epistemology.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Philosophical Foundations Part 5B: Formal Logic And Reasoning Skills</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgfc47ffb">1. Formal Logic</a></li>
+<li><a href="#org52e689e">2. Philosophy Notes</a>
+<ul>
+<li><a href="#org1169fad">2.1. Necessary Condition</a></li>
+<li><a href="#org8f69999">2.2. Sufficient Condition</a></li>
+<li><a href="#orgdeb24d6">2.3. Any condition has four possibilities:</a></li>
+<li><a href="#orgdbd6470">2.4. Intrinsic Value</a></li>
+<li><a href="#org33497d7">2.5. Instrumental Value</a></li>
+<li><a href="#org058ad8d">2.6. Implicit / Suppressed Premises</a></li>
+<li><a href="#orgd7c0957">2.7. Justification And Explanation</a></li>
+<li><a href="#orgb6dcc82">2.8. Normative And Descriptive Claims</a>
+<ul>
+<li><a href="#org54de638">2.8.1. Descriptive Claims</a></li>
+<li><a href="#orge7795c8">2.8.2. Normative Claims</a></li>
+</ul>
+</li>
+<li><a href="#orgb26c9d7">2.9. Bayes&rsquo; Theorem</a></li>
+<li><a href="#org415a312">2.10. Correlation &amp; Causation</a></li>
+<li><a href="#org0ef8d82">2.11. Fallacies</a>
+<ul>
+<li><a href="#orgdcc50a0">2.11.1. Ad Hominem Fallacies are fallacies that attack the person making the argument instead of the argument itself.</a></li>
+<li><a href="#org2ad23d9">2.11.2. Affirming the Consequent</a></li>
+<li><a href="#orgb81a764">2.11.3. Denying the Antecedant</a></li>
+<li><a href="#orgcbf4e6c">2.11.4. Post Hoc Ergo Propter Hoc</a></li>
+<li><a href="#orgdf88e38">2.11.5. Appeal to the People</a></li>
+<li><a href="#org707e369">2.11.6. Begging the Question</a></li>
+<li><a href="#org48a5e40">2.11.7. False Equivocation</a></li>
+<li><a href="#orgd780112">2.11.8. Straw Man</a></li>
+<li><a href="#orgf3b35bd">2.11.9. Slippery Slope</a></li>
+<li><a href="#org71c519d">2.11.10. Red Herring</a></li>
+</ul>
+</li>
+<li><a href="#org1a09f36">2.12. Cognitive Biases</a></li>
+</ul>
+</li>
+<li><a href="#orgf5403d0">3. Tips For Proving Certain Things</a></li>
+<li><a href="#org4b4a414">4. Proofs</a>
+<ul>
+<li><a href="#orga2ed498">4.1. Types Of Proofs</a></li>
+</ul>
+</li>
+<li><a href="#org442f719">5. Universal Quantifier Proof Strategies</a>
+<ul>
+<li><a href="#org62abadf">5.1. To prove a universal statement (∀x.P(x)):</a></li>
+<li><a href="#orge1fce85">5.2. There are some variations of this. This strategy handles a universal quantifier over a restricted domain:</a></li>
+<li><a href="#org72a5a8f">5.3. This strategy combines the universal quantifier and implication strategies: this is a very common kind of statement.</a></li>
+</ul>
+</li>
+<li><a href="#org3b92108">6. Existential Quantifier Proof Strategies</a>
+<ul>
+<li><a href="#org2ff9a1e">6.1. To prove a statement of the form (∃x.P (x)):</a></li>
+<li><a href="#org4f9f008">6.2. To prove a statement of the form (∃x ∈ A.P (x)):</a></li>
+</ul>
+</li>
+<li><a href="#orgd8754cd">7. Summary Of Logic</a></li>
+<li><a href="#org69a38f3">8. Modal Logics</a></li>
+<li><a href="#org67acb58">9. Understanding Necessity And Possibility</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfc47ffb" class="outline-2">
+<h2 id="orgfc47ffb"><span class="section-number-2">1.</span> Formal Logic</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Formal logic starts with stating our language, logic, definitions, axioms, and underlying assumptions.</li>
+<li>An argument is a list of premises followed by a conclusion.
+<ul class="org-ul">
+<li>A valid argument is an argument such that any substitution of values for variables in it which makes the premises true also makes the conclusion true.
+<ul class="org-ul">
+<li>If any assignments of values to variables appearing in the argument makes all the premises true, then it also makes the conclusion true.
+<ul class="org-ul">
+<li>Example: truth tables and/or logic.</li>
+<li>&ldquo;Snow is white, and grass is green.&rdquo;</li>
+</ul></li>
+</ul></li>
+<li>If an argument is a logical rule, that means that it is valid (and important as a basic form of valid argument).</li>
+<li>Important: The strategy for proving an implication is to assume A for the sake of argument, then deduce B.
+<ul class="org-ul">
+<li>When you finish this argument, you have not proved B (nor have you proved any of the intervening steps), because they all depend on the assumption A that you made for the sake of argument. But you have proved A → B.</li>
+<li>Be careful with definitions. Assume inclusive OR unless stated otherwise. Lawyers make great use and/or to avoid ambiguity.</li>
+</ul></li>
+<li>We give any statement we can use a line number so we can refer to it, when we are being very formal.</li>
+<li>When we write goals, the goal is just a comment. Notice that we do not give it a line number, since we cannot use it.</li>
+<li>The lines using the assumption A are indented, and we need to remember that once we have proved A → B we are no longer entitled to refer to anything in that block of statements, because all those lines depend (presumably) on the assumption A which we are no longer making.</li>
+<li>A ↔ B can be defined as (A → B) ∧ (B → A).</li>
+<li>If we have proved A↔B, we have shown that A and B are effectively saying the same thing, so we may freely substitute A for B and B for A.
+<ul class="org-ul">
+<li>For example, because the de Morgan law ¬(A ∧ B) ↔ (¬A ∨ ¬B) is a theorem, it is valid to replace ¬(A ∧ B) with ¬A ∨ ¬B or vice versa in a more complicated logical expression as a step in a proof.</li>
+<li>However, we can <b>not</b> use this rule if we are proving the law itself because then we would be assuming what we are trying to prove.</li>
+</ul></li>
+<li>To prove a statement ¬P , assume P and reason to ⊥.
+<ul class="org-ul">
+<li>Negation introduction is the direct strategy for proving a negative statement, but Reductio Ad Absurdum is more general.</li>
+</ul></li>
+<li>Since having two conflicting statement is necessary to generate a contradiction, it follows that the rule of contradiction ((P ^ ¬P) -&gt; ⊥) is the only way to prove the absurd, and this is the case.</li>
+<li>(P v Q) &lt;-&gt; (¬P -&gt; Q) &lt;-&gt; (¬Q -&gt; P)</li>
+<li>Anything can be deduced from ⊥, which represents a fixed false statement.</li>
+<li>All the binary operators except → are associative.</li>
+<li>Mixed expressions in ↔ and ⊕ actually have the same meaning no matter how parentheses are placed.</li>
+<li>There are always 2<sup>n</sup> possibilities regarding the truthfulness of a set of n premises.</li>
+<li>Propositions that are logically equivalent (logical equivalence can be elegantly displayed on truth tables) can be substituted for one another.</li>
+<li>If we can prove that A ↔ B is a tautology (where A and B are complicated expressions) then we have also proved that A and B are logically equivalent.</li>
+<li>To model the way that we actually reason in mathematics (or any other context for that matter) we need all the operations we have listed. We don’t gain by reducing the number of operations at the price of making logical sentences longer and harder to understand.</li>
+<li>Technical Remark about Letters:
+<ul class="org-ul">
+<li>Letters from late in the alphabet (P, Q, R) are single propositions with no internal structure.</li>
+<li>Letters from earlier in the alphabet (A, B, C) stand for arbitrary sentences which might have complicated structure. P for example is not a theorem (because it can be either true or false) whereas A might be a theorem (it might be P ∨ ¬P on closer inspection).</li>
+</ul></li>
+<li>A, B ⊢ A ∧ B is the linear notation for the traditional argument notation with the horizontal bar above the conclusion.
+<ul class="org-ul">
+<li>The word &rsquo;and&rsquo; doesn&rsquo;t always have the same meaning; sometimes it connects noun phrases, clauses, or is part of a noun phrase.
+<ul class="org-ul">
+<li>Examples:
+<ul class="org-ul">
+<li>3 and 7 are prime numbers. (^)</li>
+<li>3 is a prime number, and 7 is a prime number. ^</li>
+<li>3 and 7 are relatively prime. u and v are linearly independent. a and b are parallel. r, s, and t are parallel. ≠^≠</li>
+<li>Demonstrating this with venn diagram.</li>
+</ul></li>
+</ul></li>
+<li>Proof by contrapositive assumes the conclusion is false and tries to prove the hypothesis true.</li>
+<li>Example Logic Statements
+<ul class="org-ul">
+<li>If you clean your room, we will go out for pizza.</li>
+<li>If you don&rsquo;t wash the car, you won&rsquo;t get to drive it.</li>
+</ul></li>
+<li>Interesting Logic Statements
+<ul class="org-ul">
+<li>If Napoleon conquered China, then 2+2=5.</li>
+<li>If Lee won at Gettysburg, the South would have won the Civil War.</li>
+<li>If Lee won at Gettysburg, then the capital of West Virginia is Richmond.</li>
+<li>If Lee won at Gettysburg, then Caesar conquered Germany.
+<ul class="org-ul">
+<li>The logical comical absurdity proposition implies that conditional proposition require hypotheses to be in the past and conclusions to be in the future.</li>
+</ul></li>
+</ul></li>
+<li>To prove an conditional: A -&gt; B:
+<ul class="org-ul">
+<li>1) Assume A (for the same of argument)</li>
+<li>2) Prove B, A -&gt; B (while abandoning part of the argument depending on conditional assumption); deduction 1 - n.</li>
+</ul></li>
+<li>To prove a biconditional: A &lt;-&gt; B:
+<ul class="org-ul">
+<li>1) Assume A</li>
+<li>2) Prove B</li>
+<li>3) Assume B</li>
+<li>4) Prove A</li>
+<li>5) By biconditional theorem, Part I and Part II</li>
+</ul></li>
+<li>The inverse and the converse will always be logically equivalent to each other since the inverse is the contrapositive of the converse.</li>
+<li>The statement and the contrapositive will always be logically equivalent to each other.</li>
+</ul></li>
+<li>Anything implies a true statement, and a false statement implies anything, and these two considerations are enough to fill in the truth table for implication.
+<ul class="org-ul">
+<li>And true statements can only imply other true statements.</li>
+</ul></li>
+<li>The mathematical sense of implication has nothing to do with causality or counterfactual speculations.
+<ul class="org-ul">
+<li>Proofs by Contradiction have to be used when there is nothing else that could be used. There is no option because they are the only logical strategy left available. The good news is that they can be used to prove a statement of any form.</li>
+<li>The conclusion that is arrived at by proof by contradiction is ¬(Assumption).</li>
+</ul></li>
+<li>Any proposition can be created using only NAND or only NOR logical operators. It is also the case that any proposition can be created using only the AND, OR, and NOT operators.
+<ul class="org-ul">
+<li>When given an OR statement as a premise, proofs by cases will often be needed. Another common way to deal with OR statements is to assume that one of the operands is false, and prove it for the other operand.
+<ul class="org-ul">
+<li>And when you have to prove a statement containing an OR operator, you can often just prove only one of the operands and apply the addition rule.</li>
+</ul></li>
+<li>The rules of inference are basically combinations of logical forms</li>
+</ul></li>
+<li>The probability of two events occurring together (in &ldquo;conjunction&rdquo;) is always less than or equal to the probability of either one occurring alone—formally.</li>
+<li>NOR is expressed with the English phrase &ldquo;Neither&#x2026; Nor&rdquo;. NAND does not have an equivalent English phrase.</li>
+<li>NOTE: Multiple conclusions can be drawn from the same set of premises.</li>
+<li>Expanding mathematical definitions (e.g. odd = 2k+1, tree = connected + acyclic) is an important logical move.
+<ul class="org-ul">
+<li>It is also a good idea to introduce separate witness variables that are different from the letters used in the definitions.</li>
+</ul></li>
+<li>Arbitrary objects are introduced when proving a universal statement or introducing a witness to an existential assumption.</li>
+<li>i</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org52e689e" class="outline-2">
+<h2 id="org52e689e"><span class="section-number-2">2.</span> Philosophy Notes</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org1169fad" class="outline-3">
+<h3 id="org1169fad"><span class="section-number-3">2.1.</span> Necessary Condition</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Q is true only if P is true.</li>
+<li>&rsquo;P is necessary for Q because P being true is needed for Q to be true&rsquo;</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8f69999" class="outline-3">
+<h3 id="org8f69999"><span class="section-number-3">2.2.</span> Sufficient Condition</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>If R is true, then S is true.</li>
+<li>&rsquo;R is sufficient for S because R is all you need to get S&rsquo;</li>
+<li>&rsquo;R is enough to get S&rsquo;</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdeb24d6" class="outline-3">
+<h3 id="orgdeb24d6"><span class="section-number-3">2.3.</span> Any condition has four possibilities:</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>Necessary &amp; Sufficient:</li>
+<li>Not Necessary &amp; Sufficient:</li>
+<li>Necessary &amp; Not Sufficient:</li>
+<li>Not Necessary &amp; Not Sufficient:</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdbd6470" class="outline-3">
+<h3 id="orgdbd6470"><span class="section-number-3">2.4.</span> Intrinsic Value</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>Something that is valued for its own sake.</li>
+<li>Some things can have both instrumental and intrinsic value.</li>
+<li>Anything that is done for fun has intrinsic value.
+<ul class="org-ul">
+<li>So if knowledge is being learned for fun, then knowledge also has intrinsic value. This is why recreational mathematics exists.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org33497d7" class="outline-3">
+<h3 id="org33497d7"><span class="section-number-3">2.5.</span> Instrumental Value</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>Something that is valued as a means to an end.</li>
+<li>The distinction is important to make sure that we have our priorities in order, that is, that we don&rsquo;t incorrectly value instrumental value over intrinsic value.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org058ad8d" class="outline-3">
+<h3 id="org058ad8d"><span class="section-number-3">2.6.</span> Implicit / Suppressed Premises</h3>
+<div class="outline-text-3" id="text-2-6">
+<ul class="org-ul">
+<li>These are premises that aren&rsquo;t explicitly stated since they are obviously understood.</li>
+<li>One suggestion is that premises can remain suppressed if they are obvious and uncontroversial.
+<ul class="org-ul">
+<li>The problem with this is that controversy is relative to people. Democracy for example is uncontroversial in the Western world, even though it is inferior to reason.</li>
+<li>In mathematics, proofs often make statements that utilize basic properties of arithmetic without explicitly stating these properties.
+<ul class="org-ul">
+<li>It also depends on what level the proofs are being written at and the context as well.</li>
+<li>This is done because the proofs would be harder to follow if these properties are widely known and implicitly understood.</li>
+<li>So, in mathematics, it is okay to not explicitly state extremely simple details in some cases if it is annoying to state them and they will be understood.</li>
+<li>Proofs are valid mathematical arguments written for the purpose of convincing the readers that the conclusions are valid given the premises.
+<ul class="org-ul">
+<li>Since their goal is to persuade the reader, they should be written in formats that are clear and easy to follow.</li>
+</ul></li>
+</ul></li>
+<li>It definitely depends on the context. It is okay to keep suppressed premises in mathematics in several cases, provided that they were already proven earlier.</li>
+</ul></li>
+<li>If we could only choose between keeping premises implicit or making them explicit, it is better to make them explicit, especially if they would reveal invalid premises or contradictions.</li>
+<li>The only time when it is beneficial to keep premises suppressed is when:
+<ol class="org-ol">
+<li>The premises are already obvious to begin with, AND</li>
+<li>The premises can be verified using sound arguments, AND</li>
+<li>Making the premises explicit would make the argument harder to follow, AND</li>
+<li>The argument would remain valid even if the premises were made explicit.</li>
+</ol></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd7c0957" class="outline-3">
+<h3 id="orgd7c0957"><span class="section-number-3">2.7.</span> Justification And Explanation</h3>
+<div class="outline-text-3" id="text-2-7">
+<ul class="org-ul">
+<li>If our beliefs and actions are justified, we typically are not criticized for them.</li>
+<li>How does one explain what they believe?</li>
+<li>How does one justify what they believe?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb6dcc82" class="outline-3">
+<h3 id="orgb6dcc82"><span class="section-number-3">2.8.</span> Normative And Descriptive Claims</h3>
+<div class="outline-text-3" id="text-2-8">
+</div>
+<div id="outline-container-org54de638" class="outline-4">
+<h4 id="org54de638"><span class="section-number-4">2.8.1.</span> Descriptive Claims</h4>
+<div class="outline-text-4" id="text-2-8-1">
+<ul class="org-ul">
+<li>Are statements that descibe something.</li>
+<li>They express an understanding of how something is or could be.</li>
+<li>They don&rsquo;t make evaluations.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge7795c8" class="outline-4">
+<h4 id="orge7795c8"><span class="section-number-4">2.8.2.</span> Normative Claims</h4>
+<div class="outline-text-4" id="text-2-8-2">
+<ul class="org-ul">
+<li>Are statements that express an evaluation or judgement.</li>
+<li>Are often implicit.</li>
+<li>Relative to a standard or ideal.</li>
+<li>Words that are commonly associated with normative claims are: should, shouldn&rsquo;t, right, wrong, and many more.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb26c9d7" class="outline-3">
+<h3 id="orgb26c9d7"><span class="section-number-3">2.9.</span> Bayes&rsquo; Theorem</h3>
+<div class="outline-text-3" id="text-2-9">
+<ul class="org-ul">
+<li>i</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org415a312" class="outline-3">
+<h3 id="org415a312"><span class="section-number-3">2.10.</span> Correlation &amp; Causation</h3>
+<div class="outline-text-3" id="text-2-10">
+<ul class="org-ul">
+<li>Positive Correlations: When events frequently occur together.</li>
+<li>Negative Correlations: The occurence of one event makes it unlikely that the other event will not occur.</li>
+<li>Correlation ≠ Causation
+<ul class="org-ul">
+<li>Alternative explanations include common/alternative causes and coincidences.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0ef8d82" class="outline-3">
+<h3 id="org0ef8d82"><span class="section-number-3">2.11.</span> Fallacies</h3>
+<div class="outline-text-3" id="text-2-11">
+<ul class="org-ul">
+<li>Formal fallacies defects in the logical forms of arguments, not the content.</li>
+<li>Informal fallacies defects in the content of arguments, not the logical forms. These occur when the premises do not support the conclusion.</li>
+<li>The Fallacy Of Composition arises when we <b>assume</b> that the whole has the same properties as its parts. It is an informal fallacy.</li>
+<li>The Fallacy Of Division arises when we <b>assume</b> that the parts of some whole have the same properties as the whole. It is an informal fallacy, and it is the opposite of the fallacy of composition.</li>
+</ul>
+</div>
+<div id="outline-container-orgdcc50a0" class="outline-4">
+<h4 id="orgdcc50a0"><span class="section-number-4">2.11.1.</span> Ad Hominem Fallacies are fallacies that attack the person making the argument instead of the argument itself.</h4>
+<div class="outline-text-4" id="text-2-11-1">
+<ol class="org-ol">
+<li>Abusive Ad Hominem: Attacks the speaker directly.</li>
+<li>Guilt By Association: Whenever one tries to argue against a certain view by pointing out that some unsavory person is likely to have agreed with it. Example: Nazis drank water, but that doesn&rsquo;t mean that water is bad.</li>
+<li>Genetic Fallacy: Condemns the origin of a claim instead of the claim itself. Alternatively, the origins of a claim may be used to wrongly support the claim instead of giving valid reasons to support it instead.</li>
+<li>Circumstantial: Claims that the speaker is only advancing the argument to advance their own interests (attacking the speaker&rsquo;s circumstances instead).</li>
+<li>Tu Quoque: Accuses a person of acting in a manner that contradicts some position that they support, and concludes that their view is worthless.
+Although pointing out hypocrisy (tu quoque) and conflicts of interest (circumstantial ad hominems) don&rsquo;t attack the arguments directly, they are still worth pointing out. If the opponent can&rsquo;t defend their apparent hypocrisy, then they have a contradiction. And if they have a conflict of interest, then the argument should probably be evaluated by someone with no conflict.</li>
+</ol>
+
+<p>
+Examples of the Ad Hominem Fallacy in Politics
+</p>
+<ul class="org-ul">
+<li>Donald Trump&rsquo;s supporters include KKK grand wizards and white nationalists.</li>
+<li>Donald Trump&rsquo;s tower was built with Chinese steel (tu quoque).</li>
+<li>i</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2ad23d9" class="outline-4">
+<h4 id="org2ad23d9"><span class="section-number-4">2.11.2.</span> Affirming the Consequent</h4>
+<div class="outline-text-4" id="text-2-11-2">
+<ul class="org-ul">
+<li>i</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb81a764" class="outline-4">
+<h4 id="orgb81a764"><span class="section-number-4">2.11.3.</span> Denying the Antecedant</h4>
+<div class="outline-text-4" id="text-2-11-3">
+<ul class="org-ul">
+<li>i</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcbf4e6c" class="outline-4">
+<h4 id="orgcbf4e6c"><span class="section-number-4">2.11.4.</span> Post Hoc Ergo Propter Hoc</h4>
+<div class="outline-text-4" id="text-2-11-4">
+<ul class="org-ul">
+<li>&ldquo;After this, Wherefore, Because of this&rdquo;
+Example: If my phone was always working fine before, but started having problems with the battery life and/or the percentage indicators after the update, I might be making this fallacy.
+<ul class="org-ul">
+<li>I checked a few weeks before and the battery health was at 98% of its original maximum, which makes it unlikely that there were problems with the battery.</li>
+<li>I don&rsquo;t know of anything that might have caused problems with the battery.</li>
+<li>To the best of my knowledge,</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdf88e38" class="outline-4">
+<h4 id="orgdf88e38"><span class="section-number-4">2.11.5.</span> Appeal to the People</h4>
+<div class="outline-text-4" id="text-2-11-5">
+<ul class="org-ul">
+<li>Establishes the truth of some claim P on the basis that a lot of people believe P to be true.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org707e369" class="outline-4">
+<h4 id="org707e369"><span class="section-number-4">2.11.6.</span> Begging the Question</h4>
+<div class="outline-text-4" id="text-2-11-6">
+<ul class="org-ul">
+<li>When trying to understand the why the logical form of circular reasoning is invalid, recall that a false statement implying a chain of false statements does not generate a true statement.
+<ul class="org-ul">
+<li>So although F -&gt; F is T on the truth table when evaluating conditionals, true statements cannot be generated from false statements when making arguments.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org48a5e40" class="outline-4">
+<h4 id="org48a5e40"><span class="section-number-4">2.11.7.</span> False Equivocation</h4>
+<div class="outline-text-4" id="text-2-11-7">
+<ul class="org-ul">
+<li>Examples of the Equivocation Fallacy
+<ul class="org-ul">
+<li>We don&rsquo;t have free will (metaphysical). That&rsquo;s bad!; this falsely equivocates metaphysical free will with freedom free will.</li>
+<li>Memes</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd780112" class="outline-4">
+<h4 id="orgd780112"><span class="section-number-4">2.11.8.</span> Straw Man</h4>
+</div>
+<div id="outline-container-orgf3b35bd" class="outline-4">
+<h4 id="orgf3b35bd"><span class="section-number-4">2.11.9.</span> Slippery Slope</h4>
+<div class="outline-text-4" id="text-2-11-9">
+<ul class="org-ul">
+<li>Once one event occurs, other related events will follow, and this will eventually lead to undesireable consequences.</li>
+<li>Examples of the Slippery Slope Fallacy in Politics
+<ul class="org-ul">
+<li>Gay Marriage will lead to polygamy, incest, and beastiality</li>
+<li>First someone might start doing tobacco, then they&rsquo;re start doing cannabis, and then before they know it, they&rsquo;re being doing methadone too.</li>
+<li>Today&rsquo;s jay walker and litterer will be tomorrow&rsquo;s thief and window breaker.</li>
+<li>If we let one Nazi speak freely, then soon we&rsquo;ll have a second Holocaust.</li>
+<li>Socialism is just a gateway into communism.</li>
+<li>Arguing against gun control laws and more government regulation is NOT a slippery slope fallacy because even more gun control laws and even more government regulations are still constantly being proposed, and they are going to keep being proposed until people realize that they are immoral.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org71c519d" class="outline-4">
+<h4 id="org71c519d"><span class="section-number-4">2.11.10.</span> Red Herring</h4>
+<div class="outline-text-4" id="text-2-11-10">
+<ul class="org-ul">
+<li>i</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1a09f36" class="outline-3">
+<h3 id="org1a09f36"><span class="section-number-3">2.12.</span> Cognitive Biases</h3>
+<div class="outline-text-3" id="text-2-12">
+<ul class="org-ul">
+<li>i</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf5403d0" class="outline-2">
+<h2 id="orgf5403d0"><span class="section-number-2">3.</span> Tips For Proving Certain Things</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+One common way to show that two things are equal to each is to show that one element one greater than or equal the other element, and that it is also less than or equal to the other element. Then it must be the case that the first element is equal to the other element.
+</p>
+
+<p>
+To show that there is only one unique something in a specific case, it is common to assume that there are two different somethings in that case, and then show that they are equal to each other. Then it must be the case that there is only one unique something since they are both are equal to each other.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4b4a414" class="outline-2">
+<h2 id="org4b4a414"><span class="section-number-2">4.</span> Proofs</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>Axioms are statements assumed to be true. There are two types of axioms: Logical Axioms and Domain Axioms.</li>
+<li>Theorems are statements that can be proven to be true.</li>
+<li>Answering whether statements are provable or not is a set theory topic.
+<ul class="org-ul">
+<li>If a statement is provable (meaning that it is theorem), we write a proof to prove it.</li>
+<li>If a statement is improvable, it goes to the backburner</li>
+</ul></li>
+<li>A proof consists of a series of steps, each that follow logically from assumptions or previously proven statements, whose final step results in the statement of the theorem being proven.</li>
+<li>Theorems should be rewritten using precise mathematical language before they are proven. All the assumptions in the theorem&rsquo;s statement and everything that is know should be written down.</li>
+<li>If a direct proof is not being done, it is good practice to state what type of proof is being done.</li>
+<li>Much like programming, it is extremely helpful to have someone else look over your proof. They will often be able to critique, spot holes, or make suggestions to improve your proof.</li>
+</ul>
+</div>
+<div id="outline-container-orga2ed498" class="outline-3">
+<h3 id="orga2ed498"><span class="section-number-3">4.1.</span> Types Of Proofs</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>Direct Proofs prove the truth / falsehood of a statement through a set of axioms that prove a conclusion c as a direct result of the assumption, like a conditional statement.
+<ul class="org-ul">
+<li>In a direct proof of a conditional statement, the hypothesis p is assumed to be true and the conclusion c is proven as a direct result of the assumption.</li>
+</ul></li>
+<li>Proofs by Contrapositive prove conditional theorems of the form p → c by showing that the contrapositive ¬c → ¬p is true. If the hypothesis is proven false, the conditional is true.
+<ul class="org-ul">
+<li>Proofs by Contrapositive start by assuming that the conclusion of a conditional theorem is false, then try to prove the hypothesis false.</li>
+<li>Sometimes it is more difficult to assume that the entire conclusion is false and it is okay to assume that only part of the conclusion is false to generate a sufficient contradiction.
+<ul class="org-ul">
+<li>This is the case with proving DeMorgan&rsquo;s Laws. If we assume the entire conclusion is false, then we can&rsquo;t break it down any further without the statement that we are trying to prove.
+<ul class="org-ul">
+<li>However, it is sufficient to only assume that part of the conclusion is false. As long as this generates a contradiction, this is all you need.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>A Proof by Contrapositive is a special case of a proof by contradiction. Proofs by contradiction are more general because they aren&rsquo;t limited to conditional theorems.</li>
+<li>Proofs by Contradiction (AKA Indirect Proofs) start by assuming that the theorem is false and then show that some logical inconsistency arises as a result of this assumption.
+<ul class="org-ul">
+<li>If the theorem being proven has the form p → q, then the beginning assumption is p ∧ ¬q.</li>
+<li>Unlike direct proofs and proofs by contrapositive, a proof by contradiction can be used to prove theorems that are not conditional statements.</li>
+<li>If t is the statement of the theorem, the proof by contradiction begins with the assumption ¬t and leads to a conclusion r ∧ ¬r, for some proposition r.</li>
+</ul></li>
+<li>Proofs by Cases prove theorems by separating the domain for the variables into different classes and giving a different proof for every class.
+<ul class="org-ul">
+<li>Every value in the domain must be included in at least one class.</li>
+<li>Proofs by Cases are especially good for biconditional statements.</li>
+</ul></li>
+<li>Proofs by Induction prove theorems by using a base case, induction hypothesis, and induction step.</li>
+<li>Counterexamples are assignments of values to variables that prove that a universal statement is false.
+<ul class="org-ul">
+<li>It is dangerous to generalize from a set of examples because there can always be a counterexample that was not tried.
+<ul class="org-ul">
+<li>Therefore, proofs of universal statements are generally more reliable than proofs of exhaustion, except for when the domain is really small.</li>
+</ul></li>
+</ul></li>
+<li>Proofs of Exhaustion prove statements by checking every element of the domain. They are typically used for only small domains.</li>
+<li>Proofs by Exhaustion are simply akin to Proofs by Cases with 1000s of individual cases.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org442f719" class="outline-2">
+<h2 id="org442f719"><span class="section-number-2">5.</span> Universal Quantifier Proof Strategies</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org62abadf" class="outline-3">
+<h3 id="org62abadf"><span class="section-number-3">5.1.</span> To prove a universal statement (∀x.P(x)):</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Goal: (∀x.P(x))
+</p>
+<ul class="org-ul">
+<li>Let k be an arbitary object.</li>
+<li>Goal: P(k)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge1fce85" class="outline-3">
+<h3 id="orge1fce85"><span class="section-number-3">5.2.</span> There are some variations of this. This strategy handles a universal quantifier over a restricted domain:</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+Goal: (∀x ∈ A.P (x))
+</p>
+<ul class="org-ul">
+<li>Let k be an arbitary object.</li>
+<li>Assume: k ∈ A</li>
+<li>Goal: P(k)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org72a5a8f" class="outline-3">
+<h3 id="org72a5a8f"><span class="section-number-3">5.3.</span> This strategy combines the universal quantifier and implication strategies: this is a very common kind of statement.</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+Goal: (∀x ∈ A.P (x) → Q(x))
+</p>
+<ul class="org-ul">
+<li>Let k be an arbitary object.</li>
+<li>Assume: P(k)</li>
+<li>Goal: Q(k)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3b92108" class="outline-2">
+<h2 id="org3b92108"><span class="section-number-2">6.</span> Existential Quantifier Proof Strategies</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org2ff9a1e" class="outline-3">
+<h3 id="org2ff9a1e"><span class="section-number-3">6.1.</span> To prove a statement of the form (∃x.P (x)):</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+Goal: (∃x.P(x))
+</p>
+<ul class="org-ul">
+<li>Find a suitable c. This will usually take some thought.</li>
+<li>Goal: P(c)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4f9f008" class="outline-3">
+<h3 id="org4f9f008"><span class="section-number-3">6.2.</span> To prove a statement of the form (∃x ∈ A.P (x)):</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+[The version for a restricted quantifier]
+</p>
+
+<p>
+Goal: (∃x.P(x))
+</p>
+<ul class="org-ul">
+<li>Find a suitable c. This will usually take some thought.</li>
+<li>Goal 1: c ∈ A (this often doesnt require much work)</li>
+<li>Goal 2: P(c)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd8754cd" class="outline-2">
+<h2 id="orgd8754cd"><span class="section-number-2">7.</span> Summary Of Logic</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>Logical Operations, Logic Symbols, Differences and Contexts with Natural Languages like English</li>
+<li>Truth Tables, Order of Operations</li>
+<li>Logical Forms</li>
+<li>Conditions, Converses, Inverses, Contrapositives</li>
+<li>Logical Quantifiers</li>
+<li>DeMorgan&rsquo;s Laws, DeMorgan&rsquo;s Laws for Quantifiers</li>
+<li>Tautologies, Contradictions</li>
+<li>Inference Rules, Latin Terminology</li>
+<li>Invalid Logical Arguments</li>
+<li>Usage of NAND and NOR to create all other logical statements</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org69a38f3" class="outline-2">
+<h2 id="org69a38f3"><span class="section-number-2">8.</span> Modal Logics</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>Necessity is not the same thing as logical necessity, although we frequently think of it that way.</li>
+<li>Interesting Quote to Ponder Around 14:30 to 15:45: <a href="https://youtu.be/k3Jjw8oJqBk">Carneades.org: What is Kripke Semantics? (Modal Logic)</a></li>
+<li>Usually when people just say modal logic they informally mean alethic logic (the logic of possibility and necessity), even though that is not the only type of modal logic.</li>
+<li>Deontic is the logic of what you ought do or may do, temporal involves ontologies relating time, and epistemic logic has to do with what you know.</li>
+<li>For each of these there are multiple systems that would fall under any of those above definitions, but most will have a common core of axiom system K.</li>
+<li>Temporal logic is about time (and thus also metaphysics), doxastic logic is about epistemology, and deontic logic is about ethics.</li>
+<li>So aside from thinking about modal logics in terms of linguistic TAME, modal logics can also be thought of as relating to each of the major fields of philosophy.</li>
+<li>Necessity means that the truth of a proposition follows in ALL possible worlds consequent to that proposition.</li>
+<li>This is contrasted with Possibility which means that the truth of a proposition follows in SOME world consequent to the initial frame of reference.</li>
+<li>The weakest classical system is sometimes referred to as E and is non-normal. Both algebraic and neighborhood semantics characterize familiar classical modal systems that are weaker than the weakest normal modal logic K.</li>
+<li>Every regular modal logic is classical, and every normal modal logic is regular and hence classical.</li>
+<li>It&rsquo;s interesting how negation of a verb can just be an absence of that herb rather than the positive quality of the antonym of that verb. and example would be how when the US says that they do not support Taiwanese independence, they are not saying that they oppose Taiwanese independence, because the US neither supports nor opposes Taiwanese independence.</li>
+<li>Axiom D in Modal Logic is essentially equivalent to &ldquo;ought implies can&rdquo;.</li>
+<li>LEM = Law of the Excluded Middle</li>
+<li>i</li>
+<li>i</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org67acb58" class="outline-2">
+<h2 id="org67acb58"><span class="section-number-2">9.</span> Understanding Necessity And Possibility</h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li>Saul Kripke provides a straightforward mathematical definition of necessity and possibility:</li>
+<li>There is a set of (mathematical) objects called &ldquo;possible worlds.&rdquo; Each world assigns<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> truth values to all statements of first-order logic whose predicates and operands we care about, is internally consistent (does not entail any contradictions), but it may disagree with other worlds. Additionally, there is a binary relation between possible worlds called the &ldquo;accessibility relation.&rdquo; We may impose requirements on this relation, and in particular we often require it to be reflexive (but not always; see for example deontic logic).</li>
+<li>Then the necessity (box) operator means &ldquo;the enclosed statement is satisfied in every world reachable from the current world.&rdquo; The possibility operator is defined as the dual of the necessity operator (i.e. read diamond as &ldquo;¬☐¬&rdquo;), and boxes and diamonds may nest arbitrarily. So, for example, ☐☐A means &ldquo;A is satisfied in every world which is two steps away from the current world via the accessibility relation.&rdquo; Statements are usually considered &ldquo;true&rdquo; if they are satisfied in every world. In Kripke&rsquo;s formulation, no particular world is distinguished as &ldquo;the actual world,&rdquo; but to do so may be philosophically desirable.</li>
+<li>The requirements we impose on the accessibility relation can be translated into axioms about the behavior of the box operator. For example, if the relation is reflexive, then the axiom ☐A → A is produced, which we usually abbreviate as axiom T. More colloquially, &ldquo;anything that is necessarily true is true.&rdquo;</li>
+<li>Every modal logic which adheres to the above mathematical structure must at least admit axiom K, which is ☐(P → Q) → (☐P → ☐Q) (If P necessarily implies Q, then the necessity of P implies the necessity of Q). Every modal logic must also admit axiom N, which states that all tautologies or theorems are necessary (that is, if A follows from the axioms we are using, then ☐A is also a theorem, because A must be true in every world or it would create a contradiction).</li>
+<li>In many cases, modal logic is used for purposes other than possibility and necessity. It retains the same mathematical structure, but the box and diamond are reinterpreted, for example as &ldquo;It is ethically permissible/obligatory that X&rdquo; in deontic logic. So when discussing modal logic generally, we should be careful not to read ☐A as &ldquo;necessarily A&rdquo; unless we&rsquo;re sure of our logical context.</li>
+</ul>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Actually, the worlds do not actually assign truth values. Rather, truth values are assigned by a second binary relation between worlds and modal statements. This is a subtle distinction, but in some contexts, we want to consider whether a statement is true for every choice of this second relation, rather than just a particular choice.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: ZeroContradictions</p>
+<p class="date">Created: 2022-11-16 Wed 07:16</p>
+</div>
+</body>
+</html>

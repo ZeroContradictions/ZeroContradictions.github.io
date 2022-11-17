@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-16 Wed 07:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophical Foundations Part 1B: Foundationalism Bounded Inside Empirically Grounded Coherentism</title>
+<meta name="author" content="ZeroContradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../epistemology.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Philosophical Foundations Part 1B: Foundationalism Bounded Inside Empirically Grounded Coherentism</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org052c438">1. Why It&rsquo;s Still Important To Create A Rigorous Axiomatic Foundation, Even After Accepting Empirically-Grounded Coherentism</a>
+<ul>
+<li><a href="#org1059633">1.1. The History Of Epistemology</a></li>
+<li><a href="#org9aa849e">1.2. How Unplanned And Planned Philosophies Work Versus How They Should Work</a></li>
+<li><a href="#orge1cb563">1.3. Text About Why Both Empirically-Grounded Coherentism And A Rigorous Foundation Should Be Accepted</a></li>
+</ul>
+</li>
+<li><a href="#org61cf6c8">2. Notes On Foundationalist Curricula/Content/Materials/Educations Within Empirically-Grounded Coherentism</a></li>
+<li><a href="#org428335b">3. Where To Start In Forming A Foundationalist System</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org052c438" class="outline-2">
+<h2 id="org052c438"><span class="section-number-2">1.</span> Why It&rsquo;s Still Important To Create A Rigorous Axiomatic Foundation, Even After Accepting Empirically-Grounded Coherentism</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Even though we have already accepted that Empirically-Grounded Coherentism is the correct descriptive theory of how human knowledge is structured, it is still necessary that we design a rigorous, epistemic foundation that we can work with before moving forward onto the rest of philosophy. In this section, we justify the rationale for doing this.
+</p>
+
+<p>
+There are several reasons why it has historically been so difficult to create a rational, consistent philosophy free from contradictions:
+</p>
+<ol class="org-ol">
+<li>Most of human nature has been focused only on survival (and reproduction). There simply wasn&rsquo;t any time nor need to brainstorm a rationalist philosophy from scratch since the primal instinct to survive and reproduce was the foremost and only necessary concern to primitive humans. It is only until relatively recently in modern history that humans have developed a strong need for an implicit or preferably explicit philosophy.</li>
+<li>Every human&rsquo;s knowledge begins from an essentially clean slate. <a href="../epistemology/tabula-rasa-eval.html">Regardless of whether or not the human mind is born Tabula Rasa</a>, it is definitely certain that most (if not all) knowledge can never be innately known by newborns.</li>
+<li>Since every human is born with no knowledge at all, and the knowledge accumulated by older/previous humans cannot be automatically passed to newer generations, every new human&rsquo;s best chance at forming a coherent, rationalist philosophy is to read the works of older/previous/other humans and build from there, but even today, many humans are more preoccupied with just trying to survive in the world, may not have the educational resources to start doing or even conceive of doing this, and many of the humans who could do this have little to no desire to study philosophy or are more focused on doing things that they see as being more valuable. Such is the fate of a deterministic universe where everybody&rsquo;s actions were predetermined ever since the start of the theoretical Big Bang.</li>
+<li>Humans are evolutionarily designed to focus on their own experiences and perspectives first and foremost. So even if someone creates a philosophy that is based on nothing but one&rsquo;s sense perception and reasoning, it is not guaranteed at all to be consistent with what reality is outside of their sensory experiences and reasoning.</li>
+<li>Most humans are indoctrinated to believe in unreasonable things, even though all the scientific advances before and after the industrial revolution have rendered religion and other supernatural beliefs to be obsolete. Even today, a large majority humans believe in Christianity, Islam, Hinduism, Buddhism, and other irrational religions, all of which have historically spread through some combination of conquest, proselytization, the indoctrination of children, fearmongering, and the prioritization of faith over reason.
+Clearly, history has shown that most humans will never develop a rational philosophy since all humans (and all intelligent life) evolved to structure their knowledge according to Empirically-Grounded Coherentism.</li>
+</ol>
+<p>
+With that being said, if one wishes to be rational, it&rsquo;s clearly not enough to live life only according to what someone has learned from their sense perception and experiences, and to never question one&rsquo;s own intuitions and worldview.
+</p>
+
+<p>
+It is not possible to build a purely foundationalist theory of epistemology, though it is possible to start off from a foundationalist-like series of axioms and theorems that cohere to other epistemological knowledge to the point where the entire theory of epistemology justifies and re-affirms the axioms and theorems themselves, which would ultimately be coherentism, not foundationalism. Knowledge tends to look as if it&rsquo;s structured according to foundationalism when first acquiring it, but every foundationalist system eventually evolves into a coherentist structured system as the acquisition of knowledge progresses.
+</p>
+
+<p>
+[I haven&rsquo;t finished writing this section yet]
+</p>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Axiom">https://en.wikipedia.org/wiki/Axiom</a>
+</p>
+</div>
+
+<div id="outline-container-org1059633" class="outline-3">
+<h3 id="org1059633"><span class="section-number-3">1.1.</span> The History Of Epistemology</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Humans evolved from the Great Apes.</li>
+<li>Humans adapted the use of tools and primitive technologies to enhance their survivals. This implies the use of knowledge to some extent.</li>
+<li>Humans had thousands and thousands of primitive religions, many of them were polytheistic.</li>
+<li>Civilizations arose, and with it, a portion of humanity&rsquo;s modern knowledge erupted.</li>
+<li>A lot of nonsensical philosophies also developed (e.g. Classical Elements of Greece, China, etc., Eastern philosophies, the world&rsquo;s modern most populous religions).</li>
+<li>Knowledge and new technologies continue to develop, but Hinduism, Buddhism, Christianity, Islam, and other religions continue to be humanity&rsquo;s most dominant forms of philosophy.</li>
+<li>The Enlightenment, Scientific Revolution, and Industrial Revolution pioneered the way for reason to become more ingrained into Western culture, and people formed more rational ideas about the world.</li>
+<li>Today in the present, religions, inaccurate philosophies, ill-thought-out politics, and especially humanism are unfortunately still very influential in the world.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9aa849e" class="outline-3">
+<h3 id="org9aa849e"><span class="section-number-3">1.2.</span> How Unplanned And Planned Philosophies Work Versus How They Should Work</h3>
+<div class="outline-text-3" id="text-1-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Philosophy</td>
+<td class="org-left">Unplanned Philosophy</td>
+<td class="org-left">Planned Philosophy</td>
+</tr>
+
+<tr>
+<td class="org-left">Everything in General</td>
+<td class="org-left">Phenomenology</td>
+<td class="org-left">Phenomenology Plus Reason &amp; Sound Premises</td>
+</tr>
+
+<tr>
+<td class="org-left">Justified Beliefs in Knowledge</td>
+<td class="org-left">Holistic Coherentism Grounded In Experiences/Empiricism</td>
+<td class="org-left">Holistic Coherentism Grounded In Experiences/Empiricism Plus Foundations</td>
+</tr>
+
+<tr>
+<td class="org-left">Morality</td>
+<td class="org-left">Teachings/Experiences/Whatever Mind believes is &ldquo;right&rdquo;</td>
+<td class="org-left">Rational Egoism and Cooperative Meta-Ethics determined by reason</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orge1cb563" class="outline-3">
+<h3 id="orge1cb563"><span class="section-number-3">1.3.</span> Text About Why Both Empirically-Grounded Coherentism And A Rigorous Foundation Should Be Accepted</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+In spite of accepting Empirically-Grounded Coherentism, it&rsquo;s still useful to form a foundationalist framework for epistemological theories, concepts, and conclusions to build upon anyway.
+</p>
+
+<p>
+It helps ensures epistemic consistency and provides a more secure starting point for inquiring into epistemology and later into the rest of philosophy.
+</p>
+
+<p>
+In doing so, I affirm that Holistic Coherentism grounded in empiricism shouldn&rsquo;t have to completely invalidate foundationalism and vice versa. The former is best established as the way how human beliefs are ultimately created, and once the universal set of an individual&rsquo;s beliefs are established, the latter is best for utilizing many different subsets of all those beliefs to make conclusions via the reasoning process.
+</p>
+
+<p>
+Additionally, this foundationalist framework that I am proposing is easy to understand since it can be readily formulated as long as someone has an understanding of at least classical logic. This framework also works well as something that secular, logical people with different backgrounds can quickly learn and then make references to during communication. Without a common framework of agreed-upon knowledge, people with completely different life experiences (and educations) may not be able to communicate anything meaningful at all, but this foundationalist framework provides a common point of reference for doing that.
+</p>
+
+<p>
+I specify &rsquo;subsets of beliefs&rsquo; in the above statement because when reasoning about anything, one generally doesn&rsquo;t use every single belief that they have ever made to form a conclusion. Instead, they use the beliefs that are relevant to the problem, issue, or question at hand to make their conclusion.
+</p>
+
+<p>
+For this reason, we will proceed to establish some reasonable axioms, construct a foundationalist framework for our knowledge, decide which (if any) of our intuitive assumptions are correct, and answer some of life&rsquo;s big questions.
+</p>
+
+<p>
+One of the goals of our foundationalist system is to avoid having contradictory beliefs, to the fullest extent possible, hence we want to avoid any situation where we could have a belief A and a second belief ¬A such that a contradiction of A &amp; ¬A can be formed.
+</p>
+
+<p>
+Thus a good starting approach is to identify beliefs that will always be true. I have determined (according to the furthest, current extent of my knowledge), i
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org61cf6c8" class="outline-2">
+<h2 id="org61cf6c8"><span class="section-number-2">2.</span> Notes On Foundationalist Curricula/Content/Materials/Educations Within Empirically-Grounded Coherentism</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<i>However, it would still be bad practice nevertheless to learn philosophy without a set of explicitly stated assumptions.</i> Making implicit assumptions explicit and questioning them is very central and key to forming a truly coherent philosophy.
+</p>
+
+<p>
+<i>In practice, knowledge is structured according to empirically-grounded coherentism (EGC), but ideally, we should want educated knowledge to work according to foundationalism that is based on top of that empirically-grounded coherentism.</i>
+</p>
+
+<p>
+<b>In fact, one of the most defining characteristics of formal education is precisely that it is structured in a foundationalist form, based on starting assumptions/premises, laid with basic ideas, and then increasingly more complex ideas.</b> And of course, the foundations laid for the education and how well it works it way up from the bottom to the top are going to be critical in the quality of the education as well.
+</p>
+
+<p>
+Any good education is going to be taught in a foundationalist form, and there is no getting around that.
+</p>
+
+<p>
+And indeed, if an educational medium if of good quality, then when considering solely the knowledge presented within the medium and no outside knowledge at all, the knowledge that only exists within that educational medium is going to be completely foundationalist, even more so if there are no contradictions, factual inaccuracies, or any other mistakes within the educational medium/curriculum.
+</p>
+
+<p>
+However, a person&rsquo;s aggregate knowledge is not the same as the lone knowledge within any education medium or curriculum. When a person learns an educational medium/curriculum, it will often be the case that anything they learn will either: build upon what they already know, reaffirm what they already know, question what they already know (often with confusion present in trying to make sense of the material or resolve questions of theirs), or contradict what they already know. It will then be up to the learning individual to decide what they believe is true. Thus, even when someone learns something, however systematic and methodical the content may be presented, all of that new knowledge will ultimately only be able to exist in the context of Empirically-Grounded Coherentism.
+</p>
+
+<p>
+Interesting Note: Even though any human&rsquo;s aggregate knowledge is structured according to EGC, it is still possible for contradictions to exist within everything that they know, unless they find a way to rationalize keeping the two contradictory beliefs together, they never address the contradiction (perhaps by choice, or by refusal to address it), they insist that nothing is contradictory, etc.
+</p>
+
+<p>
+A minimum amount of education, real-world observation, and real-world experience, are necessary to understand reality well enough to make further conclusions past the point of establishing the set of performative contradictions, but hopefully the learner listening to this information will have already acquired some, most, or even all of that.
+</p>
+
+<p>
+It must be the case that in practice, the uneducated unquestioning human mind structures knowledge according coherentism, but it can also use knowledge according to foundationalism which is more proper, rigorous, and more rational.
+</p>
+
+<p>
+There is a lot of good philosophy that comes out of simply recognizing that the individual&rsquo;s mind is just a brain in a skull.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org428335b" class="outline-2">
+<h2 id="org428335b"><span class="section-number-2">3.</span> Where To Start In Forming A Foundationalist System</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>We could start with things that we would categorize as &ldquo;metaphysics&rdquo; and/or &ldquo;epistemology&rdquo;. Of course, what&rsquo;s categorized in either field depends entirely on how the human mind classifies topics.</li>
+<li>In reality, there is no distinction between &ldquo;metaphysics&rdquo; or &ldquo;epistemology&rdquo;. There just is.</li>
+<li>Although it might tempting to start with what one might denominate as &ldquo;metaphysics&rdquo;, it&rsquo;s actually more practical to start forming an axiomatic system for reason, since reason has to be used to build the foundation for metaphysics. As such, we start with the axioms of classical logic.
+<ul class="org-ul">
+<li>Aristotle and Ayn Rand tried to start with metaphysics, but they both ended up proving something that they had already unconsciously assumed. From &ldquo;I think therefore I exist&rdquo;, they concluded &ldquo;I exist&rdquo;, and &ldquo;I am aware&rdquo;. And then they formed a separate axiom and following corollary: &ldquo;A is A&rdquo;, and the Principle of Non-Contradiction. <a href="../journey/objectivism-sucks.html">More on their mistakes can be found here.</a></li>
+</ul></li>
+<li>Where am I? How do I know it? What should I do?</li>
+<li>V1 Quote: In order to know where one is, they must first know how they know anything. That&rsquo;s why you start learning philosophy with epistemology, the theory of knowledge.</li>
+<li>V2 Quote: In order to understand where one is, they must first understand how they understand anything. That&rsquo;s why you start learning philosophy with epistemology, the theory of knowledge.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ZeroContradictions</p>
+<p class="date">Created: 2022-11-16 Wed 07:10</p>
+</div>
+</body>
+</html>

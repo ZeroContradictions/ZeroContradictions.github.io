@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-16 Wed 03:30 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophical Foundations Part 3A: Extending Epistemology</title>
+<meta name="author" content="ZeroContradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../epistemology.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Philosophical Foundations Part 3A: Extending Epistemology</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org5e83e27">1. Understanding How The Brain Processes Patterns</a></li>
+<li><a href="#org9a0de2b">2. Questions</a></li>
+<li><a href="#orgbdef24a">3. Distinguishing Between Different Types Of Contradictions</a></li>
+<li><a href="#org1ee6f90">4. Prioritization Of Thinking In Philosophy</a></li>
+<li><a href="#orga85fde8">5. The Sequels To The Mirror Test</a></li>
+<li><a href="#org8f0746a">6. Practicality Of This System</a></li>
+<li><a href="#org9a4a94a">7. Philosophical Razors (And Alternative Names For Describing Them)</a></li>
+</ul>
+</div>
+</div>
+<p>
+NOTE: I might have placed some of the content of this file in the wrong spot. If I have time, and I think it would be a good idea, I might move some of the stuff in this file to a later section of this series on <i>Philosophical Foundations</i>.
+</p>
+
+<div id="outline-container-org5e83e27" class="outline-2">
+<h2 id="org5e83e27"><span class="section-number-2">1.</span> Understanding How The Brain Processes Patterns</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The cerebral cortex is a generic pattern-abstraction and recognition device that learns from embodied experience.
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=9rIy0xY99a0">What is Random? - VSauce</a>
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=sMb00lz-IfE">What is <i>not</i> Random? - Veritasium</a>
+</p>
+
+<p>
+[Commentary on patterns, entropy, and what the videos explained]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9a0de2b" class="outline-2">
+<h2 id="org9a0de2b"><span class="section-number-2">2.</span> Questions</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>What if the axioms of a different type of logic were used as the basis for a foundationalist theory of epistemology?</li>
+<li>Is it often or even always the case that one must assume some basic things in order to start learning in an academic field, and then they must go back (perhaps several times) to re-establish an axiomatic system for the field?</li>
+<li>What are the keyboard shortcuts for each of the available symbols of classical logic?</li>
+<li>IMPORTANT: Do the three positions (Foundationalism, Coherentism, Infinitism) say anything about certainty?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbdef24a" class="outline-2">
+<h2 id="orgbdef24a"><span class="section-number-2">3.</span> Distinguishing Between Different Types Of Contradictions</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Although you already know the differences between all three of these, is it possible for you to draw some diagrams illustrating each of them, as well as diagrams showing how they relate to each other? Perhaps even diagrams showing cases where two of these concepts could could be the same thing? (or maybe even show a case where all three of them can identify/generalize the same exact thing?)
+</p>
+<ul class="org-ul">
+<li>An ordinary contradiction</li>
+<li>A performative Contradiction</li>
+<li>Circular reasoning (often a circle of contradictions)</li>
+</ul>
+<p>
+It probably won&rsquo;t be necessary to write any rigorous epistemology theorem that arbitrary statements cannot be proven false. The epistemological framework that I am proposing does address arbitrary statements by asserting that they cannot be accepted as certain or possible unless there is at least some amount of evidence to designate it as &ldquo;possible&rdquo;. And although some people might claim that an abstract, ill-defined, and lengthy concept like God cannot be proven false, it actually can be proven false by either: 1. proving that the epistemic basis for believing God and the religion is ultimately a circular reasoning fallacy, and/or 2. letting all the contradictions pile up until there is no reasonable basis left to accept the concept.
+</p>
+
+<p>
+Since knowledge is structured according to Empirically-Grounded Coherentism, this is the reason why the basis for rejecting ideologies or scientific propositions is to ultimately let more and more contradictions pile up until the believer chooses to reject the doctrine or ideas that they previously used to believe in.
+</p>
+
+<p>
+People believe in whatever is coherent with the rest of the beliefs that they believe in, so if they&rsquo;re able to recognize enough contradictions between things that they definitively believe in and things that they less definitively believe in, they will eventually abandon the less definitive beliefs in order to stabilize their structure of beliefs to a point where they perceive their beliefs to be stable once again, whether or not they actually are or not in reality.
+</p>
+
+<p>
+Unfortunately regarding #2, many of the more hard-core theists (many of whom will never be convinced since the universe has determined that they will be that way) will actually reject science in favor of the religion, in which case there will probably be no hope, or they&rsquo;ll stubornly insist that science doesn&rsquo;t contradict religion and go to great depths to rationalize their irrationality.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1ee6f90" class="outline-2">
+<h2 id="org1ee6f90"><span class="section-number-2">4.</span> Prioritization Of Thinking In Philosophy</h2>
+<div class="outline-text-2" id="text-4">
+<ol class="org-ol">
+<li>Putting &ldquo;what is&rdquo; before &ldquo;what ought&rdquo;.</li>
+<li>Putting &ldquo;how&rdquo; before &ldquo;why&rdquo;.</li>
+<li>i</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga85fde8" class="outline-2">
+<h2 id="orga85fde8"><span class="section-number-2">5.</span> The Sequels To The Mirror Test</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Most homo sapiens can pass the mirror test, but a majority of them cannot pass the following sequels:
+</p>
+<ul class="org-ul">
+<li>Recognizing that supernatural deity(ies) don&rsquo;t exist (their existence is false).</li>
+<li>Recognizing the non-existence of free will.</li>
+<li>Recognizing the non-existence of an ontology of &ldquo;objective morality&rdquo;.</li>
+<li>Recognizing Georgism (the &ldquo;Economic Mirror Test&rdquo;).</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8f0746a" class="outline-2">
+<h2 id="org8f0746a"><span class="section-number-2">6.</span> Practicality Of This System</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+QUESTION: Can/Do the L1 get used for anything useful besides being a starting point for answering some basic philosophical questions?
+</p>
+
+<p>
+The anti-skepticism theorems show that extreme forms of skepticism are irrational.
+</p>
+
+<p>
+The Volition Theorem does get used for understanding Conscious Epistemic Free Will.
+</p>
+
+<p>
+The Values Theorem does come up when discussing efilism and antinatalism.
+</p>
+
+<p>
+The Validity of Reason Theorem works as an additional way to verify reason, and its proof is arguably the simplest way to prove reasons’s validity.
+</p>
+
+<p>
+The consciousness L1 Theorem proves self-awareness.
+</p>
+
+<p>
+With some additional knowledge from personal experiences, we can infer that the L1 Theorems do apply to other people and beings besides ourselves.
+</p>
+
+<p>
+i
+</p>
+
+<p>
+AT THE VERY LEAST, this simple foundation offers a crude way to get some big questions out of the way and gives us some guidance on figuring out the best philosophical positions to believe in.
+As we explore philosophy further and find other ways and reasons to prove and believe in the same things, these L1 Theorems will mainly function as an additional way to build coherence within our belief system.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9a4a94a" class="outline-2">
+<h2 id="org9a4a94a"><span class="section-number-2">7.</span> Philosophical Razors (And Alternative Names For Describing Them)</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+In philosophy, a razor is a principle or rule of thumb that allows one to eliminate (&ldquo;shave off&rdquo;) unlikely explanations for a phenomenon, or avoid unnecessary actions.[1][2][3] Razors include:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Razor Name</th>
+<th scope="col" class="org-left">Principle</th>
+<th scope="col" class="org-left">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Occam&rsquo;s Razor</td>
+<td class="org-left">Simplicity</td>
+<td class="org-left">Simpler explanations are more likely to be correct; avoid unnecessary or improbable assumptions.</td>
+</tr>
+
+<tr>
+<td class="org-left">Hanlon&rsquo;s Razor</td>
+<td class="org-left">Attribute Stupidity over malice</td>
+<td class="org-left">Never attribute to malice that which can be adequately explained by stupidity.</td>
+</tr>
+
+<tr>
+<td class="org-left">Hitchens&rsquo; Razor</td>
+<td class="org-left">Dismiss assertions without evidence</td>
+<td class="org-left">What can be asserted without evidence can be dismissed without evidence.</td>
+</tr>
+
+<tr>
+<td class="org-left">Hume&rsquo;s Guillotine</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">What ought to be cannot be deduced from what is.</td>
+</tr>
+
+<tr>
+<td class="org-left">Sagan Standard</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">If something cannot be settled by experiment or observation, then it is not worthy of debate.</td>
+</tr>
+
+<tr>
+<td class="org-left">Popper&rsquo;s Falsifiability Principle</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">For a theory to be considered scientific, it must be falsifiable.</td>
+</tr>
+
+<tr>
+<td class="org-left">Grice&rsquo;s Razor</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">As a principle of parsimony, conversational implications are to be preferred over semantic context for linguistic explanations.</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Occam&rsquo;s Razor: Simpler explanations are more likely to be correct; avoid unnecessary or improbable assumptions.</li>
+<li>Hanlon&rsquo;s Razor: Never attribute to malice that which can be adequately explained by stupidity.</li>
+<li>Hitchens&rsquo; Razor: What can be asserted without evidence can be dismissed without evidence.</li>
+<li>Hume&rsquo;s Guillotine: What ought to be cannot be deduced from what is. &ldquo;If the cause, assigned for any effect, be not sufficient to produce it, we must either reject that cause, or add to it such qualities as will give it a just proportion to the effect.&rdquo;</li>
+<li>Alder&rsquo;s Razor: If something cannot be settled by experiment or observation, then it is not worthy of debate.</li>
+<li>Sagan Standard: Extraordinary claims require extraordinary evidence.</li>
+<li>Popper&rsquo;s Falsifiability Principle: For a theory to be considered scientific, it must be falsifiable.</li>
+<li>Grice&rsquo;s Razor: As a principle of parsimony, conversational implications are to be preferred over semantic context for linguistic explanations.</li>
+</ul>
+<p>
+The primary goals of the philosophical razors are to figure out what can be quickly and summarily dismissed. The rationale behind this is to save time by not wasting it on things that are probably false and/or will lead towards dead-ends.
+</p>
+
+<p>
+This rationale can be seen as a subcategory of rational ignorance. Although there might be knowledge to be gained by fully understanding and evaluating something that can be dismissed by a philosophical razor in greater depth, the costs of understanding the claims and arguments in question would exceed any benefits gained by understanding and evaluating those arguments. Most of the knowledge that would be gained from exploring the razor-dismissed arguments in greater depth would likely consist of understanding why the arguments are wrong, but this in time in greater detail, in comparison to why they can be summarily dismissed by the philosophical razors.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ZeroContradictions</p>
+<p class="date">Created: 2022-11-16 Wed 03:30</p>
+</div>
+</body>
+</html>
