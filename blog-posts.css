@@ -78,6 +78,12 @@ ul li, ol li {
     /* max-height: 900px; */
 }
 
+.org-dl {
+    line-height: 1.3em;
+    margin: 0px 40px 5px 0px;
+    /* max-width: 100%; */
+}
+
 .figure-number {
     /* Customize this, if this should be changed. */
 }
