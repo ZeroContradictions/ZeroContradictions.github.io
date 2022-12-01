@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-30 Wed 20:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophical Foundations Part 1B: The Nature of Truth and the Abyss</title>
+<meta name="author" content="ZeroContradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../epistemology.html"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Philosophical Foundations Part 1B: The Nature of Truth and the Abyss</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#intro-to-truth">1. Introduction to Truth</a></li>
+<li><a href="#info-compression-theory-of-truth">2. The Information Compression Theory Of Truth</a></li>
+<li><a href="#problems-with-JTB">3. The Problems With Justified True Belief (JTB)</a></li>
+<li><a href="#problems-of-pragmatist-theory">4. The Problems With The Pragmatist Theory Of Truth</a></li>
+<li><a href="#problems-of-correspondence-theory">5. The Problem With The Correspondence Theory Of Truth</a></li>
+<li><a href="#theory-of-mental-representation">6. Theory Of Mental Representation</a></li>
+<li><a href="#known-vs-unknown-concepts">7. Known Vs Unknown Concepts</a></li>
+<li><a href="#undecidable-propositions">8. Undecidable Propositions</a></li>
+<li><a href="#the-philosophical-abyss">9. Staring Into The Philosophical Abyss</a></li>
+</ul>
+</div>
+</div>
+<p>
+NOTE: Most of what&rsquo;s written on this page is out-of-date since my thoughts on truth changed after watching this debate: <a href="https://www.youtube.com/watch?v=_NqndPtPXC4">Platonic Dialog with Aarvoll on the Nature of Truth.</a>
+</p>
+
+<div id="outline-container-intro-to-truth" class="outline-2">
+<h2 id="intro-to-truth"><span class="section-number-2">1.</span> Introduction to Truth</h2>
+<div class="outline-text-2" id="text-intro-to-truth">
+<p>
+<a href="https://www.youtube.com/watch?v=cebFWOlx848">Veritasium: The Illusion of Truth</a>
+</p>
+<ul class="org-ul">
+<li>The Frequency of Patterns and Stimuli affects how true or false we judge things in the world.</li>
+<li>Cognitive Ease</li>
+<li>Cognitive Difficulty</li>
+<li>The Mere Exposure Effect</li>
+</ul>
+
+<p>
+Important: If it&rsquo;s not possible for someone to know literally everything, then it&rsquo;s not possible for there to be a single universal ends-all-be-all fact-checker for truth.
+</p>
+
+<p>
+The best way for truth and fact-checkers to work in a society would be for the most dominant fact-checkers to cite the primary expert/institution/authority/knowledge/facts that they appeal to when determining the truth value of something.
+</p>
+
+<p>
+Likewise, there should be several competing truth fact-checkers, similar to how it&rsquo;s a good idea for there to be several competing products on the market, several competing currencies, or several competing reviewers/peer-reviewers. We&rsquo;ve already established that it&rsquo;s not possible for there to only be just one, so there has to be multiple ones. And it&rsquo;s up to everyone in society to decide who they want to agree with.
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=_jLJczkOU44">What is Truth? - AntiCitizenX</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-info-compression-theory-of-truth" class="outline-2">
+<h2 id="info-compression-theory-of-truth"><span class="section-number-2">2.</span> The Information Compression Theory Of Truth</h2>
+<div class="outline-text-2" id="text-info-compression-theory-of-truth">
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-problems-with-JTB" class="outline-2">
+<h2 id="problems-with-JTB"><span class="section-number-2">3.</span> The Problems With Justified True Belief (JTB)</h2>
+<div class="outline-text-2" id="text-problems-with-JTB">
+<p>
+Justified True Belief doesn&rsquo;t define what &ldquo;true&rdquo;, &ldquo;justified&rdquo;, or &ldquo;belief&rdquo; (knowledge) are.
+</p>
+
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-problems-of-pragmatist-theory" class="outline-2">
+<h2 id="problems-of-pragmatist-theory"><span class="section-number-2">4.</span> The Problems With The Pragmatist Theory Of Truth</h2>
+<div class="outline-text-2" id="text-problems-of-pragmatist-theory">
+<p>
+Although AntiCitizenX&rsquo;s video promotes the Pragmatist Theory of Truth in the last several minutes, this is misguided. If someone does not have enough information to make the best decision possible, they are <i>not</i> using the Pragmatist Theory of Truth to navigate themselves through life. What they are actually doing is they are using information compression to form the premises that are used in their decisions. Not everything that we gather about reality from our senses is the big picture of reality is. We often only have a very simplified understanding of reality for many different things.
+</p>
+
+<p>
+We might make the wrong decisions because our understanding of reality isn&rsquo;t large enough, but it&rsquo;s better to say that when we do make mistakes, it&rsquo;s because the model of reality that we have in our minds is not comprehensive enough, not merely because we didn&rsquo;t know enough information about reality. Different truth judgments often result from people having levels of understanding and models of reality that vary by how detailed the models are.
+</p>
+
+<p>
+Under this understanding of truth, the essential reason why &ldquo;objective truth&rdquo; doesn&rsquo;t exist is because it&rsquo;s not possible to create a hypothetical model of reality that has 100% accurate precision for all its details.
+Or in other words, it&rsquo;s not possible to be omniscient and know everything there is to know about reality because that is a fundamental condition of being a subject (philosophical).
+</p>
+
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-problems-of-correspondence-theory" class="outline-2">
+<h2 id="problems-of-correspondence-theory"><span class="section-number-2">5.</span> The Problem With The Correspondence Theory Of Truth</h2>
+<div class="outline-text-2" id="text-problems-of-correspondence-theory">
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-theory-of-mental-representation" class="outline-2">
+<h2 id="theory-of-mental-representation"><span class="section-number-2">6.</span> Theory Of Mental Representation</h2>
+<div class="outline-text-2" id="text-theory-of-mental-representation">
+<p>
+In reality, there is no language associated with any objects or concepts. Language are a component of mental representations that make them easier to understand.
+</p>
+
+<p>
+It always feels very interesting to think about concepts without language. It makes them feel more abstract and sometimes helps one think better.
+</p>
+
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-known-vs-unknown-concepts" class="outline-2">
+<h2 id="known-vs-unknown-concepts"><span class="section-number-2">7.</span> Known Vs Unknown Concepts</h2>
+<div class="outline-text-2" id="text-known-vs-unknown-concepts">
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-undecidable-propositions" class="outline-2">
+<h2 id="undecidable-propositions"><span class="section-number-2">8.</span> Undecidable Propositions</h2>
+<div class="outline-text-2" id="text-undecidable-propositions">
+<p>
+Probably the term you&rsquo;re looking for is undecidable: we say a conjecture is undecidable, relative to some formal system, if neither it or its negation can be proven within that system.
+</p>
+
+<p>
+Yes, it is possible to prove something undecidable, and it has been done (not with the Riemann hypothesis in particular, of course, but with other conjectures).
+</p>
+<ul class="org-ul">
+<li>Goodstein&rsquo;s theorem is not decidable in Peano arithmetic (though it is provable in ZFC set theory).</li>
+<li>The continuum hypothesis is known to be undecidable in ZFC set theory. In 1940, Kurt Gödel proved that the continuum hypothesis cannot be refuted from the ZFC axioms; in 1963, Paul Cohen proved that it cannot be proven from those axioms either.</li>
+<li>In fact, Gödel proved in 1931 that for any formal system rich enough to intepret Peano arithmetic, there is a proposition that cannot be proven or refuted in that system. Moreover his proof is constructive: for any system you devise that includes natural number arithmetic as we know it, I can give you a specific proposition that is undecidable in that system.</li>
+</ul>
+
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-the-philosophical-abyss" class="outline-2">
+<h2 id="the-philosophical-abyss"><span class="section-number-2">9.</span> Staring Into The Philosophical Abyss</h2>
+<div class="outline-text-2" id="text-the-philosophical-abyss">
+<p>
+<a href="../epistemology/tabula-rasa-eval.html">Tabula Rasa</a>
+</p>
+
+<p>
+[This section will be written later]
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ZeroContradictions</p>
+<p class="date">Created: 2022-11-30 Wed 20:33</p>
+</div>
+</body>
+</html>
