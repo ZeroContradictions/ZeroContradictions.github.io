@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-12-23 Fri 20:28 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agency And Dystopias</title>
+<meta name="author" content="ZeroContradictions" />
+<meta name="description" content="[Make this the same as home page keywords description]" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../index.html#culture"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Agency And Dystopias</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgd512ef6">1. Thinking About Dystopias</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<p>
+IMPORTANT: The point of this is to demonstrate that people view having a severe lack of power (personal agency) as being dystopian.
+IMPORTANT: That&rsquo;s one reason why the Rhetoric of Exploitation typically portrays so many victims as lacking personal agency.
+</p>
+<blockquote>
+<p>
+If dogs were smart enough to have deep philosophical thoughts they would probably resent their owners and not want to be a pet.
+I think a dog suddenly becoming highly intelligent/sapient/whatever and reacting realistically would make an interesting short movie or book since they&rsquo;d probably behave radically different than how talking animals normally behave in books/movies.
+Imagine suddenly become aware that you were intentionally bred to be stupid and childlike so that another species could castrate you and keep you inside their house/yard for their own amusement, and that others of this species intentionally breed your brethren to be horribly deformed, to the point even that even breathing is difficult, so that they can win ribbons.
+</p>
+</blockquote>
+<hr />
+<p>
+We could create a new reality where &#x2026;
+And I think that it would be arguably better than the world that we have now -maybe even better than any other world that we could possibly get.
+</p>
+<hr />
+
+<div id="outline-container-orgd512ef6" class="outline-2">
+<h2 id="orgd512ef6"><span class="section-number-2">1.</span> Thinking About Dystopias</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+If people live in a dystopia, but they don&rsquo;t recognize how or why it is oppressive, is it still a dystopia?
+</p>
+<ul class="org-ul">
+<li>I would be so disappointed if I had the resources to figure out that I live in a dystopia, but I never did before I died.
+<ul class="org-ul">
+<li>The only effective remedy to thoroughly question everything and always keep an open mind.</li>
+<li>Unfortunately it is so easy for close-minded people to believe they are open-minded, which is one of main reasons why most people are unaware there is dystopia.</li>
+</ul></li>
+<li>Consider the DNA delusion. If people are programmed to believe that the world is not a dystopia, is it still a dystopia?
+<ul class="org-ul">
+<li>This thought experiment gets interesting. It implies that whether or not a society can be deemed a utopia/dystopia/neither depends on the perception of sentient organisms.</li>
+<li>Because no utopias nor dystopias could ever exist if a society of living organisms didn&rsquo;t exist.
+<ul class="org-ul">
+<li>For that matter, epistemology, ethics, all the other branches of philosophy (except metaphysics), and all human-centric academic fields wouldn&rsquo;t exist either.</li>
+</ul></li>
+<li>Going even further, if there was only one sentient organism, but no society of sentient organisms, their perception of their own life still seems relevant to the utopia/dystopia question, even if there is no society present.</li>
+<li>Although I&rsquo;ve only been talking about sentient organisms, I&rsquo;m pretty sure that the designation of a society as utopia/dystopia/neither is independent of whether or not the organisms have the conscious free will to make a determination on society&rsquo;s status.</li>
+</ul></li>
+</ul>
+<p>
+Conclusion: Societal perception is the key to determining whether a society is a utopia/dystopia/neither.
+</p>
+<ul class="org-ul">
+<li>However, determining the label that a society should receive gets very murky and unclear when there is any number of members of the society that disagree with how the majority perceives the society.</li>
+<li>Maybe a distinction should be made to consider &ldquo;perceived utopia/dystopia/neither&rdquo; versus &ldquo;actual utopia/dystopia/neither&rdquo;?</li>
+<li>I would be equally disappointed if I was wrong on something critical, but I didn&rsquo;t figure it out before I died.</li>
+</ul>
+
+<p>
+If everybody lives in a dystopia, but no sentient organism is able to realize it, and/or thinks that the dystopia is worth living through, is it still a bad thing?
+If evolutionary DNA creates all of the sentient world, all sentient life has a net-negative life experience, but still continues forward and wants to continue creating more DNA-programmed life, would this still be a dystopia even if it isn’t perceived as one?
+Even if all the sentient life thought the dystopia was worth living through and couldn&rsquo;t identify anything wrong with the society itself, the best argument that it is still a dystopia is that bad things would still be continuing to happen. Bad things would be happening frequently and although nobody likes them and nobody is able to identify the society/system itself as being the problem, it would still be a dystopia. The source of all the problems is still there, nobody likes the problems, and yet nobody is able to identify the source of all the problems, even though they are programmed to like the society and not see anything wrong with the system itself. The sentient life would be conflicted between its likeness for the existing system and all the problems that the system causes.
+</p>
+
+<p>
+Definitions/Conceptions Of Freedom
+  Various Philosophical Definitions Of Freedom
+  Georgist Definition Of Freedom: I
+  Classical Liberal Definition Of Freedom: I
+  Voluntaryist Definition Of Freedom: I
+</p>
+<ul class="org-ul">
+<li>The power to do as one wants without hindrance, restraint, or coercion from a third party, so long as they abide by the Non-Aggression Principle.</li>
+<li>Individuals, businesses, charities, educational institutions, religious institutions, homeowner&rsquo;s associations, and other organizations where membership is 100% voluntary can have freedom.</li>
+<li>Dead people cannot be free because they don&rsquo;t have free will, however, if someone wrote a will letter before they died (or anything equivalent to such a thing), then that letter carries the full force of their free will for when they were alive, because they wrote it when they were still alive.</li>
+<li>Voluntary: Anything done with free will, without coercion. Even if someone was intoxicated or manipulated into doing something, that still counts as free will because they could have chosen to not do it instead. If someone is asleep or unconscious, then they do not have free will at the moment.</li>
+<li>Coercion: The practice of using force or threats to persuade someone to do something.</li>
+<li>Force: Theft, murder, rape, fraud, damage, or threats.</li>
+<li>If I say that children do not have free will, then I will inevitably encounter the problem defining the age when someone does have free will. I know this is going to be extremely arbitrary, but I will propose that anybody who is at least 13 years old, or has sexual urges that they want to act on, has free will.</li>
+<li>And even if someone doesn&rsquo;t have free will, they still have negative rights, which are important, but not the same thing as freedom.</li>
+</ul>
+<p>
+Typical American Definition Of Freedom: I
+Public School Definition Of Freedom: I
+Radical Feminist Definition Of Freedom: I
+Anarcho-Communist Definition Of Freedom: I
+Communist Definition Of Freedom: I
+Christian/Islamic/Hindu Definition Of Freedom: I
+Anti-Industrial Definition Of Freedom: By &ldquo;freedom&rdquo; we mean the opportunity to go through the power process, with real goals not the artificial goals of surrogate activities, and without interference, manipulation or supervision from anyone, especially from any large organization. Freedom means being in control (either as an individual or as a member of a SMALL group) of the life-and-death issues of one&rsquo;s existence; food, clothing, shelter and defense against whatever threats there may be in one&rsquo;s environment. Freedom means having power; not the power to control other people but the power to control the circumstances of one&rsquo;s own life. One does not have freedom if anyone else (especially a large organization) has power over one, no matter how benevolently, tolerantly and permissively that power may be exercised. It is important not to confuse freedom with mere permissiveness (see paragraph 72).
+Efilist Definition Of Freedom: I
+</p>
+
+<p>
+Two Definitions of Freedom:
+</p>
+<ol class="org-ol">
+<li>The absence of forceful coercion on sentient beings.</li>
+<li>The absence of suffering on sentient beings (caused by the immoral, unintelligent-design of sentient life)</li>
+</ol>
+
+<p>
+&gt; No government can ever have legitimate authority, so the state should be replaced with anarchy in the interest of anarchy, freedom, and self-ownership.
+Freedom is absence from forceful coercion. Under Anarchy, new form(s) of rule by force will arise during a power vaccum in the absence of law and a conforming population. &ldquo;If there is no rational law, then people will make their own authoritarian laws.&rdquo; This is a consequence of the unintelligent design present in humans and seemingly most mammals.
+Sound counter-argument to voluntaryist perspective on freedom: Even if a sentient organism is free from forceful coercion, it is NOT free if its biological nature is unintelligently designed to force it to suffer.
+</p>
+<hr />
+<p>
+Founding Fathers isn&rsquo;t a universally agreed upon term - there were many people involved in the founding of the USA - they did different things and they had different ideas.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ZeroContradictions</p>
+<p class="date">Created: 2022-12-23 Fri 20:28</p>
+</div>
+</body>
+</html>
