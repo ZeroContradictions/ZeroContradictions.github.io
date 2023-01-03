@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-01-02 Mon 20:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Case Against Libertarianism And Anarchism</title>
+<meta name="author" content="ZeroContradictions" />
+<meta name="description" content="Why ZeroContradictions rejected Libertarianism and Ancapism, why the NAP is bogus, and why Libertarian societies are not sustainable." />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../blog-posts.css" />
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="../index.html#libertarianism"> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">The Case Against Libertarianism And Anarchism</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#intro">1. Introduction</a></li>
+<li><a href="#NAP">2. The Libertarian NAP Is Vague And Misleading</a>
+<ul>
+<li><a href="#when-libertarians-disagree">2.1. List Of Ethical Topics That Libertarians/Ancaps Could Disagree On</a></li>
+<li><a href="#dif-legal-systems-have-dif-NAPs">2.2. Different Legal Systems Have Different NAPs</a></li>
+</ul>
+</li>
+<li><a href="#denial-of-biorealism">3. Libertarianism Denies Biological Realism</a>
+<ul>
+<li><a href="#individualism">3.1. Individualism Is Mostly Determined By Genetics</a></li>
+<li><a href="#cornucopianism-is-wrong">3.2. Cornucopianism Is Wrong / Overpopulation Is Real</a></li>
+<li><a href="#geopolitical-realities">3.3. Libertarian Ignorance Of Geopolitical Realities</a>
+<ul>
+<li><a href="#problems-with-secession">3.3.1. The Geopolitical Problems With Allowing Ancap Secessions</a></li>
+</ul>
+</li>
+<li><a href="#voluntary-self-protection">3.4. Voluntary Self-Protection Versus The Free-Rider Problem</a></li>
+</ul>
+</li>
+<li><a href="#game-theory">4. Libertarian Don&rsquo;t Understand Game Theory</a></li>
+<li><a href="#freedom-and-consent">5. Why Freedom And Consent Are Not The Most Important Values</a>
+<ul>
+<li><a href="#voluntaryism-and-antinatalism">5.1. A True Voluntaryist Would Be Anti-Natalist</a></li>
+</ul>
+</li>
+<li><a href="#purpose-of-government">6. The True Purpose of Government</a></li>
+<li><a href="#anti-democracy-args-apply-against-AC">7. Anti-Democracy Arguments Also Apply Against Anarcho-Capitalism</a></li>
+<li><a href="#problems-with-anti-georgism">8. The Problems With Anti-Georgism</a>
+<ul>
+<li><a href="#eminent-domain">8.1. Eminent Domain</a></li>
+<li><a href="#pigouvian-pollution-taxes">8.2. Pigouvian Pollution Taxes</a></li>
+<li><a href="#equal-negative-land-rights">8.3. The Contradictions of Unequal Land Rights</a></li>
+</ul>
+</li>
+<li><a href="#free-markets-circular-reasoning">9. The &ldquo;Free&rdquo; Markets in Ancapistan Are Established By Circular-Reasoning</a>
+<ul>
+<li><a href="#stated-in-propositions">9.1. Ancaps&rsquo; Circular Reasoning Stated In Lines Of Logical Propositions</a></li>
+<li><a href="#refuting-ancap-objections">9.2. Refuting Ancap Objections</a></li>
+</ul>
+</li>
+<li><a href="#market-failures">10. Market Failures</a>
+<ul>
+<li><a href="#infrastructure">10.1. Infrastructure</a></li>
+<li><a href="#planned-obsolescence">10.2. Planned Obsolescence</a></li>
+<li><a href="#peak-resources">10.3. Peak Resources</a></li>
+<li><a href="#land-monopolies">10.4. Land Monopolies</a></li>
+</ul>
+</li>
+<li><a href="#rothbardian-AC-problems">11. The Problems With Rothbardian Anarcho-Capitalism</a>
+<ul>
+<li><a href="#rothbardian-vs-private-cities">11.1. Defining Rothbardian Anarcho-Capitalism Versus Private Cities Anarcho-Capitalism</a></li>
+<li><a href="#argumentation-ethics-nonsense">11.2. Argumentation Ethics Is Nonsense</a></li>
+<li><a href="#summary-of-rothbardian-AC-problems">11.3. Summary of Rothbardian Anarcho-Capitalism</a></li>
+</ul>
+</li>
+<li><a href="#libertarian-tech-ignorance">12. Advancing Technology Isn&rsquo;t Necessarily A Good Thing</a></li>
+</ul>
+</div>
+</div>
+<p>
+NOTE: I will probably expand this file some more when I have more time.
+</p>
+
+<div id="outline-container-intro" class="outline-2">
+<h2 id="intro"><span class="section-number-2">1.</span> Introduction</h2>
+<div class="outline-text-2" id="text-intro">
+<p>
+I used to be a Libertarian and an Ancap myself for about 4 years, so I&rsquo;ve spent hundreds of hours thinking about this stuff, hence why this blog is so long. I wasted a lot of time believing in Libertarianism, so my hope is that this post will help open-minded Libertarians understand why Libertarianism is naive. Many of the claims stated in this article will include links to other blog posts that elaborate on the arguments made here.
+</p>
+
+<p>
+For a shorter and more general list of reasons why Anarchism is anti-civilization, I strongly recommend this essay by Blithering Genius: <a href="https://thewaywardaxolotl.blogspot.com/2017/10/the-case-against-anarchism.html?view=classic">The Case Against Anarchism</a>
+</p>
+
+<p>
+For many people however, that essay is not convincing enough for debunking Anarchism, and many of the arguments stated in Blithering Genius&rsquo;s essay don&rsquo;t apply against Libertarianism since non-anarchist Libertarians support a (minarchist) government, hence why I decided to write this much longer essay addressed against Libertarianism and Anarcho-Capitalism specifically.
+</p>
+</div>
+</div>
+
+<div id="outline-container-NAP" class="outline-2">
+<h2 id="NAP"><span class="section-number-2">2.</span> The Libertarian NAP Is Vague And Misleading</h2>
+<div class="outline-text-2" id="text-NAP">
+<p>
+Although the Libertarian NAP is defined as an ethical rule prohibiting all actions that violate negative rights, there is disagreement among Libertarians regarding what should and should not count as negative rights. Libertarians might be inclined to believe that it&rsquo;s obvious as to what counts as a negative right since it can be asked as a yes/no question, but it&rsquo;s actually not that simple because there are lots of gray areas. And even if you try to resolve the gray areas by definitively drawing a line in the sand, this is not going to work for everybody. Some people are going to disagree with the ultimate decision, whether that&rsquo;s a small minority, or whether the disagreement is split half and half among the population. For example, two Libertarians might say that they both believe in the NAP, but if you dig deeper and ask more specific questions, they actually disagree on a number of things (abortion, IP rights, rainwater rights, etc). When I used to be a Libertarian, this I used to believe this (that it is obvious regarding what does and does not count as negative rights) until I started asking deeper questions about ethics (e.g. Georgism) and became a moral relativist.
+</p>
+
+<p>
+The Non-Aggression Principle (NAP) <a href="https://thewaywardaxolotl.blogspot.com/2015/09/life-is-violent.html">is incompatible with human nature</a>, although it is notable for being a good first attempt at trying to establish the rules of a cooperative society.
+</p>
+
+<p>
+It is misleading that Libertarians try to conceptualize the NAP as a standard for objective morality. In order for this to be the case, there would have to be an objective definition of what does and does not count as &ldquo;aggression&rdquo;. But since &ldquo;aggression&rdquo; is subjective, the NAP is also subjective. That also means that there are at least dozens or hundreds of different conceptions of the NAP, instead of just one.
+</p>
+
+<p>
+Morality is <i>not</i> objective because morality necessarily has to depend on perspective. Moreover, it is also very dangerous to view morality as completely black and white.
+</p>
+</div>
+
+<div id="outline-container-when-libertarians-disagree" class="outline-3">
+<h3 id="when-libertarians-disagree"><span class="section-number-3">2.1.</span> List Of Ethical Topics That Libertarians/Ancaps Could Disagree On</h3>
+<div class="outline-text-3" id="text-when-libertarians-disagree">
+<ul class="org-ul">
+<li>Abortion?</li>
+<li>Death Penalty?</li>
+<li>Veganism?</li>
+<li>Animal Rights?</li>
+<li>Children&rsquo;s Rights?</li>
+<li>Rainwater Rights?</li>
+<li>Pollution Laws?</li>
+<li>Whether Private Property Is Based On Labor Or Original Appropriation?</li>
+<li>Intellectual Property Rights? Copyrights? Trademarks? Patents?</li>
+<li>Should Land Value Taxes Be Collected? If Yes, Then How So?</li>
+<li>The Appropriate Penalties, Fines, And Jail Times For Committing Any Type Of Crime, Or Breaking The Laws?</li>
+<li>When Democracy Is Valid (If Ever)?</li>
+<li>The Legality To Open Carry Firearms?</li>
+<li>Can People Be Naked Or Topless In Public?</li>
+<li>The Legality Of Loitering?</li>
+<li>What Should The Age Of The Majority Be?</li>
+<li>What Procedure Should Be Followed For The Court System?</li>
+<li>One-Party Or Two-Party Consent For Revealing Private Communications?</li>
+<li>What The Age Of Consent Should Be?</li>
+<li>The Legality Of Blackmailing?</li>
+<li>Legal Status and Procedures regarding Do Not Resuscitate (DNR) orders?</li>
+<li>Legal Status and Procedures regarding someone deemed mentally-incompetent; Who/what authority can deem someone mentally-incompetent?</li>
+<li>If Drunk Driving Should Be Legal?</li>
+<li>If Pitbulls Should Be Banned?</li>
+<li>If It&rsquo;s Ethical To Have Children Without Their Consent?</li>
+<li>If It&rsquo;s Okay To Indoctrinate Children?</li>
+<li>What Counts As Indoctrination?</li>
+<li>What Counts As Deception?</li>
+<li>Et Cetera. This isn&rsquo;t even a complete list of all the ways how Libertarians might disagree with each other.</li>
+</ul>
+<p>
+The bottom line here is it&rsquo;s not sufficient to define a legal code only according to the NAP, because there&rsquo;s simply way too much variation in what people would consider to be &ldquo;aggressive&rdquo; or &ldquo;non-aggression&rdquo;. A legal code would have to be much more specific and rigid because people will disagree on what counts as negative rights and then some. With all that being said, it&rsquo;s more accurate to think of the Libertarian NAP is a spectrum of NAPs that tends to favor negative rights, depending on what people should and should not count as negative rights. Assuming that we want to achieve a stable, high-technological society with little to no violence and abundant resources, Libertarianism is not the way forward.
+</p>
+</div>
+</div>
+
+<div id="outline-container-dif-legal-systems-have-dif-NAPs" class="outline-3">
+<h3 id="dif-legal-systems-have-dif-NAPs"><span class="section-number-3">2.2.</span> Different Legal Systems Have Different NAPs</h3>
+<div class="outline-text-3" id="text-dif-legal-systems-have-dif-NAPs">
+<p>
+In a way, this world already has exactly what Ancaps are asking for. There are hundreds to thousands of different jurisdictions and sub-jurisdictions that you could move to if you don&rsquo;t like the laws that come with living where you are <i>now</i>. This is essentially the same thing as Propertarianism. With so many options for &ldquo;opting-out&rdquo; available to you, how could <i>anyone</i> reasonably argue that it&rsquo;s not possible for you to opt-out of the laws that you live under today? I don&rsquo;t see how Ancapistan would be any different. If Ancaps can&rsquo;t even be satisfied with migrating to a different jurisdiction with different laws when there are at least hundreds to choose from, this suggests that Propertarianism and the freedom to migrate somewhere else (or opt-out as you say) won&rsquo;t be sufficient for resolving every human&rsquo;s moral disagreements with one another.
+</p>
+
+<p>
+Of course, Ancaps are assuming that all, most, or some of them would each do their best to conform with their own versions of the NAP, but it&rsquo;s not clear how you could even guarantee that each Ancap-citadel would try to follow the NAP in the first place, especially since Ancaps can&rsquo;t agree with each other on what counts as a violation of the NAP, much less since an Ancap society has never existed (and never will).
+</p>
+
+<p>
+However, since people cannot universally agree on what does or does not count on aggression, I would argue that in a way, this world already has exactly what Ancaps are asking for. If you disagree with the Canadian version of the NAP, then you can migrate to the United States and live under the American version of the NAP instead. If you still don&rsquo;t like that, then you can also choose to opt-out for the Mexican NAP, the Japanese NAP, the Australian NAP, the German NAP, the Mongolian NAP, the Nigerian NAP, the Swiss NAP, and so forth. If you just do some researching, you can probably find a legal jurisdiction that has a decent interpretation of the NAP that you&rsquo;re looking for. Aggression is subjective, so it&rsquo;s no surprise that there are multiple NAPs, one for every jurisdiction.
+</p>
+
+<p>
+There is a conflict between Alloidal-Voluntaryists&rsquo; support for the Libertarian NAP and their support for Propertarianism. Although we already live in a Propertarian world (considering that different countries have different laws for enforcing their different ethical views), Voluntaryists and Libertarians are still unhappy with this because the Voluntaryist / Libertarian spectrum of NAPs is not enforced to a sufficient extent of their liking.
+</p>
+
+<p>
+Why should someone agree to some ancap&rsquo;s legal system when they could shop around for another that fits their own moral preferences instead?
+</p>
+
+<p>
+Sharia Law says that apostles and people who leave Islam should be killed. This position would contradict the NAP, so Ancaps <b>should</b> be against it. But what if territories all over the world established Sharia Law in their borders? Wouldn&rsquo;t Propertarianism suggest that apostasy laws are justified since it&rsquo;s enacted on Islamic countries&rsquo; private property? And if it&rsquo;s not justified, then what are Ancaps going to do about it?
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-denial-of-biorealism" class="outline-2">
+<h2 id="denial-of-biorealism"><span class="section-number-2">3.</span> Libertarianism Denies Biological Realism</h2>
+<div class="outline-text-2" id="text-denial-of-biorealism">
+<ul class="org-ul">
+<li>Peak resources is a real concern. It is horribly mistaken to believe that humans will never run out of resources when they live on a planet with a finite amount of material resources. Natural Resources Taxation is the most logical solution.</li>
+
+<li>Eugenic Population Control (EPC) is necessary in order to preserve modern civilization in a world where the traditional constraints on evolution have disappeared due to modern technology.</li>
+
+<li>Regulations to prevent overpopulation are a good thing since the Earth has finite resources, Demographic Transition Theory is completely wrong, and this is everybody&rsquo;s best interests to prevent war, disease, and famine in the future.</li>
+
+<li>It&rsquo;s a good idea to have immigration controls within an individualist country, especially since genes are the main factor controlling how individualist a person&rsquo;s personality is. For further info, see: <a href="#individualism">Why Open-Borders Immigration will be the Downfall of Libertarian-ish Countries</a></li>
+<li><a href="https://thewaywardaxolotl.blogspot.com/2014/11/adaptive-coherence.html?view=classic">Genetics and culture, genes and memes go hand in hand</a>.</li>
+</ul>
+</div>
+
+<div id="outline-container-individualism" class="outline-3">
+<h3 id="individualism"><span class="section-number-3">3.1.</span> Individualism Is Mostly Determined By Genetics</h3>
+<div class="outline-text-3" id="text-individualism">
+<p>
+Most Libertarians are inclined to insist that race doesn&rsquo;t matter, that &ldquo;there&rsquo;s only individuals&rdquo;, that <a href="../FAQs/race-realism-FAQs.html">race realism</a> is pseudo-science, and that race and genetics don&rsquo;t matter for how individualistic, intelligent, hard-working a person can be, but there are several problems with believing this:
+</p>
+<ul class="org-ul">
+<li>Most academic research is fake, so whatever academia has to say race realism cannot be trusted.</li>
+<li>It would be contradictory to simultaneously understand evolutionary theory, to insist that racial differences don&rsquo;t matter, and to refuse to apply evolutionary theory under the ideological dogma that racial differences shouldn&rsquo;t matter. The hard fact is that race and genetics <i>do</i> matter.</li>
+<li><a href="../epistemology/free-will.html#determinism-vs-freedom">Metaphysical Free Will</a> does not exist. Due to the Metaphysical Nature of the Universe, everybody&rsquo;s destiny is already predetermined, and <a href="../epistemology/free-will.html#determinism-parents-and-children">this section contains a good, concise list of reasons</a> why that is the case.</li>
+<li>Prioritizing the an individualist moral code that emphasizes freedom above everything violates <a href="https://en.wikipedia.org/wiki/Is%E2%80%93ought_problem">Hume&rsquo;s Guillotine</a>, that is: What ought to be cannot be deduced from what is. Even if an ultra-individualist society where race doesn&rsquo;t matter might be favorable to Libertarians, that doesn&rsquo;t mean that such a society is destined to arise.</li>
+<li>Most of the World&rsquo;s Cultures are not inclined towards individualism (more on this in the next two paragraphs).</li>
+</ul>
+<p>
+There is plenty of evidence to prove that genes are the main factor controlling how individualist a person&rsquo;s personality is. In the serotonin transporter gene for example, East Asians are significantly more likely to have the short &ldquo;S&rdquo; allele compared to Europeans who are relatively more likely to have the longer &ldquo;L&rdquo; allele, which may be a contributing factor to the more collectivist culture in East Asia versus the more individualist culture in Europe. <a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2009.1650">Source</a>
+</p>
+
+<p>
+The only region in the world where Libertarianism has a sizable amount of popularity is the West, since Europeans have the most individualist genes. Likewise, a majority of the Libertarian population is white males is because those demographics have genetic characteristics that make those people more inclined towards individualism. Once one accepts race realism, it&rsquo;s no surprise why Libertarianism has very little popularity in non-western societies, which generally tend to be culturally collectivist. I&rsquo;m not saying that individualism is necessarily good or necessarily bad, because clearly both individualist <i>and</i> collectivist cultures can be evolutionarily advantageous since they are more common worldwide, but what I am saying is that&rsquo;s it&rsquo;s naive to believe that every culture and society around the world can and/or will become individualist as well. For the most part, Libertarianism has already gained most of the followers that it will ever have, and this is one of many reasons why Libertarianism will never be achieved.
+</p>
+
+<p>
+In fact, individualism is destined to become less and less common as less individualist people migrate to Western countries and have higher fertility rates than the native Western populations. If Libertarians want to achieve an individualist society, then they are shooting themselves in the foot by being pro-immigration and refusing to understand biological realities. Ironically, Libertarians are usually pro-immigration since that position aligns well with being fiercely individualist, but supporting this position will only make individualist countries less individualist in the long run, due to the <a href="https://thewaywardaxolotl.blogspot.com/2018/07/the-thermodynamics-of-globalization.html?view=classic">Thermodyanmics of Globalization</a>. The United States is the most Libertarian country in the world because it is the most individualist country in the world, since its founding and environment created a country where more individualist-minded people were tempted to migrate to, but unfortunately, the prosperity and high individualism of the United States is destined to cease by the end of the century: <a href="https://thewaywardaxolotl.blogspot.com/2021/02/the-end-of-american-greatness.html?view=classic">The End of American Greatness</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-cornucopianism-is-wrong" class="outline-3">
+<h3 id="cornucopianism-is-wrong"><span class="section-number-3">3.2.</span> Cornucopianism Is Wrong / Overpopulation Is Real</h3>
+<div class="outline-text-3" id="text-cornucopianism-is-wrong">
+<p>
+Libertarians often promote Cornucopianism out of ideological reasons rather than practical reasons. It would be ideologically convenient if we lived in a reality where we&rsquo;ll never run out of resources, but unfortunately for Libertarians, reality doesn&rsquo;t work that way.
+</p>
+
+<p>
+For more information, see: <a href="../FAQs/overpopulation-FAQs.html">Overpopulation FAQs</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-geopolitical-realities" class="outline-3">
+<h3 id="geopolitical-realities"><span class="section-number-3">3.3.</span> Libertarian Ignorance Of Geopolitical Realities</h3>
+<div class="outline-text-3" id="text-geopolitical-realities">
+<p>
+Libertarians frequently tend to be ignorant/naive of geopolitical realities. For example, Reason Magazine had both the ignorance and the nerve to blame NATO (a defensive alliance where all members join with democratic support) for Russian aggression, despite a history of Russians invading their neighbors and a well-known Russian interest to restore the USSR.
+</p>
+<ul class="org-ul">
+<li><a href="https://reason.com/2022/02/28/ukraine-putin-war-russia-nato-us-bad-europe-clinton/">https://reason.com/2022/02/28/ukraine-putin-war-russia-nato-us-bad-europe-clinton/</a></li>
+<li><a href="https://reason.com/2022/10/28/it-should-be-ok-to-talk-about-negotiating-with-russia-over-ukraine/">https://reason.com/2022/10/28/it-should-be-ok-to-talk-about-negotiating-with-russia-over-ukraine/</a>
+<ul class="org-ul">
+<li>The world should have already learned from 1939 that appeasement is <i>not</i> an option for ending war. If Ukraine brokered a deal to let Russia keep its annexed territories, Russia would simply attack Ukraine again and again in the future until they finally take over the entire country. And then Russia would accomplish the rest of their outdated geopolitical desires and worldview.</li>
+</ul></li>
+<li>i</li>
+</ul>
+<p>
+Military spending is not a waste if it secures rational national security interests.
+</p>
+
+<p>
+Tariffs, power projection, and other foreign policy tools can actually be useful and rational for securing national interests and playing good geopolitics.
+</p>
+</div>
+
+<div id="outline-container-problems-with-secession" class="outline-4">
+<h4 id="problems-with-secession"><span class="section-number-4">3.3.1.</span> The Geopolitical Problems With Allowing Ancap Secessions</h4>
+<div class="outline-text-4" id="text-problems-with-secession">
+<p>
+Some Ancaps argue that as long as they are provided with an &ldquo;opt-out option&rdquo;, that is, they are allowed to secede from a country on uninhabited territory, there is no problem with statism. This is just more ignorance about how geopolitics work.
+</p>
+
+<p>
+It will never be possible to allow Ancaps to secede on uninhabited territory within the country because that is exactly what the country&rsquo;s enemies would support. If there was a major anti-American secession within some territory in the United States, geopolitical enemies/rivals of the US like Russia and China would jump at the opportunity to support the secessionist movement as a proxy war that could weaken the United States.
+</p>
+
+<p>
+As another example, consider the Berber secessionist movement in Algeria. Algeria&rsquo;s greatest geopolitical rival is Morocco. If the Berbers in Algeria did secede from Algeria, then Morocco would exploit the opportunity by arming the rebels and backing them in a proxy war that could weaken Algeria.
+</p>
+
+<p>
+All that being said, I would actually support a theoretical secession movement in an enemy country (e.g. Russia, China, etc) if it would weaken the geopolitical opponents of the United States and Western World in general, but I would never ever support such a movement in any Western countries. The entire world would be closer to achieving my Pragmatopian vision for Earth if China and the Russian Federation were to both collapse.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-voluntary-self-protection" class="outline-3">
+<h3 id="voluntary-self-protection"><span class="section-number-3">3.4.</span> Voluntary Self-Protection Versus The Free-Rider Problem</h3>
+<div class="outline-text-3" id="text-voluntary-self-protection">
+<p>
+Ancaps frequently argue that people won&rsquo;t need the protection of a state as long as people are free to form mutual protection agreements. Unless there is a top-down authority that will ensure that everybody will protect the community when called upon to do so, there will be a free-rider problem where the members of the voluntary army are incentivized to not protect the community so that they don&rsquo;t have to put their life on the line, while they still get the benefits of everybody else doing the actual fighting and defending. The end result will be that the voluntary army only consists of <a href="https://en.wikipedia.org/wiki/Ghost_soldiers">ghost soldiers</a>. The same argument also applies to conscription if there arises a situation where conscription is necessary to defend the country. It&rsquo;s truly puzzling how Ancaps are quick to realize that welfare states are doomed to fail since they create a free-rider problem, and yet their unable to realize that their own proposals are also doomed to fail due to free-rider problems.
+</p>
+
+<p>
+On the other hand, the ancap army could have an authority that will ensure that every person on the military rolls is guaranteed to fight if the community is under attack. In order to do this, it would have to punish defectors, and that would avoid the free-rider problem. But in that case, it wouldn&rsquo;t be a voluntary army anymore. It would just be another state.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-game-theory" class="outline-2">
+<h2 id="game-theory"><span class="section-number-2">4.</span> Libertarian Don&rsquo;t Understand Game Theory</h2>
+<div class="outline-text-2" id="text-game-theory">
+<p>
+Although it may seem ridiculous and absurd to most anarchists (or even the average person) to have laws and regulations against collecting rainwater since it&rsquo;s a really simple thing to do, and most anarchists would see it as their right to get water by collecting it via their own labor, it can be very reasonable to have rational regulations against collecting rainwater for the purpose of preventing a Tragedy of the Commons where everybody (or even just a few insistent people) collects as much free rainwater for themselves, at the cost of disrupting groundwater, aquifers, rivers, and the general flow of the water cycle. Just because collecting rainwater is easy and simple and water is necessary to live, that doesn&rsquo;t mean that there shouldn&rsquo;t be any regulations against it when it comes to society&rsquo;s best interests. Anarchists and other shallow thinkers fail to realize this because they fail to recognize the importance of government in resolving game theoretical problems.
+</p>
+
+<p>
+<a href="../civilization/ideal-government.html#urban-planning">Government is necessary for doing urban planning right</a>. Urban planning is very important because it affects future societal and economical outcomes.
+</p>
+
+<p>
+<a href="../civilization/ideal-government.html#global-government">Global government</a> is a good idea since it is necessary in order to prevent Tragedies of the Commons from happening on a global scale. The humanist ideology of the United Nations is a terrible basis for a global government, but if a rational ideology that understands evolution well was the hypothetical global government&rsquo;s ideology instead, then the arguments against global government aren&rsquo;t really any better than the standard arguments given against any form of government.
+</p>
+
+<p>
+Open-carry is not a good idea for the same reason why public nudity is not a good idea. It disturbs the peace, and it&rsquo;s not advantageous anyway since concealed-carry is superior from a game-theoretic perspective.
+</p>
+</div>
+</div>
+
+<div id="outline-container-freedom-and-consent" class="outline-2">
+<h2 id="freedom-and-consent"><span class="section-number-2">5.</span> Why Freedom And Consent Are Not The Most Important Values</h2>
+<div class="outline-text-2" id="text-freedom-and-consent">
+<p>
+Freedom is not the most important value. Preserving the stability and prosperity of modern civilization is the actual most important value.
+</p>
+
+<p>
+<a href="https://thewaywardaxolotl.blogspot.com/2022/07/circles-of-control-and-freedom.html?view=classic">Freedom only exists within a system of constraints.</a>
+</p>
+
+<p>
+Although Libertarians portray humans as being indoctrinated by the government to support the government, they&rsquo;re just merely using the <a href="https://thewaywardaxolotl.blogspot.com/2013/12/the-rhetoric-of-exploitation_21.html">Rhetoric of Exploitation</a>. It is not a good argument to portray culture as indoctrination because culture and context are always inseparable from human life.
+</p>
+</div>
+
+<div id="outline-container-voluntaryism-and-antinatalism" class="outline-3">
+<h3 id="voluntaryism-and-antinatalism"><span class="section-number-3">5.1.</span> A True Voluntaryist Would Be Anti-Natalist</h3>
+<div class="outline-text-3" id="text-voluntaryism-and-antinatalism">
+<p>
+If you&rsquo;re going to uphold consent as the most important ethical value, then it is completely indefensible to have children:
+</p>
+<ul class="org-ul">
+<li>Fact #1: Nobody asks to be born.</li>
+<li>Fact #2: Many people wish they were never born.</li>
+<li>Fact #3: You can never know if your children will consent to being born.</li>
+<li>Fact #4: Having children is unethical, according to Voluntaryism (assuming logical consistency).</li>
+</ul>
+<p>
+No matter how they might say otherwise, it is logically inconsistent to uphold maximal consent, while not being anti-natalist. Most people would argue that it&rsquo;s not immoral because it&rsquo;s not possible to get consent before giving birth to someone, but there&rsquo;s no reason why that should deem an exception for these scenarios, <i>if you&rsquo;re going to be a True Voluntaryist</i>. Nobody ever asks to be born. If a Voluntaryist cannot get their unborn children&rsquo;s consent to do something that would be potentially harmful to the unborn children, then you shouldn&rsquo;t do it. No excuses.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-purpose-of-government" class="outline-2">
+<h2 id="purpose-of-government"><span class="section-number-2">6.</span> The True Purpose of Government</h2>
+<div class="outline-text-2" id="text-purpose-of-government">
+<p>
+Libertarians have a moral narrative that the purpose of government is to protect the rights of the citizens, and while I will concede that this is a better understanding of why government exists than what most people think, it&rsquo;s still inaccurate to a great extent. See: <a href="../civilization/ideal-government.html#goals-of-government">The purpose of government</a>.
+</p>
+
+<p>
+The first and foremost goal of government is to resolve Prisoner&rsquo;s Dilemmas, Tragedies of the Commons, and Free-Rider Problems. Government comes from the necessity to create a reasonable set of laws that would create a societal framework from which selfish individuals can cooperate together for greater mutual gain (than if they didn&rsquo;t cooperate together). Cooperation is the foundation of civilization, and the best legal code is the one that enables that to the greatest extent possible.
+</p>
+
+<p>
+Instead of calling the relationship between a citizen and the government a &ldquo;social contract&rdquo;, it should instead be called an <b>Implicit Mutual Social Agreement (IMSA)</b>. Every time the word &ldquo;contract&rdquo; is used, Libertarians and Ancaps complain that it&rsquo;s not really a contract because they never signed it. And while they&rsquo;re right about that, they&rsquo;re missing the point. The idea is that if you want the benefits that society gives you, then you have to comply with society&rsquo;s rules, even if you don&rsquo;t like all the rules. You can&rsquo;t have your cake and eat it too. If you&rsquo;re going to break the IMSA, then society is justified to prosecute you.
+</p>
+
+<p>
+There is a Privately Owned City in India that is about the closest thing that we have to what a city would be like under Anarcho-Capitalism. Although it&rsquo;s functional in many ways, Humans can do much better than that, under <a href="../civilization/ideal-government.html">Pragmatopianism</a>.
+</p>
+
+<p>
+See: <a href="https://www.youtube.com/watch?v=uD0bR7JXI6k">India&rsquo;s Privately Owned City - Polymatter</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-anti-democracy-args-apply-against-AC" class="outline-2">
+<h2 id="anti-democracy-args-apply-against-AC"><span class="section-number-2">7.</span> Anti-Democracy Arguments Also Apply Against Anarcho-Capitalism</h2>
+<div class="outline-text-2" id="text-anti-democracy-args-apply-against-AC">
+<p>
+The same arguments that Ancaps make against Democracy can also be used against Ancapism itself. Democracies don&rsquo;t necessarily elect leaders that are the best for society, but rather they elect the leaders who are the best at manipulating people into voting for them. The best political campaigns and the best corporations already do this to achieve their ambitions. So if political corporations do this too, it would be even worse because not only would they be doing it to make a profit, but they would also do it to gain direct jurisdiction on what the laws would be. Under crony-capitalism, they are able to lobby the government to do their bidding, but this time they would <i>be</i> the government.
+</p>
+
+<p>
+All the political data analytics, manipulative political advertising, and laborious campaign events should be mentioned as counter-arguments. An ancap agency would be <i>very</i> foolish to not use these tactics. The largest, most profitable corporations would obviously use the most intrusive data analytics (demographics, job occupations, interests, passions, what people buy, etc). They would collect as much information on everybody as they possibly can to figure out what makes everybody tick, and they would use that data to manipulate everybody into joining their tribe, and they would try to conquer the world. For more information, see: <a href="https://www.youtube.com/watch?v=LUSZfEBTwRc">The Selfish Ledger - Google</a>.
+</p>
+
+<p>
+Instead of calling them &ldquo;defense agencies&rdquo;, &ldquo;ancap corporations&rdquo;, etc., a better name for them would be &ldquo;political corporations&rdquo; because that&rsquo;s what exactly they are. They are corporations that profit off of enforcing their arbitrary definition of the Law, and they seek to manipulate everybody into paying them and obeying <i>their</i> laws. If a majority of people don&rsquo;t support libertarianism, then this would quickly become a very dystopian society. Corporations and states are not so different. Corporations are just states that have not yet established a monopoly on violence.
+</p>
+
+<p>
+So, it&rsquo;s clear to see that the most successful and most popular defensive agencies of an Ancap society wouldn&rsquo;t be chosen whichever one protects individual rights the best, but rather by whichever ones are the most successful at manipulating the masses. This is no different from how Democracies don&rsquo;t necessarily elect leaders that are the best for society, but rather they elect the leaders who are the best at manipulating people into voting for them. The way how the consumers would pay the political corporations that they like the best is called <a href="https://en.wikipedia.org/wiki/Dollar_voting">Dollar Voting</a>, which is hardly any different from how a traditional democracy works.
+</p>
+
+<p>
+John Stossel released some good videos about a week before the 2020 presidential election that talked about how a shocking amount of invasive data analytics are already used for manipulating people into supporting political campaigns. After seeing it, I came to the conclusion that the most successful and most popular defensive agencies of an Ancap society wouldn&rsquo;t be chosen whichever one protects individual rights the best, but rather by whichever ones are the most successful at manipulating the masses, especially given the massive data analytics that are done nowadays.
+</p>
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=LasGIVHyCGI">Campaign Technology - John Stossel</a></li>
+<li><a href="https://www.youtube.com/watch?v=bwxllxMIzzY">Campaign Moments and Message - John Stossel</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZckwjLTW6lA">How Debates Are Won - John Stossel</a></li>
+</ul>
+<p>
+While I don&rsquo;t think a non-ancap society would be invulnerable to similar problems, it&rsquo;s hard for anyone to believe that the problems wouldn&rsquo;t be even worse in an Ancap one.
+</p>
+</div>
+</div>
+
+<div id="outline-container-problems-with-anti-georgism" class="outline-2">
+<h2 id="problems-with-anti-georgism"><span class="section-number-2">8.</span> The Problems With Anti-Georgism</h2>
+<div class="outline-text-2" id="text-problems-with-anti-georgism">
+<p>
+<a href="../economics/georgism-elevator-pitch.html">Georgism</a> is necessary for truly free markets, to protect negative rights, to maximize economic production, to significantly reduce wealth inequality, to prevent real estate bubbles, to conserve the Earth&rsquo;s finite natural resources, and to maximize land-use efficiency.
+</p>
+</div>
+
+<div id="outline-container-eminent-domain" class="outline-3">
+<h3 id="eminent-domain"><span class="section-number-3">8.1.</span> Eminent Domain</h3>
+<div class="outline-text-3" id="text-eminent-domain">
+<p>
+Eminent Domain can be justified in favor of society&rsquo;s collective interests in the right situations, especially if a land-possessor fails to pay their Location Value Tax.
+</p>
+
+<p>
+<a href="../FAQs/georgism-FAQs.html#eminent-domain">How Eminent Domain Works Under Georgism</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-pigouvian-pollution-taxes" class="outline-3">
+<h3 id="pigouvian-pollution-taxes"><span class="section-number-3">8.2.</span> Pigouvian Pollution Taxes</h3>
+<div class="outline-text-3" id="text-pigouvian-pollution-taxes">
+<p>
+Pigouvian pollution taxes easily the best solution to regulating pollution, reducing climate change, and reducing society&rsquo;s current dependence on inefficient roads and cars.
+</p>
+
+<p>
+Ancaps hate taxes, so they argue that there are other ways to reduce pollution, but none of them are systematic or guaranteed to work, nor do any of them quantify pollution, thus making the problem harder to control.
+</p>
+</div>
+</div>
+
+<div id="outline-container-equal-negative-land-rights" class="outline-3">
+<h3 id="equal-negative-land-rights"><span class="section-number-3">8.3.</span> The Contradictions of Unequal Land Rights</h3>
+<div class="outline-text-3" id="text-equal-negative-land-rights">
+<p>
+Multiple contradictions result from believing that everyone does not have an equal right to land: <a href="./geolibertarian-syllogisms.html">Geolibertarian Syllogisms</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-free-markets-circular-reasoning" class="outline-2">
+<h2 id="free-markets-circular-reasoning"><span class="section-number-2">9.</span> The &ldquo;Free&rdquo; Markets in Ancapistan Are Established By Circular-Reasoning</h2>
+<div class="outline-text-2" id="text-free-markets-circular-reasoning">
+<p>
+Government is necessary in order to establish, guarantee, and protect a free market, lest the market be neither free nor fair.
+</p>
+
+<p>
+The basic error with anarchism is that it evades the crucial, life-and-death difference between trade and force. Objectivism recognizes that because man is the rational animal, he can only succeed if he is free of coercion. If men are allowed to trade freely, he will prosper and succeed. If men are subject to coercion (practiced either by the state or by criminals) he will fail and die. Anarchists conflate these two - they make no distinction between trade and force and simply argue that force is just a kind of trade like any other so it should be on the market.
+</p>
+
+<p>
+They argue that the roles that would be traditionally filled by government - police, courts and army - should simply be filled by a free market. But this is plainly circular reasoning. The protection of individual rights cannot be supplied by a market since the very existence of a market itself requires the protection of individual rights. You get into an infinite regress trying to explain this away.
+</p>
+
+<p>
+Furthermore the notion that the state has an immoral monopoly on coercion is a false comparison. Competition in coercion is nothing like competition in a marketplace. Competing in a marketplace means you have several goods to choose from and there is no coercion at all. Competing in coercion would mean&#x2026; what exactly? All force is a monopoly - force says obey or harm will be done to you. The notion of &ldquo;competition&rdquo; in force is silly, unless you mean five independent thugs pointing guns at you with different demands.
+</p>
+
+<p>
+Another key reason why a limited government is necessary is to place the awesome power of retaliatory force under objective laws. With a limited government, specific rules can be placed on its functioning which will limit the government&rsquo;s power and ensure it adheres to certain basic rules. Under anarcho-capitalism, any private agency can do whatever it wants - if a group wants to have the death penalty for adultery, that is perfectly OK. If another group thinks thermonuclear warfare is a proper response to property dispute, who is to stop them - after all, we wouldn&rsquo;t want to interfere with their &ldquo;right&rdquo; to use retaliatory force. Limited government provides the possibility of placing the means of coercion under objective control - anarcho-capitalism lets anybody do absolutely anything no matter how wicked, unjust or disproportionate.
+</p>
+
+<p>
+And the final reason is the very fact that anarchy simply cannot exist as you envision it. The only valid meaning of the term anarchy is the way it was historically used - to mean a situation where no central authority results in constant violence and bloodshed between different, feuding mini-dictatorships (i.e. Somalia). The idea of anarchy as a society where everyone magically lives in harmony without the use of force is a fantasy - nothing like this has ever existed in history on any scale whatever, the reason being that such a society would fall victim to the first thug or enemy army who showed up (if they could resist those two, then they do have some force-wielding entity which is then a de-facto government).
+</p>
+
+<p>
+So, in short, anarcho-&ldquo;capitalism&rdquo; conflates trade and force, rests on circular logic, embraces complete subjectivism and is logically incoherent. Anarchy means Somalia, Afghanistan and Iraq - If it is freedom you want, you must support the existence of a government which will guarantee it.
+</p>
+</div>
+
+<div id="outline-container-stated-in-propositions" class="outline-3">
+<h3 id="stated-in-propositions"><span class="section-number-3">9.1.</span> Ancaps&rsquo; Circular Reasoning Stated In Lines Of Logical Propositions</h3>
+<div class="outline-text-3" id="text-stated-in-propositions">
+<p>
+[A] Individual rights will be protected exclusively by private entities, without any government protection.
+</p>
+
+<p>
+[B] Private defense corporations will compete against each other in a free marketplace with the intent of gaining the most profit.
+</p>
+
+<p>
+[C] A free and fair marketplace can only exist if individual rights (trade, property, etc) are protected, otherwise the marketplace is not free nor fair.
+</p>
+
+<p>
+If you believe all the premises above as well as: (A -&gt; B) <i>and</i> (B -&gt; C) <i>and</i> (C -&gt; B), then you believe in a circular reasoning fallacy. It would not be possible to sufficiently protect individual rights without a free marketplace that could distribute the necessary weapons and defenses, private defense corporations would not exist if the free marketplace does not exist, and the free marketplace does not exist because there is no entity that can independently guarantee its existence since we already assumed premise A. By negation introduction, we can reject proposition A.
+</p>
+</div>
+</div>
+
+<div id="outline-container-refuting-ancap-objections" class="outline-3">
+<h3 id="refuting-ancap-objections"><span class="section-number-3">9.2.</span> Refuting Ancap Objections</h3>
+<div class="outline-text-3" id="text-refuting-ancap-objections">
+<p>
+Ancaps might counter-argue that communities could still provide their own defenses until a free market forms, but this is also impossible because no community or defense agency would be able to purchase the goods and services that would be necessary for protecting themselves against foreign invaders (guns, ammunition, defenses), which would effectively means that everybody would be defenseless unless they already had modern weapons and defenses to begin with. Producing modern weapons on an industrial scale is essentially impossible without an existing free market that could enable the production and distribution of defensive goods, and no free market can exist since individual rights cannot be protected without sufficient defenses, and moreover, because there are no governments that can guarantee a market in the first place.
+</p>
+
+<p>
+And even if communities were able to provide their own private, mutual protection, they would still be vulnerable to collapsing due to the <a href="#voluntary-self-protection">Free-Rider Problem</a>.
+</p>
+
+<p>
+If Community X has a greater Comparative Advantage and a greater Division of Labor at producing better quality weapons than Community Y, then Community X would be able to subdue Community Y by force if they wanted to. But if governments existed, they could prevent Community X from conquering Community Y, and it would be possible to establish a free marketplace that could produce and distribute high-quality weapons across all regions.
+</p>
+
+<p>
+Conclusion: A laissez-faire government is necessary to protect a free market where corporations of any kind are able to compete against each other.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-market-failures" class="outline-2">
+<h2 id="market-failures"><span class="section-number-2">10.</span> Market Failures</h2>
+<div class="outline-text-2" id="text-market-failures">
+<p>
+Due to Libertarians&rsquo; rejection of government, Libertarianism is unable to fix many market failures. i
+</p>
+</div>
+
+<div id="outline-container-infrastructure" class="outline-3">
+<h3 id="infrastructure"><span class="section-number-3">10.1.</span> Infrastructure</h3>
+<div class="outline-text-3" id="text-infrastructure">
+<p>
+<a href="https://www.youtube.com/watch?v=pLcqJ2DclEg">Government is Necessary to Build Infrastructure</a>
+</p>
+
+<p>
+TL;DW: Infrastructure for EVs won&rsquo;t be built unless enough people have already bought EVs to make it profitable enough to do so, and people won&rsquo;t buy EVs unless there&rsquo;s enough infrastructure to support using them.
+</p>
+</div>
+</div>
+
+<div id="outline-container-planned-obsolescence" class="outline-3">
+<h3 id="planned-obsolescence"><span class="section-number-3">10.2.</span> Planned Obsolescence</h3>
+<div class="outline-text-3" id="text-planned-obsolescence">
+<p>
+i
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=j5v8D-alAKE">The Problem of Planned Obsolescence - Veritasium</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-peak-resources" class="outline-3">
+<h3 id="peak-resources"><span class="section-number-3">10.3.</span> Peak Resources</h3>
+<div class="outline-text-3" id="text-peak-resources">
+<p>
+i
+</p>
+</div>
+</div>
+
+<div id="outline-container-land-monopolies" class="outline-3">
+<h3 id="land-monopolies"><span class="section-number-3">10.4.</span> Land Monopolies</h3>
+<div class="outline-text-3" id="text-land-monopolies">
+<p>
+i
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-rothbardian-AC-problems" class="outline-2">
+<h2 id="rothbardian-AC-problems"><span class="section-number-2">11.</span> The Problems With Rothbardian Anarcho-Capitalism</h2>
+<div class="outline-text-2" id="text-rothbardian-AC-problems">
+<p>
+Anarcho-Capitalism would replace government and political parties with morally-righteous political corporations that would fight each other constantly over power and morally superiority, thus combining market failures and tribal warfare with democracy&rsquo;s worst problems. Conflicts and disagreements would ultimately be justified by might makes right.
+</p>
+<ul class="org-ul">
+<li>Ancaps assume that the defense agencies are going to enforce the NAP, but what if they never do? As it currently stands, the vast majority of people have no desire for libertarian ethics, and without consumers interested in enforcing a NAP, corporations who prioritize enforcing such ethics would not make enough money to stay in business against their competitors.</li>
+<li>So popular support for libertarianism is clearly a pre-requisite in order for anarcho-capitalism to work anything at all like how ancaps want it to work. In which case, they would be better off trying to garner support for libertarianism instead of proposing that the government be replaced by defense agencies.</li>
+<li>Otherwise, if such a system replaced the United States government today with the beliefs that everybody has now (as an example of a world where there is <i>not</i> popular support for libertarianism), there would easily be a defense corporation that would work like a christian theocracy, one for vegans, one for extreme-environmentalists, one for moderate republicans, one for moderate democrats, maybe a centrist one for people who don&rsquo;t care, and maybe one that would pander to socialists/marxists/leftists/etc. Instead of people voting for political parties to enforce their beliefs and way of living on other people, consumers would pay &ldquo;defense&rdquo; corporations to do the same thing. There would be all sorts of different corporations that people would pay money towards to enforce their way of living on other people. [and everything could be even worse outside the United States in more religiously, ethnically, linguistically diverse populations]
+<ul class="org-ul">
+<li>It would probably be vulnerable to mimicking a two-party system, just like our current democracy.</li>
+<li>It is true that there would be a diversity of corporations to cater to a multitude of different interests, but just as the two main parties do everything they can to weaken the smaller parties today, and just as mega corporations lobby the government to make it harder for small businesses to compete against them, it is reasonable to infer that the most dominant political corporations would do the same thing to the smaller corporations. If they&rsquo;re writing the laws, they could easily write a law outlawing smaller corporations. They could then become very powerful and dictatorial since they would have the greatest capacity of any entity to inflict violence and retribution.</li>
+<li>But how would the socialists/marxists/leftists/etc be able to force rich people to pay for their expensive shitty programs if there is not government with a monopoly on violence?
+<ul class="org-ul">
+<li>Presumably the richest people would form their own defense agencies, perhaps even pre-emptively to counter the socialists. In which the socialists wouldn&rsquo;t be able to force them to pay for anything. That said, would it be the case that the rich people&rsquo;s defense agencies would dominate and enslave everybody just like how all leftists predict they would? -Why wouldn&rsquo;t they be able to do this?</li>
+</ul></li>
+</ul></li>
+<li>Libertarians already know that if corporations can lobby and influence the government to do them favors, they will because there is a profit to be made. So why would they trust corporations to replace the government? If you think it through as I have done above, this would all be a disaster unless the corporations already accept libertarianism and <i>want</i> to enforce it. They usually refute that most consumers wouldn&rsquo;t pay corrupt corporations, but again, this assumes that the consumers follow libertarian ethics, and they wouldn&rsquo;t unless libertarianism achieved majority popularity.</li>
+</ul>
+</div>
+
+<div id="outline-container-rothbardian-vs-private-cities" class="outline-3">
+<h3 id="rothbardian-vs-private-cities"><span class="section-number-3">11.1.</span> Defining Rothbardian Anarcho-Capitalism Versus Private Cities Anarcho-Capitalism</h3>
+<div class="outline-text-3" id="text-rothbardian-vs-private-cities">
+<p>
+<b>Rothbardian Anarcho-Capitalism</b> (RAC): Anarcho-Capitalism as it was first conceived by Murray Rothbard. Under RAC, multiple political corporations can have overlapping authority on the same plot of territory.
+</p>
+
+<p>
+<b>Private Cities Anarcho-Capitalism</b> (PCAC): Anarcho-Capitalism, except that only <i>one</i> political corporation can have control over a plot of territory. Different communities that favor different laws, legal codes, customs, and such would each form their own private city where their ideals are exclusively enforced.
+</p>
+
+<p>
+When I went through my Ancap phase, I started off as a Rothbardian Anarcho-Capitalist, but then I became a Private Cities Anarcho-Capitalist as I found it harder and harder to reconcile the problems with Rothbardian Anarcho-Capitalism, until I eventually rejected Anarcho-Capitalism altogether. Most people don&rsquo;t make a distinction between these two types of Anarcho-Capitalism, but I argue that this is an important distinction to make because I&rsquo;ve found some Private City Anarcho-Capitalists don&rsquo;t like RAC, and understandably so, because PCAC has far fewer problems than RAC and is more likely to be successful, hence why I converted from the former to the latter near the end of my Ancap phase.
+</p>
+</div>
+</div>
+
+<div id="outline-container-argumentation-ethics-nonsense" class="outline-3">
+<h3 id="argumentation-ethics-nonsense"><span class="section-number-3">11.2.</span> Argumentation Ethics Is Nonsense</h3>
+<div class="outline-text-3" id="text-argumentation-ethics-nonsense">
+<p>
+I never believed in Argumentation Ethics myself, but a lot of Ancaps do, and this essay does a great job at debunking it: <a href="http://www.justopia.org/exploding-argumentation-ethics.html">http://www.justopia.org/exploding-argumentation-ethics.html</a>
+</p>
+
+<p>
+In short, Argumentation Ethics is wrong because it makes false assumptions. It is not required for two debaters to implicitly accept voluntariness, as demonstrated when someone has to defend themself in a court of law and make an argument that they should be released.
+</p>
+</div>
+</div>
+
+<div id="outline-container-summary-of-rothbardian-AC-problems" class="outline-3">
+<h3 id="summary-of-rothbardian-AC-problems"><span class="section-number-3">11.3.</span> Summary of Rothbardian Anarcho-Capitalism</h3>
+<div class="outline-text-3" id="text-summary-of-rothbardian-AC-problems">
+<ol class="org-ol">
+<li>It requires at least majority support for Libertarianism as a prerequisite.</li>
+<li>And even if general support for Libertarianism was achieved, there&rsquo;s still many issues that libertarians could easily disagree on, including but not limited to: abortion, death penalty, immigration, open-carry, intellectual property, black mailing, legal penalties, pollution, georgism, how parents should be able to raise their children, etc.</li>
+<li>Anarcho-Capitalism would replace political parties with political corporations. Instead of people voting for the party or candidate that they support the most to enforce their beliefs on other people, people would be paying corporations to do the exact same thing. It would be bring us back where we started, maybe even farther back.</li>
+<li>Instead of resolving ethical disagreements by choosing majority rule, disagreements would be resolved according to which corporations have the most consumers and the most money. If disagreements are resolved by economic means, then the laws would be largely determined by what&rsquo;s economical for corporations, which is largely determined by the beliefs of their consumers since the consumers pay money to the corporations that enforce their beliefs the best. <b>Just as ethics should <i>not</i> be determined by majority rule, ethics should <i>not</i> be determined by the economics surrounding popular opinion. The best legal system would use reason to resolve ethical disagreements, not majority approval or the economics of popular opinion.</b></li>
+<li>The Rothbardian model of anarcho-capitalism would bring back all of democracy&rsquo;s worst problems. People would be tribalistic about the corporation they support, political corporations would create divisive and manipulative propaganda to win support (similar to the political rhetoric and ads featured in western democracies), etc, and worst of all: the laws would not enforce the NAP (due to bullet #3).</li>
+<li>The corporations would be interested in collective massive profits AND political power, not just profit alone. Collecting massive profits would lead to gaining more political power, and gaining more political power would lead to increased profits. The synergy from this combination would make it easier than ever for monopolies to form.</li>
+<li>The political data analytics, manipulative political advertising, and laborious campaign events done by today&rsquo;s political campaigns, parties, and organizations would be amplified with even greater intensity due to bullet #5. The largest, most profitable political corporations would collect the most intrusive data analytics (demographics, job occupations, interests, passions, social bubbles, what people buy, etc) to figure out how they could manipulate everybody into joining their tribe, and it would foolish for any corporation to not do this. Does anybody really want to live in a world where corporations have even greater incentive to collect such information and brainwash people?</li>
+<li>Anarcho-capitalism does not support georgism, even though there are no good rebuttals against georgism. Without land value tax, there would be massive inequality and economic inefficiency, which would contribute to the dystopian nightmare.</li>
+</ol>
+<p>
+All of the bullet points above (except for bullet #8) could be resolved by creating private cities that people can join and leave.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-libertarian-tech-ignorance" class="outline-2">
+<h2 id="libertarian-tech-ignorance"><span class="section-number-2">12.</span> Advancing Technology Isn&rsquo;t Necessarily A Good Thing</h2>
+<div class="outline-text-2" id="text-libertarian-tech-ignorance">
+<p>
+In this section, I write my response to some naive quotes that have been written by ancaps who don&rsquo;t realize that technology is a double-edged sword.
+</p>
+<blockquote>
+<p>
+Ancaps: &ldquo;Tax evasion is one of the main uses for bitcoin.&rdquo;
+</p>
+</blockquote>
+
+<p>
+You wanna know what else are great uses for bitcoin and crypto? Scams, ransom, hacking attempts, human trafficking, et cetera. By making transactions anonymous, yes there are some good people who gain freedom from the government, but what you&rsquo;re overlooking is that there are always at least two sides to every moral action. When transactions become anonymous and untraceable, you also make it easier for criminals and evil-doers to get away with their bad deeds and immoral acts. And as more and more companies, individuals, and governments become more accepting of cryptocurrencies, they are also becoming more accepting of these criminals&rsquo; nefarious and untraceable means of collecting money. And you support that apparently. Crypto does have some advantages, but your perspective on cryptocurrencies is very one-sided.
+</p>
+
+<blockquote>
+<p>
+Ancaps: &ldquo;This is huge. Future generations will chuckle at your short-sightedness and small mindedness for doubting the power of crypto-currency. You sound like the nay-sayers when the Internet was in its nascency.&rdquo;
+</p>
+</blockquote>
+
+<p>
+Yeah, sure. The Internet totally hasn&rsquo;t had any negative effects on society whatsoever. You&rsquo;re being one-sided again. With the Internet also came the Dark Web, a popular hub for criminal activities. The Internet is also causing ideological extremists like Ancaps to congregate together, and the rise of these radical ideologies is a contributing factor to the fall of people&rsquo;s faith in the current democratic society and the rising instability of our culture and society. Social media may not be worth the costs that it has had on society. And of course, the Internet is responsible for the spread of lots of fake news and misinformation all over the world. In many ways, human societies would be better off if the Internet was never invented.
+</p>
+
+<p>
+Why should we expect the growing popularity and adoption of cryptocurrencies to be any different? Cryptocurrencies might do some good for society, but they will also undoubtedly cause some predictable harm as well. Stuff like this becomes more obvious when you reject the concept of a Universal Good or a Universal Evil, and it&rsquo;s just one of many reasons why it&rsquo;s so illogical to believe in an Objective Morality, or &ldquo;universally preferable behavior&rdquo; as you call it. There is no such thing because every cause and every action has both an upside <i>and</i> a downside. It just depends on the perspective you&rsquo;re viewing the cause/action from.
+</p>
+
+<p>
+<a href="../journey/transhumanism-vs-anprimism.html#problems-caused-by-technology">Technology Causes Just As Many Problems As It Solves</a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ZeroContradictions</p>
+<p class="date">Created: 2023-01-02 Mon 20:54</p>
+</div>
+</body>
+</html>
